@@ -390,9 +390,8 @@ export async function middleware(req: NextRequest) {
       },
     });
 
-    const { data } = await supabase.auth.getClaims();
-    const claims = data?.claims as { sub?: string } | null | undefined;
-    userId = typeof claims?.sub === 'string' ? claims.sub : null;
+    const { data } = await supabase.auth.getUser();
+    userId = data.user?.id || null;
   }
 
   const isProtectedRoute = PROTECTED_PREFIXES.some((prefix) => pathname.startsWith(prefix));
