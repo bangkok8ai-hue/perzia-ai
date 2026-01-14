@@ -6,7 +6,7 @@ import { routing } from '@/i18n/routing';
 import { defaultLocale, localePathnames, locales } from '@/i18n/locales';
 import { LOCALE_COOKIE } from '@/lib/i18n/constants';
 import localizedSlugConfig from '@/config/localized-slugs.json';
-import { updateSession } from '@/lib/supabase-ssr';
+import { createServerClient } from '@supabase/ssr';
 import { LOGOUT_INTENT_COOKIE } from '@/lib/logout-intent-cookie';
 
 const NEXT_LOCALE_COOKIE = 'NEXT_LOCALE';
@@ -372,7 +372,28 @@ export async function middleware(req: NextRequest) {
     }
   }
 
-  const { userId } = await updateSession(req, response);
+  // Update Supabase session - Edge Runtime compatible
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+
+  let userId: string | null = null;
+
+  if (supabaseUrl && supabaseAnonKey) {
+    const supabase = createServerClient(supabaseUrl, supabaseAnonKey, {
+      cookies: {
+        getAll: () => req.cookies.getAll(),
+        setAll: (cookiesToSet: Array<{ name: string; value: string; options: any }>) => {
+          cookiesToSet.forEach(({ name, value, options }) => {
+            response.cookies.set(name, value, options);
+          });
+        },
+      },
+    });
+
+    const { data } = await supabase.auth.getClaims();
+    const claims = data?.claims as { sub?: string } | null | undefined;
+    userId = typeof claims?.sub === 'string' ? claims.sub : null;
+  }
 
   const isProtectedRoute = PROTECTED_PREFIXES.some((prefix) => pathname.startsWith(prefix));
   if (!isProtectedRoute) {
