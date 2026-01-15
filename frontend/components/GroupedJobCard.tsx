@@ -133,7 +133,6 @@ export function GroupedJobCard({
   actionMenu = true,
   menuVariant = 'full',
   allowRemove = true,
-  isImageGroup = false,
   savingToLibrary = false,
   showImageCta = false,
   imageCtaHref = '/app/image',

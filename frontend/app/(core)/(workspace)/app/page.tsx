@@ -4560,7 +4560,7 @@ export default function Page() {
         return next;
       });
     }
-  }, [savingGroupIds, showNotice]);
+  }, [savingGroupIds, showNotice, authFetch]);
 
   const handleActiveGroupAction = useCallback(
     (group: GroupSummary, action: GroupedJobAction) => {

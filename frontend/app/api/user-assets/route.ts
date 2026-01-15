@@ -146,7 +146,7 @@ export async function POST(req: NextRequest) {
     let uploadUrl = '';
     let uploadWidth: number | null = null;
     let uploadHeight: number | null = null;
-    let uploadSize = buffer.length;
+    const uploadSize = buffer.length;
 
     if (mime.startsWith('image/')) {
       const upload = await uploadImageToStorage({
