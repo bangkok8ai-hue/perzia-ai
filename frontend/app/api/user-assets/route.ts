@@ -3,6 +3,7 @@ import { ensureAssetSchema } from '@/lib/schema';
 import { query } from '@/lib/db';
 import { deleteUserAsset, uploadImageToStorage, recordUserAsset } from '@/server/storage';
 import { getRouteAuthContext } from '@/lib/supabase-ssr';
+import { Buffer } from 'buffer';
 
 export const runtime = 'nodejs';
 
@@ -48,9 +49,9 @@ export async function GET(req: NextRequest) {
     source: row.source,
     jobId:
       row.metadata &&
-      typeof row.metadata === 'object' &&
-      'jobId' in (row.metadata as Record<string, unknown>) &&
-      typeof (row.metadata as Record<string, unknown>).jobId === 'string'
+        typeof row.metadata === 'object' &&
+        'jobId' in (row.metadata as Record<string, unknown>) &&
+        typeof (row.metadata as Record<string, unknown>).jobId === 'string'
         ? (row.metadata as Record<string, unknown>).jobId
         : null,
     createdAt: row.created_at,
@@ -129,34 +130,57 @@ export async function POST(req: NextRequest) {
       );
     }
     const mime = response.headers.get('content-type') ?? 'image/png';
-    if (!mime.startsWith('image/')) {
+    if (!mime.startsWith('image/') && !mime.startsWith('video/')) {
       return NextResponse.json({ ok: false, error: 'UNSUPPORTED_TYPE' }, { status: 415 });
     }
     const arrayBuffer = await response.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
-    const MAX_BYTES = 25 * 1024 * 1024;
+    const MAX_BYTES = 50 * 1024 * 1024; // Increased to 50MB for videos
     if (!buffer.length) {
-      return NextResponse.json({ ok: false, error: 'EMPTY_IMAGE' }, { status: 422 });
+      return NextResponse.json({ ok: false, error: 'EMPTY_FILE' }, { status: 422 });
     }
     if (buffer.length > MAX_BYTES) {
-      return NextResponse.json({ ok: false, error: 'IMAGE_TOO_LARGE' }, { status: 422 });
+      return NextResponse.json({ ok: false, error: 'FILE_TOO_LARGE' }, { status: 422 });
     }
 
-    const upload = await uploadImageToStorage({
-      data: buffer,
-      mime,
-      userId,
-      prefix: 'library',
-      fileName: payload?.name ?? parsed.pathname.split('/').pop() ?? 'image.png',
-    });
+    let uploadUrl = '';
+    let uploadWidth: number | null = null;
+    let uploadHeight: number | null = null;
+    let uploadSize = buffer.length;
+
+    if (mime.startsWith('image/')) {
+      const upload = await uploadImageToStorage({
+        data: buffer,
+        mime,
+        userId,
+        prefix: 'library',
+        fileName: payload?.name ?? parsed.pathname.split('/').pop() ?? 'image.png',
+      });
+      uploadUrl = upload.url;
+      uploadWidth = upload.width;
+      uploadHeight = upload.height;
+    } else {
+      // Video or other supported types
+      // Import uploadFileBuffer from storage if not already there, but based on view_file validation it is exported
+      // We need to make sure we import it.
+      const filename = payload?.name ?? parsed.pathname.split('/').pop() ?? 'video.mp4';
+      const upload = await import('@/server/storage').then(m => m.uploadFileBuffer({
+        data: buffer,
+        mime,
+        userId,
+        prefix: 'library',
+        fileName: filename,
+      }));
+      uploadUrl = upload.url;
+    }
 
     const assetId = await recordUserAsset({
       userId,
-      url: upload.url,
-      mime: upload.mime,
-      width: upload.width,
-      height: upload.height,
-      size: upload.size,
+      url: uploadUrl,
+      mime: mime,
+      width: uploadWidth,
+      height: uploadHeight,
+      size: uploadSize,
       source: 'generated',
       metadata: {
         originUrl: sourceUrl,
@@ -168,11 +192,11 @@ export async function POST(req: NextRequest) {
       ok: true,
       asset: {
         id: assetId,
-        url: upload.url,
-        width: upload.width,
-        height: upload.height,
-        mime: upload.mime,
-        size: upload.size,
+        url: uploadUrl,
+        width: uploadWidth,
+        height: uploadHeight,
+        mime: mime,
+        size: uploadSize,
       },
     });
   } catch (error) {

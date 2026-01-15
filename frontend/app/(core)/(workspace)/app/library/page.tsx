@@ -69,18 +69,18 @@ const DEFAULT_LIBRARY_COPY: LibraryCopy = {
     },
   },
   tabs: {
-    all: 'All images',
-    upload: 'Uploaded images',
-    generated: 'Generated images',
+    all: 'All assets',
+    upload: 'Uploaded assets',
+    generated: 'Generated assets',
   },
   assets: {
     title: 'Library assets',
     countLabel: '{count}',
     loadError: 'Unable to load imported assets.',
     empty: 'No imported assets yet. Upload references from the composer or drop files here.',
-    emptyUploads: 'No uploaded images yet. Upload references from the composer or drop files here.',
-    emptyGenerated: 'No generated images saved yet. Generate an image and save it to your library.',
-    deleteError: 'Unable to delete this image.',
+    emptyUploads: 'No uploaded assets yet. Upload references from the composer or drop files here.',
+    emptyGenerated: 'No generated assets saved yet. Generate an asset and save it to your library.',
+    deleteError: 'Unable to delete this asset.',
     deleteButton: 'Delete',
     downloadButton: 'Download',
     useSettingsButton: 'Use settings',
@@ -216,9 +216,8 @@ export default function LibraryPage() {
                     setDeleteError(null);
                     setDeletingId(null);
                   }}
-                  className={`flex-1 px-4 py-2 transition sm:flex-none ${
-                    activeSource === 'all' ? 'bg-accent text-white' : 'hover:bg-white'
-                  }`}
+                  className={`flex-1 px-4 py-2 transition sm:flex-none ${activeSource === 'all' ? 'bg-accent text-white' : 'hover:bg-white'
+                    }`}
                 >
                   {copy.tabs.all}
                 </button>
@@ -231,9 +230,8 @@ export default function LibraryPage() {
                     setDeleteError(null);
                     setDeletingId(null);
                   }}
-                  className={`flex-1 px-4 py-2 transition sm:flex-none ${
-                    activeSource === 'upload' ? 'bg-accent text-white' : 'hover:bg-white'
-                  }`}
+                  className={`flex-1 px-4 py-2 transition sm:flex-none ${activeSource === 'upload' ? 'bg-accent text-white' : 'hover:bg-white'
+                    }`}
                 >
                   {copy.tabs.upload}
                 </button>
@@ -246,9 +244,8 @@ export default function LibraryPage() {
                     setDeleteError(null);
                     setDeletingId(null);
                   }}
-                  className={`flex-1 px-4 py-2 transition sm:flex-none ${
-                    activeSource === 'generated' ? 'bg-accent text-white' : 'hover:bg-white'
-                  }`}
+                  className={`flex-1 px-4 py-2 transition sm:flex-none ${activeSource === 'generated' ? 'bg-accent text-white' : 'hover:bg-white'
+                    }`}
                 >
                   {copy.tabs.generated}
                 </button>
@@ -287,7 +284,17 @@ export default function LibraryPage() {
                 {assets.map((asset) => (
                   <article key={asset.id} className="rounded-card border border-border bg-white shadow-card">
                     <div className="relative aspect-square overflow-hidden rounded-t-card bg-[#f2f4f8]">
-                      <img src={asset.url} alt="" className="h-full w-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+                      {asset.mime?.startsWith('video/') || asset.url.match(/\.(mp4|webm|mov)$/i) ? (
+                        <video
+                          src={asset.url}
+                          className="h-full w-full object-cover"
+                          controls
+                          playsInline
+                          preload="metadata"
+                        />
+                      ) : (
+                        <img src={asset.url} alt="" className="h-full w-full object-cover" loading="lazy" referrerPolicy="no-referrer" />
+                      )}
                     </div>
                     <div className="space-y-2 border-t border-border px-4 py-3 text-xs text-text-secondary">
                       <p className="truncate text-text-primary">{asset.url.split('/').pop() ?? copy.assets.assetFallback}</p>

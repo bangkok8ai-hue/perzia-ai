@@ -24,7 +24,7 @@ export type GroupedJobAction =
   | 'branch'
   | 'compare'
   | 'remove'
-  | 'save-image';
+  | 'save-asset';
 
 function ThumbImage({ src, alt, className }: { src: string; alt: string; className?: string }) {
   const baseClass = clsx('h-full w-full pointer-events-none', className);
@@ -316,12 +316,12 @@ export function GroupedJobCard({
           ) : null}
         </div>
         <div className="flex items-center gap-2">
-          {isImageGroup && (
+          {group.hero.status === 'completed' && (
             <button
               type="button"
               onClick={(event) => {
                 event.stopPropagation();
-                handleAction('save-image');
+                handleAction('save-asset');
               }}
               disabled={savingToLibrary}
               className={clsx(
@@ -399,7 +399,7 @@ export function GroupedJobCard({
               </button>
               <button
                 type="button"
-                onClick={() => handleAction('save-image')}
+                onClick={() => handleAction('save-asset')}
                 className="mt-1 flex w-full items-center justify-between rounded-[8px] px-2 py-1.5 text-left transition hover:bg-accentSoft/10"
               >
                 <span>Add to Library</span>
@@ -472,10 +472,10 @@ export function GroupedJobCard({
               ) : null}
             </>
           )}
-          {isImageGroup && (
+          {group.hero.status === 'completed' && (
             <button
               type="button"
-              onClick={() => handleAction('save-image')}
+              onClick={() => handleAction('save-asset')}
               className={clsx(
                 'mt-1 flex w-full items-center justify-between rounded-[8px] px-2 py-1.5 text-left transition',
                 savingToLibrary ? 'opacity-60' : 'hover:bg-accentSoft/10'
@@ -495,7 +495,8 @@ export function GroupedJobCard({
             </button>
           )}
         </div>
-      )}
-    </Card>
+      )
+      }
+    </Card >
   );
 }

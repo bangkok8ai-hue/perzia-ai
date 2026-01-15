@@ -521,10 +521,10 @@ function coerceFormState(engine: EngineCaps, mode: Mode, previous: FormState | n
         const closestBySeconds =
           prevSeconds != null
             ? parsedOptions.reduce((best, candidate) => {
-                const bestDiff = Math.abs(best.value - prevSeconds);
-                const candidateDiff = Math.abs(candidate.value - prevSeconds);
-                return candidateDiff < bestDiff ? candidate : best;
-              }, parsedOptions[0])
+              const bestDiff = Math.abs(best.value - prevSeconds);
+              const candidateDiff = Math.abs(candidate.value - prevSeconds);
+              return candidateDiff < bestDiff ? candidate : best;
+            }, parsedOptions[0])
             : null;
         const selected = parsedOptions.find((meta) => matchesDurationOption(meta, prevOption, prevSeconds))
           ?? closestBySeconds
@@ -995,6 +995,7 @@ export default function Page() {
   const [topUpAmount, setTopUpAmount] = useState<number>(1000);
   const [isTopUpLoading, setIsTopUpLoading] = useState(false);
   const [topUpError, setTopUpError] = useState<string | null>(null);
+  const [savingGroupIds, setSavingGroupIds] = useState<Set<string>>(new Set());
 
   const storageScope = useMemo(() => userId ?? 'anon', [userId]);
   const storageKey = useCallback(
@@ -1062,97 +1063,97 @@ export default function Page() {
     },
     [storageKey]
   );
-const fromVideoId = useMemo(() => searchParams?.get('from') ?? null, [searchParams]);
-const requestedJobId = useMemo(() => {
-  const value = searchParams?.get('job');
-  if (!value) return null;
-  const trimmed = value.trim();
-  return trimmed.length ? trimmed : null;
-}, [searchParams]);
-const requestedEngineId = useMemo(() => {
-  const value = searchParams?.get('engine');
-  if (!value) return null;
-  const trimmed = value.trim();
-  return trimmed.length ? trimmed : null;
-}, [searchParams]);
-const resolvedRequestedEngineId = useMemo(() => {
-  if (!requestedEngineId) return null;
-  const normalized = requestedEngineId.trim().toLowerCase();
-  if (normalized === 'pika-image-to-video') {
-    return 'pika-text-to-video';
+  const fromVideoId = useMemo(() => searchParams?.get('from') ?? null, [searchParams]);
+  const requestedJobId = useMemo(() => {
+    const value = searchParams?.get('job');
+    if (!value) return null;
+    const trimmed = value.trim();
+    return trimmed.length ? trimmed : null;
+  }, [searchParams]);
+  const requestedEngineId = useMemo(() => {
+    const value = searchParams?.get('engine');
+    if (!value) return null;
+    const trimmed = value.trim();
+    return trimmed.length ? trimmed : null;
+  }, [searchParams]);
+  const resolvedRequestedEngineId = useMemo(() => {
+    if (!requestedEngineId) return null;
+    const normalized = requestedEngineId.trim().toLowerCase();
+    if (normalized === 'pika-image-to-video') {
+      return 'pika-text-to-video';
+    }
+    return requestedEngineId;
+  }, [requestedEngineId]);
+  const requestedEngineToken = useMemo(
+    () => normalizeEngineToken(resolvedRequestedEngineId),
+    [resolvedRequestedEngineId]
+  );
+  if (typeof window !== 'undefined') {
+    console.log('[generate] requested engine params', {
+      raw: requestedEngineId,
+      resolved: resolvedRequestedEngineId,
+      token: requestedEngineToken,
+      search: searchParams?.toString() ?? '',
+    });
   }
-  return requestedEngineId;
-}, [requestedEngineId]);
-const requestedEngineToken = useMemo(
-  () => normalizeEngineToken(resolvedRequestedEngineId),
-  [resolvedRequestedEngineId]
-);
-if (typeof window !== 'undefined') {
-  console.log('[generate] requested engine params', {
-    raw: requestedEngineId,
-    resolved: resolvedRequestedEngineId,
-    token: requestedEngineToken,
-    search: searchParams?.toString() ?? '',
-  });
-}
-const searchString = useMemo(() => searchParams?.toString() ?? '', [searchParams]);
-const skipOnboardingRef = useRef<boolean>(false);
-const hydratedJobRef = useRef<string | null>(null);
+  const searchString = useMemo(() => searchParams?.toString() ?? '', [searchParams]);
+  const skipOnboardingRef = useRef<boolean>(false);
+  const hydratedJobRef = useRef<string | null>(null);
 
-useEffect(() => {
-  if (typeof window === 'undefined') return;
-  let skipFlag = window.sessionStorage.getItem(LOGIN_SKIP_ONBOARDING_KEY);
-  if (!skipFlag) {
-    skipFlag = window.localStorage.getItem(LOGIN_SKIP_ONBOARDING_KEY);
-    if (skipFlag) {
-      window.localStorage.removeItem(LOGIN_SKIP_ONBOARDING_KEY);
-      window.sessionStorage.setItem(LOGIN_SKIP_ONBOARDING_KEY, skipFlag);
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    let skipFlag = window.sessionStorage.getItem(LOGIN_SKIP_ONBOARDING_KEY);
+    if (!skipFlag) {
+      skipFlag = window.localStorage.getItem(LOGIN_SKIP_ONBOARDING_KEY);
+      if (skipFlag) {
+        window.localStorage.removeItem(LOGIN_SKIP_ONBOARDING_KEY);
+        window.sessionStorage.setItem(LOGIN_SKIP_ONBOARDING_KEY, skipFlag);
+      }
     }
-  }
-  if (skipFlag === 'true') {
-    skipOnboardingRef.current = true;
-    if (process.env.NODE_ENV !== 'production') {
-      console.log('[app] skip onboarding via flag');
-    }
-    window.sessionStorage.removeItem(LOGIN_SKIP_ONBOARDING_KEY);
-    window.localStorage.removeItem(LOGIN_SKIP_ONBOARDING_KEY);
-  }
-  let lastTarget =
-    window.sessionStorage.getItem(LOGIN_LAST_TARGET_KEY) ??
-    null;
-  if (!lastTarget) {
-    lastTarget = window.localStorage.getItem(LOGIN_LAST_TARGET_KEY);
-    if (lastTarget) {
-      window.localStorage.removeItem(LOGIN_LAST_TARGET_KEY);
-      window.sessionStorage.setItem(LOGIN_LAST_TARGET_KEY, lastTarget);
-    }
-  }
-  if (lastTarget) {
-    const normalized = lastTarget.trim();
-    const shouldSkip =
-      normalized.startsWith('/generate') ||
-      normalized.startsWith('/app') ||
-      normalized.includes('from=') ||
-      normalized.includes('engine=');
-    if (shouldSkip) {
+    if (skipFlag === 'true') {
       skipOnboardingRef.current = true;
+      if (process.env.NODE_ENV !== 'production') {
+        console.log('[app] skip onboarding via flag');
+      }
+      window.sessionStorage.removeItem(LOGIN_SKIP_ONBOARDING_KEY);
+      window.localStorage.removeItem(LOGIN_SKIP_ONBOARDING_KEY);
     }
-    if (process.env.NODE_ENV !== 'production') {
-      console.log('[app] read last target', { lastTarget, shouldSkip });
+    let lastTarget =
+      window.sessionStorage.getItem(LOGIN_LAST_TARGET_KEY) ??
+      null;
+    if (!lastTarget) {
+      lastTarget = window.localStorage.getItem(LOGIN_LAST_TARGET_KEY);
+      if (lastTarget) {
+        window.localStorage.removeItem(LOGIN_LAST_TARGET_KEY);
+        window.sessionStorage.setItem(LOGIN_LAST_TARGET_KEY, lastTarget);
+      }
     }
-    window.sessionStorage.removeItem(LOGIN_LAST_TARGET_KEY);
-    window.localStorage.removeItem(LOGIN_LAST_TARGET_KEY);
-  }
-}, []);
+    if (lastTarget) {
+      const normalized = lastTarget.trim();
+      const shouldSkip =
+        normalized.startsWith('/generate') ||
+        normalized.startsWith('/app') ||
+        normalized.includes('from=') ||
+        normalized.includes('engine=');
+      if (shouldSkip) {
+        skipOnboardingRef.current = true;
+      }
+      if (process.env.NODE_ENV !== 'production') {
+        console.log('[app] read last target', { lastTarget, shouldSkip });
+      }
+      window.sessionStorage.removeItem(LOGIN_LAST_TARGET_KEY);
+      window.localStorage.removeItem(LOGIN_LAST_TARGET_KEY);
+    }
+  }, []);
 
-useEffect(() => {
-  if (fromVideoId) {
-    skipOnboardingRef.current = true;
-    if (process.env.NODE_ENV !== 'production') {
-      console.log('[app] skip onboarding due to fromVideoId', { fromVideoId });
+  useEffect(() => {
+    if (fromVideoId) {
+      skipOnboardingRef.current = true;
+      if (process.env.NODE_ENV !== 'production') {
+        console.log('[app] skip onboarding due to fromVideoId', { fromVideoId });
+      }
     }
-  }
-}, [fromVideoId]);
+  }, [fromVideoId]);
   const [renders, setRenders] = useState<LocalRender[]>([]);
   const [sharedPrompt, setSharedPrompt] = useState<string | null>(null);
   const [selectedPreview, setSelectedPreview] = useState<{
@@ -1272,12 +1273,12 @@ useEffect(() => {
         prompt: job.prompt ?? '',
         progress: normalizedProgress,
         message,
-      status: normalizedStatus,
-      videoUrl: job.videoUrl ?? undefined,
-      readyVideoUrl: job.videoUrl ?? undefined,
-      thumbUrl,
-      hasAudio: typeof job.hasAudio === 'boolean' ? job.hasAudio : undefined,
-      priceCents: priceCents ?? undefined,
+        status: normalizedStatus,
+        videoUrl: job.videoUrl ?? undefined,
+        readyVideoUrl: job.videoUrl ?? undefined,
+        thumbUrl,
+        hasAudio: typeof job.hasAudio === 'boolean' ? job.hasAudio : undefined,
+        priceCents: priceCents ?? undefined,
         currency,
         pricingSnapshot: job.pricingSnapshot,
         paymentStatus: job.paymentStatus ?? 'platform',
@@ -1525,37 +1526,37 @@ useEffect(() => {
               prev.map((item) =>
                 item.jobId === render.jobId
                   ? {
-                      ...item,
-                      status: status.status ?? item.status,
-                      progress: status.progress ?? item.progress,
-                      readyVideoUrl: status.videoUrl ?? item.readyVideoUrl,
-                      videoUrl: status.videoUrl ?? item.videoUrl ?? item.readyVideoUrl,
-                      thumbUrl: status.thumbUrl ?? item.thumbUrl,
-                      aspectRatio: status.aspectRatio ?? item.aspectRatio,
-                      priceCents: status.finalPriceCents ?? status.pricing?.totalCents ?? item.priceCents,
-                      currency: status.currency ?? status.pricing?.currency ?? item.currency,
-                      pricingSnapshot: status.pricing ?? item.pricingSnapshot,
-                      paymentStatus: status.paymentStatus ?? item.paymentStatus,
-                      message: status.message ?? item.message,
-                    }
+                    ...item,
+                    status: status.status ?? item.status,
+                    progress: status.progress ?? item.progress,
+                    readyVideoUrl: status.videoUrl ?? item.readyVideoUrl,
+                    videoUrl: status.videoUrl ?? item.videoUrl ?? item.readyVideoUrl,
+                    thumbUrl: status.thumbUrl ?? item.thumbUrl,
+                    aspectRatio: status.aspectRatio ?? item.aspectRatio,
+                    priceCents: status.finalPriceCents ?? status.pricing?.totalCents ?? item.priceCents,
+                    currency: status.currency ?? status.pricing?.currency ?? item.currency,
+                    pricingSnapshot: status.pricing ?? item.pricingSnapshot,
+                    paymentStatus: status.paymentStatus ?? item.paymentStatus,
+                    message: status.message ?? item.message,
+                  }
                   : item
               )
             );
             setSelectedPreview((cur) =>
               cur && (cur.id === render.jobId || cur.localKey === render.localKey)
                 ? {
-                    ...cur,
-                    id: render.jobId,
-                    localKey: render.localKey,
-                    status: status.status ?? cur.status,
-                    progress: status.progress ?? cur.progress,
-                    videoUrl: status.videoUrl ?? cur.videoUrl,
-                    thumbUrl: status.thumbUrl ?? cur.thumbUrl,
-                    aspectRatio: status.aspectRatio ?? cur.aspectRatio,
-                    priceCents: status.finalPriceCents ?? status.pricing?.totalCents ?? cur.priceCents,
-                    currency: status.currency ?? status.pricing?.currency ?? cur.currency,
-                    message: status.message ?? cur.message,
-                  }
+                  ...cur,
+                  id: render.jobId,
+                  localKey: render.localKey,
+                  status: status.status ?? cur.status,
+                  progress: status.progress ?? cur.progress,
+                  videoUrl: status.videoUrl ?? cur.videoUrl,
+                  thumbUrl: status.thumbUrl ?? cur.thumbUrl,
+                  aspectRatio: status.aspectRatio ?? cur.aspectRatio,
+                  priceCents: status.finalPriceCents ?? status.pricing?.totalCents ?? cur.priceCents,
+                  currency: status.currency ?? status.pricing?.currency ?? cur.currency,
+                  message: status.message ?? cur.message,
+                }
                 : cur
             );
           } catch (error) {
@@ -2058,28 +2059,28 @@ useEffect(() => {
 
   const assetsRef = useRef<Record<string, (ReferenceAsset | null)[]>>({});
 
-const revokeAssetPreview = (asset: ReferenceAsset | null | undefined) => {
-  if (!asset) return;
-  if (asset.previewUrl.startsWith('blob:')) {
-    URL.revokeObjectURL(asset.previewUrl);
-  }
-};
-
-useEffect(() => {
-  assetsRef.current = inputAssets;
-}, [inputAssets]);
-
-useEffect(() => {
-  return () => {
-    Object.values(assetsRef.current).forEach((entries) => {
-      entries.forEach((asset) => {
-        revokeAssetPreview(asset);
-      });
-    });
+  const revokeAssetPreview = (asset: ReferenceAsset | null | undefined) => {
+    if (!asset) return;
+    if (asset.previewUrl.startsWith('blob:')) {
+      URL.revokeObjectURL(asset.previewUrl);
+    }
   };
-}, []);
 
-const showNotice = useCallback((message: string) => {
+  useEffect(() => {
+    assetsRef.current = inputAssets;
+  }, [inputAssets]);
+
+  useEffect(() => {
+    return () => {
+      Object.values(assetsRef.current).forEach((entries) => {
+        entries.forEach((asset) => {
+          revokeAssetPreview(asset);
+        });
+      });
+    };
+  }, []);
+
+  const showNotice = useCallback((message: string) => {
     setNotice(message);
     if (noticeTimeoutRef.current !== null) {
       window.clearTimeout(noticeTimeoutRef.current);
@@ -2112,14 +2113,14 @@ const showNotice = useCallback((message: string) => {
       }
       const assets = Array.isArray(payload.assets)
         ? (payload.assets as UserAsset[]).map((asset) => ({
-            id: asset.id,
-            url: asset.url,
-            width: asset.width ?? null,
-            height: asset.height ?? null,
-            size: asset.size ?? null,
-            mime: asset.mime ?? null,
-            createdAt: asset.createdAt,
-          }))
+          id: asset.id,
+          url: asset.url,
+          width: asset.width ?? null,
+          height: asset.height ?? null,
+          size: asset.size ?? null,
+          mime: asset.mime ?? null,
+          createdAt: asset.createdAt,
+        }))
         : [];
       const filtered = assets.filter((asset) => !asset.mime || asset.mime.startsWith('image/'));
       setAssetLibrary(filtered);
@@ -2183,7 +2184,7 @@ const showNotice = useCallback((message: string) => {
     [showNotice]
   );
 
-const handleRefreshJob = useCallback(async (jobId: string) => {
+  const handleRefreshJob = useCallback(async (jobId: string) => {
     try {
       const status = await getJobStatus(jobId);
       if (status.status === 'failed') {
@@ -2195,7 +2196,7 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
     } catch (error) {
       throw error instanceof Error ? error : new Error('Unable to refresh render status.');
     }
-}, []);
+  }, []);
 
   const closeTopUpModal = useCallback(() => {
     setTopUpModal(null);
@@ -2622,19 +2623,19 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
       .then(async (response) => {
         const payload = (await response.json().catch(() => null)) as
           | {
-              ok?: boolean;
-              error?: string;
-              status?: string;
-              progress?: number;
-              videoUrl?: string;
-              thumbUrl?: string;
-              aspectRatio?: string;
-              finalPriceCents?: number;
-              currency?: string;
-              pricing?: { totalCents?: number; currency?: string } | null;
-              settingsSnapshot?: unknown;
-              createdAt?: string;
-            }
+            ok?: boolean;
+            error?: string;
+            status?: string;
+            progress?: number;
+            videoUrl?: string;
+            thumbUrl?: string;
+            aspectRatio?: string;
+            finalPriceCents?: number;
+            currency?: string;
+            pricing?: { totalCents?: number; currency?: string } | null;
+            settingsSnapshot?: unknown;
+            createdAt?: string;
+          }
           | null;
         if (!response.ok || !payload?.ok) {
           throw new Error(payload?.error ?? `Failed to load job (${response.status})`);
@@ -2642,13 +2643,13 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
 
         const snapshot = payload.settingsSnapshot as
           | {
-              schemaVersion?: unknown;
-              surface?: unknown;
-              engineId?: unknown;
-              engineLabel?: unknown;
-              prompt?: unknown;
-              core?: unknown;
-            }
+            schemaVersion?: unknown;
+            surface?: unknown;
+            engineId?: unknown;
+            engineLabel?: unknown;
+            prompt?: unknown;
+            core?: unknown;
+          }
           | null
           | undefined;
         if (snapshot?.schemaVersion !== 1 || snapshot?.surface !== 'video') {
@@ -2990,19 +2991,19 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
       .then(async (response) => {
         const payload = (await response.json().catch(() => null)) as
           | {
-              ok?: boolean;
-              error?: string;
-              settingsSnapshot?: unknown;
-              videoUrl?: string;
-              thumbUrl?: string;
-              aspectRatio?: string;
-              progress?: number;
-              status?: string;
-              pricing?: { totalCents?: number; currency?: string } | null;
-              finalPriceCents?: number;
-              currency?: string;
-              createdAt?: string;
-            }
+            ok?: boolean;
+            error?: string;
+            settingsSnapshot?: unknown;
+            videoUrl?: string;
+            thumbUrl?: string;
+            aspectRatio?: string;
+            progress?: number;
+            status?: string;
+            pricing?: { totalCents?: number; currency?: string } | null;
+            finalPriceCents?: number;
+            currency?: string;
+            createdAt?: string;
+          }
           | null;
         if (!response.ok || !payload?.ok) {
           throw new Error(payload?.error ?? `Failed to load job (${response.status})`);
@@ -3019,13 +3020,13 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
 
         const snapshot = payload.settingsSnapshot as
           | {
-              schemaVersion?: unknown;
-              surface?: unknown;
-              engineId?: unknown;
-              engineLabel?: unknown;
-              prompt?: unknown;
-              core?: unknown;
-            }
+            schemaVersion?: unknown;
+            surface?: unknown;
+            engineId?: unknown;
+            engineLabel?: unknown;
+            prompt?: unknown;
+            core?: unknown;
+          }
           | null
           | undefined;
         if (snapshot?.schemaVersion === 1 && snapshot?.surface === 'video') {
@@ -3445,14 +3446,14 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
       map[fieldId] = entries.map((asset) =>
         asset
           ? {
-              kind: asset.kind,
-              name: asset.name,
-              size: asset.size,
-              type: asset.type,
-              previewUrl: asset.previewUrl,
-              status: asset.status,
-              error: asset.error,
-            }
+            kind: asset.kind,
+            name: asset.name,
+            size: asset.size,
+            type: asset.type,
+            previewUrl: asset.previewUrl,
+            status: asset.status,
+            error: asset.error,
+          }
           : null
       );
     });
@@ -3569,7 +3570,7 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
                   ? Math.round(walletJson.balance * 100)
                   : typeof walletJson.balance === 'string'
                     ? Math.round(Number(walletJson.balance) * 100)
-                  : undefined;
+                    : undefined;
             if (typeof balanceCents === 'number') {
               const shortfall = requiredCents - balanceCents;
               if (shortfall > 0) {
@@ -3661,25 +3662,25 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
       ) ?? null;
     const referenceImageUrls = inputsPayload
       ? inputsPayload
-          .filter((attachment) => {
-            if (attachment.kind !== 'image' || typeof attachment.url !== 'string') return false;
-            const slotId = attachment.slotId;
-            if (slotId && primaryAssetFieldIds.has(slotId)) return false;
-            if (slotId && frameAssetFieldIds.has(slotId)) return false;
-            if (!slotId) return referenceSlots.size === 0;
-            if (referenceSlots.size === 0) {
-              return !primaryAssetFieldIds.has(slotId);
-            }
-            return referenceSlots.has(slotId);
-          })
-          .map((attachment) => attachment.url)
-          .filter((url, index, self) => self.indexOf(url) === index)
+        .filter((attachment) => {
+          if (attachment.kind !== 'image' || typeof attachment.url !== 'string') return false;
+          const slotId = attachment.slotId;
+          if (slotId && primaryAssetFieldIds.has(slotId)) return false;
+          if (slotId && frameAssetFieldIds.has(slotId)) return false;
+          if (!slotId) return referenceSlots.size === 0;
+          if (referenceSlots.size === 0) {
+            return !primaryAssetFieldIds.has(slotId);
+          }
+          return referenceSlots.has(slotId);
+        })
+        .map((attachment) => attachment.url)
+        .filter((url, index, self) => self.indexOf(url) === index)
       : [];
     const referenceVideoUrls = inputsPayload
       ? inputsPayload
-          .filter((attachment) => attachment.kind === 'video' && typeof attachment.url === 'string')
-          .map((attachment) => attachment.url)
-          .filter((url, index, self) => self.indexOf(url) === index)
+        .filter((attachment) => attachment.kind === 'video' && typeof attachment.url === 'string')
+        .map((attachment) => attachment.url)
+        .filter((url, index, self) => self.indexOf(url) === index)
       : [];
 
     const primaryImageUrl = primaryAttachment?.url ?? referenceImageUrls[0];
@@ -3772,10 +3773,10 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
             prev.map((r) =>
               r.localKey === localKey && !r.videoUrl
                 ? {
-                    ...r,
-                    progress: pct < 5 ? 5 : pct,
-                    message: progressMessage,
-                  }
+                  ...r,
+                  progress: pct < 5 ? 5 : pct,
+                  message: progressMessage,
+                }
                 : r
             )
           );
@@ -3942,28 +3943,28 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
           prev.map((render) =>
             render.localKey === localKey
               ? {
-                  ...render,
-                  id: resolvedJobId,
-                  jobId: resolvedJobId,
-                  batchId: resolvedBatchId,
-                  groupId: resolvedGroupId,
-                  iterationIndex: resolvedIterationIndex,
-                  iterationCount: resolvedIterationCount,
-                  thumbUrl: resolvedThumb,
-                  message: resolvedMessage,
-                  progress: gatedProgress,
-                  status: gatingActive ? 'pending' : resolvedStatus,
-                  priceCents: resolvedPriceCents,
-                  currency: resolvedCurrency,
-                  pricingSnapshot: resolvedPricingSnapshot,
-                  paymentStatus: resolvedPaymentStatus,
-                  etaSeconds: resolvedEtaSeconds,
-                  etaLabel: resolvedEtaLabel,
-                  renderIds: resolvedRenderIds,
-                  heroRenderId: resolvedHeroRenderId,
-                  readyVideoUrl: resolvedVideoUrl ?? render.readyVideoUrl,
-                  videoUrl: gatingActive ? render.videoUrl : resolvedVideoUrl ?? render.videoUrl,
-                }
+                ...render,
+                id: resolvedJobId,
+                jobId: resolvedJobId,
+                batchId: resolvedBatchId,
+                groupId: resolvedGroupId,
+                iterationIndex: resolvedIterationIndex,
+                iterationCount: resolvedIterationCount,
+                thumbUrl: resolvedThumb,
+                message: resolvedMessage,
+                progress: gatedProgress,
+                status: gatingActive ? 'pending' : resolvedStatus,
+                priceCents: resolvedPriceCents,
+                currency: resolvedCurrency,
+                pricingSnapshot: resolvedPricingSnapshot,
+                paymentStatus: resolvedPaymentStatus,
+                etaSeconds: resolvedEtaSeconds,
+                etaLabel: resolvedEtaLabel,
+                renderIds: resolvedRenderIds,
+                heroRenderId: resolvedHeroRenderId,
+                readyVideoUrl: resolvedVideoUrl ?? render.readyVideoUrl,
+                videoUrl: gatingActive ? render.videoUrl : resolvedVideoUrl ?? render.videoUrl,
+              }
               : render
           )
         );
@@ -3971,21 +3972,21 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
         setSelectedPreview((cur) =>
           cur && cur.localKey === localKey
             ? {
-                ...cur,
-                id: resolvedJobId,
-                batchId: resolvedBatchId,
-                iterationIndex: resolvedIterationIndex,
-                iterationCount: resolvedIterationCount,
-                thumbUrl: resolvedThumb,
-                progress: gatedProgress,
-                message: resolvedMessage,
-                priceCents: resolvedPriceCents,
-                currency: resolvedCurrency,
-                etaSeconds: resolvedEtaSeconds,
-                etaLabel: resolvedEtaLabel,
-                videoUrl: gatingActive ? cur.videoUrl : resolvedVideoUrl ?? cur.videoUrl,
-                status: gatingActive ? 'pending' : resolvedStatus,
-              }
+              ...cur,
+              id: resolvedJobId,
+              batchId: resolvedBatchId,
+              iterationIndex: resolvedIterationIndex,
+              iterationCount: resolvedIterationCount,
+              thumbUrl: resolvedThumb,
+              progress: gatedProgress,
+              message: resolvedMessage,
+              priceCents: resolvedPriceCents,
+              currency: resolvedCurrency,
+              etaSeconds: resolvedEtaSeconds,
+              etaLabel: resolvedEtaLabel,
+              videoUrl: gatingActive ? cur.videoUrl : resolvedVideoUrl ?? cur.videoUrl,
+              status: gatingActive ? 'pending' : resolvedStatus,
+            }
             : cur
         );
 
@@ -4057,35 +4058,35 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
               prev.map((r) =>
                 r.id === jobId
                   ? {
-                      ...r,
-                      status: status.status ?? r.status,
-                      progress: status.progress ?? r.progress,
-                      readyVideoUrl: status.videoUrl ?? r.readyVideoUrl,
-                      videoUrl: status.videoUrl ?? r.videoUrl ?? r.readyVideoUrl,
-                      thumbUrl: status.thumbUrl ?? r.thumbUrl,
-                      priceCents: status.finalPriceCents ?? status.pricing?.totalCents ?? r.priceCents,
-                      currency: status.currency ?? status.pricing?.currency ?? r.currency,
-                      pricingSnapshot: status.pricing ?? r.pricingSnapshot,
-                      paymentStatus: status.paymentStatus ?? r.paymentStatus,
-                    }
+                    ...r,
+                    status: status.status ?? r.status,
+                    progress: status.progress ?? r.progress,
+                    readyVideoUrl: status.videoUrl ?? r.readyVideoUrl,
+                    videoUrl: status.videoUrl ?? r.videoUrl ?? r.readyVideoUrl,
+                    thumbUrl: status.thumbUrl ?? r.thumbUrl,
+                    priceCents: status.finalPriceCents ?? status.pricing?.totalCents ?? r.priceCents,
+                    currency: status.currency ?? status.pricing?.currency ?? r.currency,
+                    pricingSnapshot: status.pricing ?? r.pricingSnapshot,
+                    paymentStatus: status.paymentStatus ?? r.paymentStatus,
+                  }
                   : r
               )
             );
             setSelectedPreview((cur) =>
               cur && (cur.id === jobId || cur.localKey === localKey)
                 ? {
-                    ...cur,
-                    status: status.status ?? cur.status,
-                    id: jobId,
-                    localKey,
-                    progress: status.progress ?? cur.progress,
-                    videoUrl: status.videoUrl ?? target?.readyVideoUrl ?? cur.videoUrl,
-                    thumbUrl: status.thumbUrl ?? cur.thumbUrl,
-                    priceCents: status.finalPriceCents ?? status.pricing?.totalCents ?? cur.priceCents,
-                    currency: status.currency ?? status.pricing?.currency ?? cur.currency,
-                    etaLabel: cur.etaLabel,
-                    etaSeconds: cur.etaSeconds,
-                  }
+                  ...cur,
+                  status: status.status ?? cur.status,
+                  id: jobId,
+                  localKey,
+                  progress: status.progress ?? cur.progress,
+                  videoUrl: status.videoUrl ?? target?.readyVideoUrl ?? cur.videoUrl,
+                  thumbUrl: status.thumbUrl ?? cur.thumbUrl,
+                  priceCents: status.finalPriceCents ?? status.pricing?.totalCents ?? cur.priceCents,
+                  currency: status.currency ?? status.pricing?.currency ?? cur.currency,
+                  etaLabel: cur.etaLabel,
+                  etaSeconds: cur.etaSeconds,
+                }
                 : cur
             );
             const shouldKeepPolling =
@@ -4351,6 +4352,10 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
   const handleGalleryGroupAction = useCallback(
     (group: GroupSummary, action: GroupedJobAction) => {
       setActiveGroupId(group.id);
+      if (action === 'save-asset') {
+        void saveAssetToLibrary(group);
+        return;
+      }
       if (action === 'remove') {
         return;
       }
@@ -4520,6 +4525,43 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
     },
     [handleGalleryGroupAction, setActiveGroupId]
   );
+  const saveAssetToLibrary = useCallback(async (group: GroupSummary) => {
+    const hero = group.hero;
+    const url = hero.videoUrl ?? hero.thumbUrl;
+    if (!url || savingGroupIds.has(group.id)) return;
+
+    setSavingGroupIds((prev) => new Set(prev).add(group.id));
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error('Failed to fetch asset data');
+      const blob = await response.blob();
+
+      const formData = new FormData();
+      const filename = url.split('/').pop()?.split('?')[0] ?? (hero.videoUrl ? 'generated-video.mp4' : 'generated-image.png');
+
+      formData.append('file', blob, filename);
+
+      const uploadRes = await authFetch('/api/user-assets', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!uploadRes.ok) {
+        throw new Error('Upload failed');
+      }
+      showNotice('Saved to Library');
+    } catch (err) {
+      console.error('Save to library failed', err);
+      showNotice('Failed to save to Library');
+    } finally {
+      setSavingGroupIds((prev) => {
+        const next = new Set(prev);
+        next.delete(group.id);
+        return next;
+      });
+    }
+  }, [savingGroupIds, showNotice]);
+
   const handleActiveGroupAction = useCallback(
     (group: GroupSummary, action: GroupedJobAction) => {
       if (action === 'remove') return;
@@ -4578,196 +4620,197 @@ const handleRefreshJob = useCallback(async (jobId: string) => {
           <AppSidebar />
           <div className="flex flex-1 min-w-0 flex-col overflow-hidden">
             <main className="flex flex-1 min-w-0 flex-col gap-5 p-5 lg:p-7">
-            {notice && (
-              <div className="rounded-[12px] border border-[#FACC15]/60 bg-[#FEF3C7] px-4 py-2 text-sm text-[#92400E] shadow-card">
-                {notice}
-              </div>
-            )}
-            <div className="space-y-5">
-              {showCenterGallery ? (
-                normalizedPendingGroups.length === 0 && !isGenerationLoading ? (
-                  <div className="rounded-card border border-border bg-white/80 p-5 text-center text-sm text-text-secondary">
-                    {workspaceCopy.gallery.empty}
-                  </div>
-                ) : (
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    {normalizedPendingGroups.map((group) => {
-                      const engineId = group.hero.engineId;
-                      const engine = engineId ? engineMap.get(engineId) ?? null : null;
-                      return (
-                        <GroupedJobCard
-                          key={group.id}
-                          group={group}
-                          engine={engine ?? undefined}
-                          onOpen={handleActiveGroupOpen}
-                          onAction={handleActiveGroupAction}
-                          allowRemove={false}
-                        />
-                      );
-                    })}
-                    {isGenerationLoading &&
-                      Array.from({ length: normalizedPendingGroups.length ? 0 : generationSkeletonCount }).map((_, index) => (
-                        <div key={`workspace-gallery-skeleton-${index}`} className="rounded-card border border-border bg-white/60 p-0" aria-hidden>
-                          <div className="relative overflow-hidden rounded-card">
-                            <div className="relative" style={{ aspectRatio: '16 / 9' }}>
-                              <div className="skeleton absolute inset-0" />
+              {notice && (
+                <div className="rounded-[12px] border border-[#FACC15]/60 bg-[#FEF3C7] px-4 py-2 text-sm text-[#92400E] shadow-card">
+                  {notice}
+                </div>
+              )}
+              <div className="space-y-5">
+                {showCenterGallery ? (
+                  normalizedPendingGroups.length === 0 && !isGenerationLoading ? (
+                    <div className="rounded-card border border-border bg-white/80 p-5 text-center text-sm text-text-secondary">
+                      {workspaceCopy.gallery.empty}
+                    </div>
+                  ) : (
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      {normalizedPendingGroups.map((group) => {
+                        const engineId = group.hero.engineId;
+                        const engine = engineId ? engineMap.get(engineId) ?? null : null;
+                        return (
+                          <GroupedJobCard
+                            key={group.id}
+                            group={group}
+                            engine={engine ?? undefined}
+                            onOpen={handleActiveGroupOpen}
+                            onAction={handleActiveGroupAction}
+                            allowRemove={false}
+                            savingToLibrary={savingGroupIds.has(group.id)}
+                          />
+                        );
+                      })}
+                      {isGenerationLoading &&
+                        Array.from({ length: normalizedPendingGroups.length ? 0 : generationSkeletonCount }).map((_, index) => (
+                          <div key={`workspace-gallery-skeleton-${index}`} className="rounded-card border border-border bg-white/60 p-0" aria-hidden>
+                            <div className="relative overflow-hidden rounded-card">
+                              <div className="relative" style={{ aspectRatio: '16 / 9' }}>
+                                <div className="skeleton absolute inset-0" />
+                              </div>
+                            </div>
+                            <div className="border-t border-border bg-white/70 px-3 py-2">
+                              <div className="h-3 w-24 rounded-full bg-neutral-200" />
                             </div>
                           </div>
-                          <div className="border-t border-border bg-white/70 px-3 py-2">
-                            <div className="h-3 w-24 rounded-full bg-neutral-200" />
-                          </div>
-                        </div>
-                      ))}
-                  </div>
-                )
-              ) : null}
-              <CompositePreviewDock
-                group={compositeGroup}
-                isLoading={isGenerationLoading && !compositeGroup}
-                copyPrompt={sharedPrompt}
-                onCopyPrompt={sharedPrompt ? handleCopySharedPrompt : undefined}
-                showTitle={false}
-                engineSettings={
-                  <EngineSettingsBar
-                    engines={engines}
-                    engineId={form.engineId}
-                    onEngineChange={handleEngineChange}
-                    mode={activeMode}
-                    onModeChange={handleModeChange}
-                    modeOptions={engineModeOptions}
-                    modeLabel={MODE_DISPLAY_LABEL[activeMode]}
-                    showModeBadge={false}
-                  />
-                }
-                onOpenModal={(group) => {
-                  if (!group) return;
-                  if (renderGroups.has(group.id)) {
-                    setViewerTarget({ kind: 'pending', id: group.id });
-                    return;
+                        ))}
+                    </div>
+                  )
+                ) : null}
+                <CompositePreviewDock
+                  group={compositeGroup}
+                  isLoading={isGenerationLoading && !compositeGroup}
+                  copyPrompt={sharedPrompt}
+                  onCopyPrompt={sharedPrompt ? handleCopySharedPrompt : undefined}
+                  showTitle={false}
+                  engineSettings={
+                    <EngineSettingsBar
+                      engines={engines}
+                      engineId={form.engineId}
+                      onEngineChange={handleEngineChange}
+                      mode={activeMode}
+                      onModeChange={handleModeChange}
+                      modeOptions={engineModeOptions}
+                      modeLabel={MODE_DISPLAY_LABEL[activeMode]}
+                      showModeBadge={false}
+                    />
                   }
-                  if (compositeOverrideSummary && compositeOverrideSummary.id === group.id) {
-                    setViewerTarget({ kind: 'summary', summary: compositeOverrideSummary });
+                  onOpenModal={(group) => {
+                    if (!group) return;
+                    if (renderGroups.has(group.id)) {
+                      setViewerTarget({ kind: 'pending', id: group.id });
+                      return;
+                    }
+                    if (compositeOverrideSummary && compositeOverrideSummary.id === group.id) {
+                      setViewerTarget({ kind: 'summary', summary: compositeOverrideSummary });
+                    }
+                  }}
+                />
+                <Composer
+                  engine={selectedEngine}
+                  prompt={prompt}
+                  onPromptChange={setPrompt}
+                  negativePrompt={negativePrompt}
+                  onNegativePromptChange={setNegativePrompt}
+                  price={price}
+                  currency={currency}
+                  isLoading={isPricing}
+                  error={preflightError}
+                  messages={preflight?.messages}
+                  textareaRef={composerRef}
+                  onGenerate={startRender}
+                  preflight={preflight}
+                  promptField={inputSchemaSummary.promptField}
+                  promptRequired={inputSchemaSummary.promptRequired}
+                  negativePromptField={inputSchemaSummary.negativePromptField}
+                  negativePromptRequired={inputSchemaSummary.negativePromptRequired}
+                  assetFields={inputSchemaSummary.assetFields}
+                  assets={composerAssets}
+                  onAssetAdd={handleAssetAdd}
+                  onAssetRemove={handleAssetRemove}
+                  onNotice={showNotice}
+                  onOpenLibrary={handleOpenAssetLibrary}
+                  settingsBar={
+                    <CoreSettingsBar
+                      engine={selectedEngine}
+                      mode={activeMode}
+                      caps={capability}
+                      durationSec={form.durationSec}
+                      durationOption={form.durationOption ?? null}
+                      onDurationChange={handleDurationChange}
+                      numFrames={form.numFrames ?? undefined}
+                      onNumFramesChange={handleFramesChange}
+                      resolution={form.resolution}
+                      onResolutionChange={handleResolutionChange}
+                      aspectRatio={form.aspectRatio}
+                      onAspectRatioChange={handleAspectRatioChange}
+                      iterations={form.iterations}
+                      onIterationsChange={(iterations) =>
+                        setForm((current) => {
+                          const next = current ? { ...current, iterations } : current;
+                          if (iterations <= 1) {
+                            setViewMode('single');
+                          }
+                          return next;
+                        })
+                      }
+                      showAudioControl={supportsAudioToggle}
+                      audioEnabled={form.audio}
+                      onAudioChange={(audio) => setForm((current) => (current ? { ...current, audio } : current))}
+                      showLoopControl={selectedEngine.id === 'lumaRay2'}
+                      loopEnabled={selectedEngine.id === 'lumaRay2' ? Boolean(form.loop) : undefined}
+                      onLoopChange={(next) =>
+                        setForm((current) => (current ? { ...current, loop: next } : current))
+                      }
+                    />
                   }
-                }}
-              />
-              <Composer
+                />
+                <SettingsControls
+                  engine={selectedEngine}
+                  caps={capability}
+                  durationSec={form.durationSec}
+                  durationOption={form.durationOption ?? null}
+                  onDurationChange={handleDurationChange}
+                  numFrames={form.numFrames ?? undefined}
+                  onNumFramesChange={handleFramesChange}
+                  resolution={form.resolution}
+                  onResolutionChange={handleResolutionChange}
+                  aspectRatio={form.aspectRatio}
+                  onAspectRatioChange={handleAspectRatioChange}
+                  fps={form.fps}
+                  onFpsChange={handleFpsChange}
+                  mode={activeMode}
+                  iterations={form.iterations}
+                  showAudioControl={supportsAudioToggle}
+                  audioEnabled={form.audio}
+                  onAudioChange={(audio) => setForm((current) => (current ? { ...current, audio } : current))}
+                  showLoopControl={selectedEngine.id === 'lumaRay2'}
+                  loopEnabled={selectedEngine.id === 'lumaRay2' ? Boolean(form.loop) : undefined}
+                  onLoopChange={(next) =>
+                    setForm((current) => (current ? { ...current, loop: next } : current))
+                  }
+                  showExtendControl={false}
+                  seedLocked={form.seedLocked}
+                  onSeedLockedChange={(seedLocked) =>
+                    setForm((current) => (current ? { ...current, seedLocked } : current))
+                  }
+                  cfgScale={cfgScale}
+                  onCfgScaleChange={(value) => setCfgScale(value)}
+                  variant="advanced"
+                />
+              </div>
+            </main>
+          </div>
+          {isDesktopLayout && (
+            <div className="flex w-[320px] justify-end pl-2 pr-0 py-4">
+              <GalleryRail
                 engine={selectedEngine}
-                prompt={prompt}
-                onPromptChange={setPrompt}
-                negativePrompt={negativePrompt}
-                onNegativePromptChange={setNegativePrompt}
-                price={price}
-                currency={currency}
-                isLoading={isPricing}
-                error={preflightError}
-                messages={preflight?.messages}
-                textareaRef={composerRef}
-                onGenerate={startRender}
-                preflight={preflight}
-                promptField={inputSchemaSummary.promptField}
-                promptRequired={inputSchemaSummary.promptRequired}
-                negativePromptField={inputSchemaSummary.negativePromptField}
-                negativePromptRequired={inputSchemaSummary.negativePromptRequired}
-                assetFields={inputSchemaSummary.assetFields}
-                assets={composerAssets}
-                onAssetAdd={handleAssetAdd}
-                onAssetRemove={handleAssetRemove}
-                onNotice={showNotice}
-                onOpenLibrary={handleOpenAssetLibrary}
-                settingsBar={
-                  <CoreSettingsBar
-                    engine={selectedEngine}
-                    mode={activeMode}
-                    caps={capability}
-                    durationSec={form.durationSec}
-                    durationOption={form.durationOption ?? null}
-                    onDurationChange={handleDurationChange}
-                    numFrames={form.numFrames ?? undefined}
-                    onNumFramesChange={handleFramesChange}
-                    resolution={form.resolution}
-                    onResolutionChange={handleResolutionChange}
-                    aspectRatio={form.aspectRatio}
-                    onAspectRatioChange={handleAspectRatioChange}
-                    iterations={form.iterations}
-                    onIterationsChange={(iterations) =>
-                      setForm((current) => {
-                        const next = current ? { ...current, iterations } : current;
-                        if (iterations <= 1) {
-                          setViewMode('single');
-                        }
-                        return next;
-                      })
-                    }
-                    showAudioControl={supportsAudioToggle}
-                    audioEnabled={form.audio}
-                    onAudioChange={(audio) => setForm((current) => (current ? { ...current, audio } : current))}
-                    showLoopControl={selectedEngine.id === 'lumaRay2'}
-                    loopEnabled={selectedEngine.id === 'lumaRay2' ? Boolean(form.loop) : undefined}
-                    onLoopChange={(next) =>
-                      setForm((current) => (current ? { ...current, loop: next } : current))
-                    }
-                  />
-                }
-              />
-              <SettingsControls
-                engine={selectedEngine}
-                caps={capability}
-                durationSec={form.durationSec}
-                durationOption={form.durationOption ?? null}
-                onDurationChange={handleDurationChange}
-                numFrames={form.numFrames ?? undefined}
-                onNumFramesChange={handleFramesChange}
-                resolution={form.resolution}
-                onResolutionChange={handleResolutionChange}
-                aspectRatio={form.aspectRatio}
-                onAspectRatioChange={handleAspectRatioChange}
-                fps={form.fps}
-                onFpsChange={handleFpsChange}
-                mode={activeMode}
-                iterations={form.iterations}
-                showAudioControl={supportsAudioToggle}
-                audioEnabled={form.audio}
-                onAudioChange={(audio) => setForm((current) => (current ? { ...current, audio } : current))}
-                showLoopControl={selectedEngine.id === 'lumaRay2'}
-                loopEnabled={selectedEngine.id === 'lumaRay2' ? Boolean(form.loop) : undefined}
-                onLoopChange={(next) =>
-                  setForm((current) => (current ? { ...current, loop: next } : current))
-                }
-                showExtendControl={false}
-                seedLocked={form.seedLocked}
-                onSeedLockedChange={(seedLocked) =>
-                  setForm((current) => (current ? { ...current, seedLocked } : current))
-                }
-                cfgScale={cfgScale}
-                onCfgScaleChange={(value) => setCfgScale(value)}
-                variant="advanced"
+                activeGroups={normalizedPendingGroups}
+                onOpenGroup={openGroupViaGallery}
+                onGroupAction={handleGalleryGroupAction}
+                variant="desktop"
               />
             </div>
-          </main>
+          )}
         </div>
-        {isDesktopLayout && (
-          <div className="flex w-[320px] justify-end pl-2 pr-0 py-4">
+        {!isDesktopLayout && (
+          <div className="border-t border-hairline bg-white/70 px-4 py-4">
             <GalleryRail
               engine={selectedEngine}
               activeGroups={normalizedPendingGroups}
               onOpenGroup={openGroupViaGallery}
               onGroupAction={handleGalleryGroupAction}
-              variant="desktop"
+              variant="mobile"
             />
           </div>
         )}
-      </div>
-      {!isDesktopLayout && (
-        <div className="border-t border-hairline bg-white/70 px-4 py-4">
-          <GalleryRail
-            engine={selectedEngine}
-            activeGroups={normalizedPendingGroups}
-            onOpenGroup={openGroupViaGallery}
-            onGroupAction={handleGalleryGroupAction}
-            variant="mobile"
-          />
-        </div>
-      )}
       </div>
       {viewerGroup ? (
         <GroupViewerModal
