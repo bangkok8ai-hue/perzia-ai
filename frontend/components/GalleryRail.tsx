@@ -343,7 +343,7 @@ export function GalleryRail({
         handleCardCopy(original);
         return;
       }
-      if (action === 'save-image' && feedType === 'image') {
+      if (action === 'save-asset' && feedType === 'image') {
         handleCardSaveImage(original);
         return;
       }
