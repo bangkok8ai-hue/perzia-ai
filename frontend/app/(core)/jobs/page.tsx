@@ -203,7 +203,7 @@ export default function JobsPage() {
     (group: GroupSummary) => {
       const summary = summaryMap.get(group.id);
       if (!summary) return false;
-       if (summary.hero.job?.curated) return false;
+      if (summary.hero.job?.curated) return false;
       return summary.source !== 'active' && summary.count <= 1;
     },
     [summaryMap]
@@ -250,7 +250,7 @@ export default function JobsPage() {
         void handleRemoveVideoGroup(group);
         return;
       }
-      if (action === 'save-image') {
+      if (action === 'save-asset') {
         void handleSaveImageGroup(group);
         return;
       }
