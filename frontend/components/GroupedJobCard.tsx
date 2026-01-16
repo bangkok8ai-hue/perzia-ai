@@ -315,24 +315,6 @@ export function GroupedJobCard({
           ) : null}
         </div>
         <div className="flex items-center gap-2">
-          {group.hero.status === 'completed' && (
-            <button
-              type="button"
-              onClick={(event) => {
-                event.stopPropagation();
-                handleAction('save-asset');
-              }}
-              disabled={savingToLibrary}
-              className={clsx(
-                'rounded-pill border px-2.5 py-1 text-[11px] font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
-                savingToLibrary
-                  ? 'border-border bg-white/70 text-text-muted'
-                  : 'border-accent/40 bg-white text-accent hover:bg-accentSoft/20'
-              )}
-            >
-              {savingToLibrary ? imageLibrarySavingLabel : imageLibraryLabel}
-            </button>
-          )}
           {isCurated ? (
             <div className="flex items-center gap-2">
               <span className="rounded-pill border border-hairline bg-bg px-2 py-0.5 text-[11px] font-semibold uppercase tracking-micro text-text-secondary">
@@ -396,13 +378,7 @@ export function GroupedJobCard({
               >
                 <span>Open</span>
               </button>
-              <button
-                type="button"
-                onClick={() => handleAction('save-asset')}
-                className="mt-1 flex w-full items-center justify-between rounded-[8px] px-2 py-1.5 text-left transition hover:bg-accentSoft/10"
-              >
-                <span>Add to Library</span>
-              </button>
+
               <button
                 type="button"
                 onClick={() => handleAction('download')}
@@ -471,19 +447,7 @@ export function GroupedJobCard({
               ) : null}
             </>
           )}
-          {group.hero.status === 'completed' && (
-            <button
-              type="button"
-              onClick={() => handleAction('save-asset')}
-              className={clsx(
-                'mt-1 flex w-full items-center justify-between rounded-[8px] px-2 py-1.5 text-left transition',
-                savingToLibrary ? 'opacity-60' : 'hover:bg-accentSoft/10'
-              )}
-              disabled={savingToLibrary}
-            >
-              <span>{savingToLibrary ? 'Saving…' : 'Add to Library'}</span>
-            </button>
-          )}
+
           {allowRemove && group.count <= 1 && (
             <button
               type="button"
