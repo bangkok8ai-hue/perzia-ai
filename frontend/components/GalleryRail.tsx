@@ -9,7 +9,7 @@ import type { EngineCaps } from '@/types/engines';
 import type { Job } from '@/types/jobs';
 import type { GroupSummary } from '@/types/groups';
 import type { VideoGroup, ResultProvider } from '@/types/video-groups';
-import { hideJob, saveImageToLibrary, useEngines, useInfiniteJobs } from '@/lib/api';
+import { hideJob, useEngines, useInfiniteJobs } from '@/lib/api';
 import { groupJobsIntoSummaries } from '@/lib/job-groups';
 import { GroupedJobCard, type GroupedJobAction } from '@/components/GroupedJobCard';
 import { normalizeGroupSummaries, normalizeGroupSummary } from '@/lib/normalize-group-summary';
@@ -309,24 +309,7 @@ export function GalleryRail({
     [copy.snackbar.copied, copy.snackbar.copyFailed, copy.snackbar.noMedia, feedType, resolveMediaUrl, summaryIndex]
   );
 
-  const handleCardSaveImage = useCallback(
-    (group: GroupSummary) => {
-      const original = summaryIndex.get(group.id) ?? group;
-      const candidateUrl = resolveMediaUrl(original, true);
-      if (!candidateUrl) {
-        setSnackbar({ message: copy.snackbar.noMedia, duration: 2400 });
-        return;
-      }
-      void saveImageToLibrary({
-        url: candidateUrl,
-        jobId: original.hero.jobId ?? original.hero.job?.jobId ?? original.id,
-        label: original.hero.prompt ?? undefined,
-      })
-        .then(() => setSnackbar({ message: copy.snackbar.saved, duration: 2000 }))
-        .catch(() => setSnackbar({ message: copy.snackbar.saveFailed, duration: 2400 }));
-    },
-    [copy.snackbar.noMedia, copy.snackbar.saveFailed, copy.snackbar.saved, resolveMediaUrl, summaryIndex]
-  );
+
 
   const handleCardAction = useCallback(
     (group: GroupSummary, action: GroupedJobAction) => {
@@ -343,10 +326,6 @@ export function GalleryRail({
         handleCardCopy(original);
         return;
       }
-      if (action === 'save-asset' && feedType === 'image') {
-        handleCardSaveImage(original);
-        return;
-      }
       if (action === 'remove') {
         handleRemoveGroup(original);
         return;
@@ -357,7 +336,6 @@ export function GalleryRail({
       feedType,
       handleCardCopy,
       handleCardDownload,
-      handleCardSaveImage,
       handleCardView,
       handleRemoveGroup,
       onGroupAction,
