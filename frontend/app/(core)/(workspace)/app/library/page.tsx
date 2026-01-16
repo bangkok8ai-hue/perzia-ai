@@ -127,7 +127,7 @@ export default function LibraryPage() {
           {/* Video Grid */}
           <section className="rounded-card border border-border bg-white/80 p-5 shadow-card">
             {isLoading && sortedVideos.length === 0 ? (
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 {Array.from({ length: 6 }).map((_, index) => (
                   <div key={`skeleton-${index}`} className="rounded-[18px] border border-hairline bg-white/60">
                     <div className="relative aspect-video rounded-t-[18px] bg-neutral-100">
@@ -148,7 +148,7 @@ export default function LibraryPage() {
                 No videos generated yet. Create your first video!
               </div>
             ) : (
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 {sortedVideos.map((job) => {
                   const priceLabel = getPriceLabel(job);
                   const isHovered = hoveredJobId === job.jobId;
