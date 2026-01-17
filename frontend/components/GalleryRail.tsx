@@ -406,8 +406,6 @@ export function GalleryRail({
             onOpen={handleCardOpen}
             onAction={handleCardAction}
             allowRemove={allowCardRemoval(group)}
-            showImageCta={curated}
-            imageCtaLabel={copy.imageCta}
             metaLabel={feedType === 'image' ? resolveAspectRatioLabel(group) : undefined}
             menuVariant={feedType === 'video' ? 'gallery' : 'gallery-image'}
           />
