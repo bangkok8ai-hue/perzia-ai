@@ -77,10 +77,11 @@ export function MarketingFooter() {
             <span>{brandLabel}</span>
           </Link>
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-5">
-            <div className="inline-flex items-center gap-2 rounded-full border border-hairline px-3 py-1.5 text-[11px] font-semibold uppercase tracking-micro text-text-muted shadow-sm">
+            {/* Language toggle temporarily hidden - routing preserved */}
+            {/* <div className="inline-flex items-center gap-2 rounded-full border border-hairline px-3 py-1.5 text-[11px] font-semibold uppercase tracking-micro text-text-muted shadow-sm">
               <span>{languageLabel}</span>
               <LanguageToggle />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="grid gap-4 text-sm text-text-secondary sm:grid-cols-2 lg:grid-cols-2">

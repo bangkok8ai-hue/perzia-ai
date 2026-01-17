@@ -354,9 +354,10 @@ export function HeaderBar() {
         </div>
 
         <div className="flex items-center gap-3 text-xs text-text-muted">
-          <div className="hidden md:block">
+          {/* Language toggle temporarily hidden - routing preserved */}
+          {/* <div className="hidden md:block">
             <AppLanguageToggle />
-          </div>
+          </div> */}
           <div className="relative" onMouseEnter={openWalletPrompt} onMouseLeave={scheduleWalletPromptClose}>
             <Link
               href="/billing"
@@ -509,9 +510,10 @@ export function HeaderBar() {
             </button>
           </div>
           <div className="mx-auto mt-5 max-w-sm space-y-5">
-            <div className="flex justify-end">
+            {/* Language toggle temporarily hidden - routing preserved */}
+            {/* <div className="flex justify-end">
               <AppLanguageToggle />
-            </div>
+            </div> */}
             <nav className="flex flex-col gap-2 text-base font-semibold text-text-primary">
               {marketingLinks.map((item) => {
                 const label = t(`nav.linkLabels.${item.key}`, item.key);

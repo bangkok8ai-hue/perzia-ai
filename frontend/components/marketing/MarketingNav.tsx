@@ -249,193 +249,194 @@ export function MarketingNav() {
 
   return (
     <>
-    <header className="sticky top-0 z-40 border-b border-hairline bg-white/90 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link
-          href="/"
-          className="flex items-center gap-3 font-display text-base font-semibold tracking-tight text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-        >
-          <Image
-            src="/assets/branding/logo-mark.svg"
-            alt="MaxVideoAI"
-            width={32}
-            height={32}
-            className="h-8 w-8"
-            priority
-          />
-          <span>{brand}</span>
-        </Link>
-        <button
-          type="button"
-          className="inline-flex items-center justify-center rounded-full border border-hairline bg-white/80 p-2 text-text-primary transition hover:bg-accentSoft/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:hidden"
-          aria-label={t('nav.mobileToggle', 'Open menu')}
-          onClick={() => setMobileMenuOpen(true)}
-        >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
-          </svg>
-        </button>
-        <nav aria-label="Primary" className="hidden items-center gap-6 text-sm font-medium text-text-secondary md:flex">
-          {links.map((item) => {
-            const isActive = pathname === item.href || (item.href !== '/' && pathname?.startsWith(item.href + '/'));
-            return (
-              <Link
-                key={item.key}
-                href={item.href}
-                className={clsx(
-                  'transition-colors hover:text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white',
-                  isActive ? 'text-text-primary' : undefined
-                )}
-              >
-                {t(`nav.linkLabels.${item.key}`, item.key)}
-              </Link>
-            );
-          })}
-        </nav>
-        <div className="flex items-center gap-3">
-          <div className="hidden md:block">
-            <LanguageToggle />
-          </div>
-          {isAuthenticated ? (
-            <>
-              <div className="hidden items-center gap-3 md:flex">
-                <div
-                  className="relative"
-                  onMouseEnter={openWalletPrompt}
-                  onMouseLeave={scheduleWalletPromptClose}
-                  onFocusCapture={openWalletPrompt}
-                  onBlurCapture={scheduleWalletPromptClose}
+      <header className="sticky top-0 z-40 border-b border-hairline bg-white/90 backdrop-blur">
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+          <Link
+            href="/"
+            className="flex items-center gap-3 font-display text-base font-semibold tracking-tight text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          >
+            <Image
+              src="/assets/branding/logo-mark.svg"
+              alt="MaxVideoAI"
+              width={32}
+              height={32}
+              className="h-8 w-8"
+              priority
+            />
+            <span>{brand}</span>
+          </Link>
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-full border border-hairline bg-white/80 p-2 text-text-primary transition hover:bg-accentSoft/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:hidden"
+            aria-label={t('nav.mobileToggle', 'Open menu')}
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+          <nav aria-label="Primary" className="hidden items-center gap-6 text-sm font-medium text-text-secondary md:flex">
+            {links.map((item) => {
+              const isActive = pathname === item.href || (item.href !== '/' && pathname?.startsWith(item.href + '/'));
+              return (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className={clsx(
+                    'transition-colors hover:text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white',
+                    isActive ? 'text-text-primary' : undefined
+                  )}
                 >
-                  <Link
-                    href="/billing"
-                    prefetch={false}
-                    className="flex items-center gap-2 rounded-pill border border-hairline bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-micro text-text-secondary transition hover:border-accentSoft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                    aria-describedby={walletPromptOpen ? walletPromptId : undefined}
+                  {t(`nav.linkLabels.${item.key}`, item.key)}
+                </Link>
+              );
+            })}
+          </nav>
+          <div className="flex items-center gap-3">
+            {/* Language toggle temporarily hidden - routing preserved */}
+            {/* <div className="hidden md:block">
+            <LanguageToggle />
+          </div> */}
+            {isAuthenticated ? (
+              <>
+                <div className="hidden items-center gap-3 md:flex">
+                  <div
+                    className="relative"
+                    onMouseEnter={openWalletPrompt}
+                    onMouseLeave={scheduleWalletPromptClose}
+                    onFocusCapture={openWalletPrompt}
+                    onBlurCapture={scheduleWalletPromptClose}
                   >
-                    <WalletGlyph size={16} className="text-text-primary" />
-                    <span className="text-sm font-semibold tracking-normal text-text-primary">
-                      {wallet ? `$${wallet.balance.toFixed(2)}` : '--'}
-                    </span>
-                  </Link>
-                  {walletPromptOpen && (
-                    <div
-                      id={walletPromptId}
-                      role="status"
-                      className="absolute right-0 top-full z-10 mt-2 w-64 rounded-card border border-hairline bg-white p-3 text-left text-xs text-text-secondary shadow-card"
-                      onMouseEnter={openWalletPrompt}
-                      onMouseLeave={scheduleWalletPromptClose}
+                    <Link
+                      href="/billing"
+                      prefetch={false}
+                      className="flex items-center gap-2 rounded-pill border border-hairline bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-micro text-text-secondary transition hover:border-accentSoft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                      aria-describedby={walletPromptOpen ? walletPromptId : undefined}
                     >
-                      <p className="text-[11px] font-semibold uppercase tracking-micro text-text-muted">
-                        {t('workspace.header.walletTopUp.label', 'Top up available')}
-                      </p>
-                      <p className="mt-1 text-sm text-text-primary">
-                        {t(
-                          'workspace.header.walletTopUp.copy',
-                          'Click to add funds and keep generating without interruption.'
-                        )}
-                      </p>
-                      <Link
-                        href="/billing"
-                        prefetch={false}
-                        className="mt-3 inline-flex w-full items-center justify-center rounded-input bg-accent px-3 py-2 text-sm font-semibold text-white shadow-card transition hover:bg-accentSoft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                      <WalletGlyph size={16} className="text-text-primary" />
+                      <span className="text-sm font-semibold tracking-normal text-text-primary">
+                        {wallet ? `$${wallet.balance.toFixed(2)}` : '--'}
+                      </span>
+                    </Link>
+                    {walletPromptOpen && (
+                      <div
+                        id={walletPromptId}
+                        role="status"
+                        className="absolute right-0 top-full z-10 mt-2 w-64 rounded-card border border-hairline bg-white p-3 text-left text-xs text-text-secondary shadow-card"
+                        onMouseEnter={openWalletPrompt}
+                        onMouseLeave={scheduleWalletPromptClose}
                       >
-                        {t('workspace.header.walletTopUp.cta', 'Top up now')}
-                      </Link>
+                        <p className="text-[11px] font-semibold uppercase tracking-micro text-text-muted">
+                          {t('workspace.header.walletTopUp.label', 'Top up available')}
+                        </p>
+                        <p className="mt-1 text-sm text-text-primary">
+                          {t(
+                            'workspace.header.walletTopUp.copy',
+                            'Click to add funds and keep generating without interruption.'
+                          )}
+                        </p>
+                        <Link
+                          href="/billing"
+                          prefetch={false}
+                          className="mt-3 inline-flex w-full items-center justify-center rounded-input bg-accent px-3 py-2 text-sm font-semibold text-white shadow-card transition hover:bg-accentSoft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                        >
+                          {t('workspace.header.walletTopUp.cta', 'Top up now')}
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <Link
+                  href="/app"
+                  prefetch={false}
+                  className="inline-flex items-center rounded-pill border border-hairline px-4 py-2 text-sm font-semibold text-text-primary shadow-card transition hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  {generateLabel}
+                </Link>
+                <div className="relative">
+                  <button
+                    ref={avatarRef}
+                    type="button"
+                    onClick={() => setAccountMenuOpen((prev) => !prev)}
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-[#dce4ff] bg-gradient-to-br from-[#dfe6ff] via-white/95 to-white text-sm font-semibold text-text-primary shadow-card transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    aria-haspopup="menu"
+                    aria-expanded={accountMenuOpen}
+                  >
+                    {initials}
+                  </button>
+                  {accountMenuOpen && (
+                    <div
+                      ref={menuRef}
+                      className="absolute right-0 mt-3 w-56 rounded-card border border-hairline bg-white p-3 text-sm text-text-secondary shadow-card"
+                      role="menu"
+                    >
+                      <div className="mb-3 rounded-input bg-bg px-3 py-2">
+                        <p className="text-xs uppercase tracking-micro text-text-muted">
+                          {t('workspace.header.signedIn', 'Signed in')}
+                        </p>
+                        <p className="mt-1 truncate text-sm font-medium text-text-primary">{email}</p>
+                      </div>
+                      <nav
+                        className="mb-2 flex flex-col gap-1"
+                        aria-label={t('workspace.header.primaryNav', 'Primary navigation')}
+                      >
+                        {NAV_ITEMS.map((item) => {
+                          const label = t(`workspace.sidebar.links.${item.id}`, item.label);
+                          const badgeLabel = item.badge
+                            ? t(`workspace.sidebar.badges.${item.badgeKey ?? item.id}`, item.badge)
+                            : null;
+                          return (
+                            <Link
+                              key={item.id}
+                              href={item.href}
+                              prefetch={false}
+                              className="flex items-center justify-between rounded-input px-3 py-2 text-sm font-medium text-text-secondary transition hover:bg-accentSoft/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                              onClick={() => setAccountMenuOpen(false)}
+                            >
+                              <span>{label}</span>
+                              {badgeLabel ? (
+                                <span className="rounded-full bg-accent/10 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-micro text-accent">
+                                  {badgeLabel}
+                                </span>
+                              ) : null}
+                            </Link>
+                          );
+                        })}
+                      </nav>
+                      <button
+                        type="button"
+                        className="flex w-full items-center justify-between rounded-input px-3 py-2 text-sm font-medium text-text-secondary transition hover:bg-accentSoft/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                        onClick={() => signOut({ closeAccountMenu: true })}
+                      >
+                        {t('workspace.header.signOut', 'Sign out')}
+                        <span className="text-[11px] uppercase tracking-micro text-text-muted">⌘⇧Q</span>
+                      </button>
                     </div>
                   )}
                 </div>
-              </div>
-              <Link
-                href="/app"
-                prefetch={false}
-                className="inline-flex items-center rounded-pill border border-hairline px-4 py-2 text-sm font-semibold text-text-primary shadow-card transition hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-              >
-                {generateLabel}
-              </Link>
-              <div className="relative">
-                <button
-                  ref={avatarRef}
-                  type="button"
-                  onClick={() => setAccountMenuOpen((prev) => !prev)}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-[#dce4ff] bg-gradient-to-br from-[#dfe6ff] via-white/95 to-white text-sm font-semibold text-text-primary shadow-card transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                  aria-haspopup="menu"
-                  aria-expanded={accountMenuOpen}
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/login?next=/app"
+                  className="hidden text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white md:inline-flex"
                 >
-                  {initials}
-                </button>
-                {accountMenuOpen && (
-                  <div
-                    ref={menuRef}
-                    className="absolute right-0 mt-3 w-56 rounded-card border border-hairline bg-white p-3 text-sm text-text-secondary shadow-card"
-                    role="menu"
-                  >
-                    <div className="mb-3 rounded-input bg-bg px-3 py-2">
-                      <p className="text-xs uppercase tracking-micro text-text-muted">
-                        {t('workspace.header.signedIn', 'Signed in')}
-                      </p>
-                      <p className="mt-1 truncate text-sm font-medium text-text-primary">{email}</p>
-                    </div>
-                    <nav
-                      className="mb-2 flex flex-col gap-1"
-                      aria-label={t('workspace.header.primaryNav', 'Primary navigation')}
-                    >
-                      {NAV_ITEMS.map((item) => {
-                        const label = t(`workspace.sidebar.links.${item.id}`, item.label);
-                        const badgeLabel = item.badge
-                          ? t(`workspace.sidebar.badges.${item.badgeKey ?? item.id}`, item.badge)
-                          : null;
-                        return (
-                          <Link
-                            key={item.id}
-                            href={item.href}
-                            prefetch={false}
-                            className="flex items-center justify-between rounded-input px-3 py-2 text-sm font-medium text-text-secondary transition hover:bg-accentSoft/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                            onClick={() => setAccountMenuOpen(false)}
-                          >
-                            <span>{label}</span>
-                            {badgeLabel ? (
-                              <span className="rounded-full bg-accent/10 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-micro text-accent">
-                                {badgeLabel}
-                              </span>
-                            ) : null}
-                          </Link>
-                        );
-                      })}
-                    </nav>
-                    <button
-                      type="button"
-                      className="flex w-full items-center justify-between rounded-input px-3 py-2 text-sm font-medium text-text-secondary transition hover:bg-accentSoft/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                      onClick={() => signOut({ closeAccountMenu: true })}
-                    >
-                      {t('workspace.header.signOut', 'Sign out')}
-                      <span className="text-[11px] uppercase tracking-micro text-text-muted">⌘⇧Q</span>
-                    </button>
-                  </div>
-                )}
-              </div>
-            </>
-          ) : (
-            <>
-              <Link
-                href="/login?next=/app"
-                className="hidden text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white md:inline-flex"
-              >
-                {login}
-              </Link>
-              <Link
-                href="/app"
-                prefetch={false}
-                className="inline-flex items-center rounded-pill bg-accent px-4 py-2 text-sm font-semibold text-white shadow-card transition transform-gpu hover:bg-accentSoft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-              >
-                {cta}
-              </Link>
-            </>
-          )}
+                  {login}
+                </Link>
+                <Link
+                  href="/app"
+                  prefetch={false}
+                  className="inline-flex items-center rounded-pill bg-accent px-4 py-2 text-sm font-semibold text-white shadow-card transition transform-gpu hover:bg-accentSoft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  {cta}
+                </Link>
+              </>
+            )}
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
       {mobileMenuOpen ? (
         <div className="fixed inset-0 z-50 bg-white/95 px-4 py-6 sm:px-6">
           <div className="mx-auto flex max-w-sm items-center justify-between">
@@ -467,9 +468,10 @@ export function MarketingNav() {
             </button>
           </div>
           <div className="mx-auto mt-5 max-w-sm space-y-5">
-            <div className="flex justify-end">
+            {/* Language toggle temporarily hidden - routing preserved */}
+            {/* <div className="flex justify-end">
               <LanguageToggle />
-            </div>
+            </div> */}
             <nav className="flex flex-col gap-2 text-base font-semibold text-text-primary">
               {links.map((item) => (
                 <Link
@@ -501,11 +503,11 @@ export function MarketingNav() {
                 >
                   {generateLabel}
                 </Link>
-                      <button
-                        type="button"
-                        className="w-full rounded-2xl border border-hairline px-4 py-3 text-base font-semibold text-text-primary shadow-card"
-                        onClick={() => signOut({ closeMobileMenu: true })}
-                      >
+                <button
+                  type="button"
+                  className="w-full rounded-2xl border border-hairline px-4 py-3 text-base font-semibold text-text-primary shadow-card"
+                  onClick={() => signOut({ closeMobileMenu: true })}
+                >
                   {t('workspace.header.signOut', 'Sign out')}
                 </button>
               </div>
