@@ -309,9 +309,6 @@ export default function JobsPage() {
                 onAction={handleGroupAction}
                 allowRemove={allowRemove(group)}
                 isImageGroup={isImageGroup || prefix === 'image'}
-                savingToLibrary={savingImageGroupIds.has(group.id)}
-                imageLibraryLabel={copy.actions.addToLibrary}
-                imageLibrarySavingLabel={copy.actions.saving}
                 recreateHref={recreateHref}
                 recreateLabel={copy.actions.recreate}
                 menuVariant="compact"
