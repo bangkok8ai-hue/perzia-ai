@@ -725,23 +725,14 @@ export default function DashboardPage() {
               <CreateHero
                 copy={copy}
                 videoEngines={availableEngines}
-                imageEngines={availableImageEngines}
                 selectedVideoEngineId={selectedEngine?.id ?? ''}
                 selectedVideoMode={selectedMode}
-                selectedImageEngineId={selectedImageEngine?.id ?? ''}
-                selectedImageMode={selectedImageMode}
                 hasStoredVideoForm={hasStoredForm}
-                hasStoredImageForm={hasStoredImageForm}
                 canStartVideo={canStart}
-                canStartImage={canStartImage}
                 onVideoModeChange={handleVideoModeChange}
                 onVideoEngineChange={handleVideoEngineChange}
-                onImageModeChange={handleImageModeChange}
-                onImageEngineChange={handleImageEngineChange}
                 onNewVideo={handleNewVideo}
                 onUseLastVideoSettings={handleUseLastVideoSettings}
-                onNewImage={handleNewImage}
-                onUseLastImageSettings={handleUseLastImageSettings}
               />
 
               <InProgressList
@@ -851,43 +842,25 @@ export default function DashboardPage() {
 function CreateHero({
   copy,
   videoEngines,
-  imageEngines,
   selectedVideoEngineId,
   selectedVideoMode,
-  selectedImageEngineId,
-  selectedImageMode,
   hasStoredVideoForm,
-  hasStoredImageForm,
   canStartVideo,
-  canStartImage,
   onVideoModeChange,
   onVideoEngineChange,
-  onImageModeChange,
-  onImageEngineChange,
   onNewVideo,
   onUseLastVideoSettings,
-  onNewImage,
-  onUseLastImageSettings,
 }: {
   copy: DashboardCopy;
   videoEngines: EngineCaps[];
-  imageEngines: EngineCaps[];
   selectedVideoEngineId: string;
   selectedVideoMode: Mode;
-  selectedImageEngineId: string;
-  selectedImageMode: Mode;
   hasStoredVideoForm: boolean;
-  hasStoredImageForm: boolean;
   canStartVideo: boolean;
-  canStartImage: boolean;
   onVideoModeChange: (mode: Mode) => void;
   onVideoEngineChange: (engineId: string) => void;
-  onImageModeChange: (mode: Mode) => void;
-  onImageEngineChange: (engineId: string) => void;
   onNewVideo: () => void;
   onUseLastVideoSettings: () => void;
-  onNewImage: () => void;
-  onUseLastImageSettings: () => void;
 }) {
   return (
     <section className="rounded-card border border-border bg-white p-5 shadow-card">
