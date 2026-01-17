@@ -809,23 +809,23 @@ export default function DashboardPage() {
           metadata={
             lightbox.kind === 'group'
               ? [
-                  { label: copy.lightbox.metadata.created, value: formatDateTime(lightbox.group.createdAt) },
-                  {
-                    label: copy.lightbox.metadata.heroDuration,
-                    value: lightbox.group.hero.durationSec
-                      ? `${lightbox.group.hero.durationSec}s`
-                      : copy.lightbox.metadata.notProvided,
-                  },
-                  { label: copy.lightbox.metadata.engine, value: lightbox.group.hero.engineLabel },
-                ]
+                { label: copy.lightbox.metadata.created, value: formatDateTime(lightbox.group.createdAt) },
+                {
+                  label: copy.lightbox.metadata.heroDuration,
+                  value: lightbox.group.hero.durationSec
+                    ? `${lightbox.group.hero.durationSec}s`
+                    : copy.lightbox.metadata.notProvided,
+                },
+                { label: copy.lightbox.metadata.engine, value: lightbox.group.hero.engineLabel },
+              ]
               : [
-                  { label: copy.lightbox.metadata.duration, value: `${lightbox.job.durationSec}s` },
-                  {
-                    label: copy.lightbox.metadata.status,
-                    value: lightbox.job.paymentStatus ?? copy.lightbox.statusFallback,
-                  },
-                  { label: copy.lightbox.metadata.created, value: formatDateTime(lightbox.job.createdAt) },
-                ]
+                { label: copy.lightbox.metadata.duration, value: `${lightbox.job.durationSec}s` },
+                {
+                  label: copy.lightbox.metadata.status,
+                  value: lightbox.job.paymentStatus ?? copy.lightbox.statusFallback,
+                },
+                { label: copy.lightbox.metadata.created, value: formatDateTime(lightbox.job.createdAt) },
+              ]
           }
           entries={
             lightbox.kind === 'group'
@@ -898,7 +898,7 @@ function CreateHero({
         </div>
       </div>
 
-      <div className="mt-5 grid gap-6 lg:grid-cols-2">
+      <div className="mt-5">
         <CreateVideoCard
           copy={copy}
           engines={videoEngines}
@@ -910,18 +910,6 @@ function CreateHero({
           onEngineChange={onVideoEngineChange}
           onNew={onNewVideo}
           onUseLast={onUseLastVideoSettings}
-        />
-        <CreateImageCard
-          copy={copy}
-          engines={imageEngines}
-          selectedEngineId={selectedImageEngineId}
-          selectedMode={selectedImageMode}
-          hasStoredForm={hasStoredImageForm}
-          canStart={canStartImage}
-          onModeChange={onImageModeChange}
-          onEngineChange={onImageEngineChange}
-          onNew={onNewImage}
-          onUseLast={onUseLastImageSettings}
         />
       </div>
     </section>
@@ -1006,83 +994,7 @@ function CreateVideoCard({
   );
 }
 
-function CreateImageCard({
-  copy,
-  engines,
-  selectedEngineId,
-  selectedMode,
-  hasStoredForm,
-  canStart,
-  onModeChange,
-  onEngineChange,
-  onNew,
-  onUseLast,
-}: {
-  copy: DashboardCopy;
-  engines: EngineCaps[];
-  selectedEngineId: string;
-  selectedMode: Mode;
-  hasStoredForm: boolean;
-  canStart: boolean;
-  onModeChange: (mode: Mode) => void;
-  onEngineChange: (engineId: string) => void;
-  onNew: () => void;
-  onUseLast: () => void;
-}) {
-  return (
-    <div className="space-y-4">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h2 className="text-lg font-semibold text-text-primary">{copy.create.imageTitle}</h2>
-          <p className="mt-1 text-sm text-text-secondary">{copy.create.imageSubtitle}</p>
-        </div>
-      </div>
-      <div className="flex flex-col gap-3">
-        <div className="min-w-0">
-          <EngineSelect
-            engines={engines}
-            engineId={selectedEngineId}
-            onEngineChange={onEngineChange}
-            mode={selectedMode}
-            onModeChange={onModeChange}
-            modeOptions={IMAGE_MODE_OPTIONS}
-            modeLabelOverrides={{
-              t2i: copy.modes.t2i,
-              i2i: copy.modes.i2i,
-            }}
-            showBillingNote={false}
-            showModeSelect={false}
-            variant="bar"
-          />
-        </div>
-        <button
-          type="button"
-          onClick={onNew}
-          disabled={!canStart}
-          className={clsx(
-            'w-full rounded-input px-5 py-3 text-base font-semibold transition',
-            canStart
-              ? 'bg-accent text-white hover:bg-accent/90'
-              : 'cursor-not-allowed bg-neutral-200 text-text-muted'
-          )}
-        >
-          {copy.create.newImage}
-        </button>
-      </div>
-      <div className="flex flex-wrap items-center gap-3">
-        {hasStoredForm ? (
-          <button
-            type="button"
-            onClick={onUseLast}
-            className="rounded-input border border-border px-4 py-2 text-sm font-semibold text-text-secondary transition hover:border-accentSoft/60 hover:bg-accentSoft/10"
-          >
-            {copy.create.useLastImage}
-          </button>
-        ) : null}
-      </div>
-    </div>
-  );
-}
+
 
 function InProgressList({
   copy,
@@ -1348,7 +1260,7 @@ function InsightRow({ label, value }: { label: string; value: string }) {
   );
 }
 
-  const QuickStarts = forwardRef(function QuickStarts(
+const QuickStarts = forwardRef(function QuickStarts(
   {
     copy,
     templates,
