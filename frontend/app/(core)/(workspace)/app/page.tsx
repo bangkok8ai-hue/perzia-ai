@@ -4644,7 +4644,6 @@ export default function Page() {
                             onOpen={handleActiveGroupOpen}
                             onAction={handleActiveGroupAction}
                             allowRemove={false}
-                            savingToLibrary={savingGroupIds.has(group.id)}
                           />
                         );
                       })}
