@@ -308,14 +308,7 @@ export function GroupedJobCard({
               <span className="rounded-pill border border-hairline bg-bg px-2 py-0.5 text-[11px] font-semibold uppercase tracking-micro text-text-secondary">
                 Sample
               </span>
-              {showImageCta ? (
-                <Link
-                  href={imageCtaHref}
-                  className="rounded-pill border border-accent/40 px-2 py-0.5 text-[11px] font-semibold text-accent transition hover:bg-accentSoft/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                >
-                  {imageCtaLabel}
-                </Link>
-              ) : null}
+
             </div>
           ) : null}
           {formattedPrice ? (
