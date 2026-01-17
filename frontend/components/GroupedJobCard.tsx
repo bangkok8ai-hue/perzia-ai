@@ -114,12 +114,6 @@ export interface GroupedJobCardProps {
   menuVariant?: 'full' | 'compact' | 'gallery' | 'gallery-image';
   allowRemove?: boolean;
   isImageGroup?: boolean;
-  savingToLibrary?: boolean;
-  showImageCta?: boolean;
-  imageCtaHref?: string;
-  imageCtaLabel?: string;
-  imageLibraryLabel?: string;
-  imageLibrarySavingLabel?: string;
   recreateHref?: string;
   recreateLabel?: string;
 }
@@ -133,12 +127,6 @@ export function GroupedJobCard({
   actionMenu = true,
   menuVariant = 'full',
   allowRemove = true,
-  savingToLibrary = false,
-  showImageCta = false,
-  imageCtaHref = '/app/image',
-  imageCtaLabel = 'Generate images',
-  imageLibraryLabel = 'Add to Library',
-  imageLibrarySavingLabel = 'Saving…',
   recreateHref,
   recreateLabel = 'Generate same settings',
 }: GroupedJobCardProps) {

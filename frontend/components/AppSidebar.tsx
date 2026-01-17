@@ -7,7 +7,6 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useMemo, useState, useId } from 'react';
 import {
   BookOpen,
-  Image as ImageIcon,
   LayoutDashboard,
   ListVideo,
   LucideIcon,

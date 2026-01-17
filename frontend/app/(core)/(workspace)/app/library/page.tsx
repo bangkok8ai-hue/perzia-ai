@@ -10,13 +10,12 @@ import { AudioEqualizerBadge } from '@/components/ui/AudioEqualizerBadge';
 import type { Job } from '@/types/jobs';
 
 export default function LibraryPage() {
-  const { t } = useI18n();
   const [activeEngine, setActiveEngine] = useState<string>('all');
   const [dateSort, setDateSort] = useState<'newest' | 'oldest'>('newest');
   const [hoveredJobId, setHoveredJobId] = useState<string | null>(null);
   const [deletingJobId, setDeletingJobId] = useState<string | null>(null);
 
-  const { data, error, isLoading, stableJobs, mutate } = useInfiniteJobs(24, { type: 'video' });
+  const { error, isLoading, stableJobs, mutate } = useInfiniteJobs(24, { type: 'video' });
   const { data: enginesData } = useEngines();
   const engines = useMemo(() => enginesData?.engines ?? [], [enginesData?.engines]);
 
