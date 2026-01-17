@@ -12,7 +12,7 @@ import type { GenerateAttachment } from '@/lib/fal';
 import type { VideoAsset } from '@/types/render';
 import { translateError } from '@/lib/error-messages';
 import { normalizeJobMessage, normalizeJobProgress, normalizeJobStatus } from '@/lib/job-status';
-import type { ImageGenerationRequest, ImageGenerationResponse } from '@/types/image-generation';
+
 
 type PrimitiveValue = string | number | boolean | null | undefined;
 
@@ -143,9 +143,9 @@ function normalizeJobFromApi(job: Job): Job {
     hasImageMedia && status === 'completed'
       ? undefined
       : messageFromApi ??
-        (status === 'failed'
-          ? 'The service reported a failure without details. Try again. If it fails repeatedly, contact support with your request ID.'
-          : undefined);
+      (status === 'failed'
+        ? 'The service reported a failure without details. Try again. If it fails repeatedly, contact support with your request ID.'
+        : undefined);
 
   return {
     ...job,
@@ -612,27 +612,7 @@ export async function runGenerate(
   return body as GenerateResult;
 }
 
-export async function runImageGeneration(payload: ImageGenerationRequest): Promise<ImageGenerationResponse> {
-  const response = await authFetch('/api/images/generate', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  });
-  const data = (await response.json().catch(() => null)) as ImageGenerationResponse | null;
-  if (!data) {
-    throw new Error('Image generation response malformed');
-  }
-  if (!response.ok || !data.ok) {
-    const error = new Error(data.error?.message ?? `Image generation failed (${response.status})`);
-    Object.assign(error, {
-      code: data.error?.code ?? 'image_generation_failed',
-      detail: data.error?.detail,
-      status: response.status,
-    });
-    throw error;
-  }
-  return data;
-}
+
 
 export async function getJobStatus(jobId: string): Promise<JobStatusResult> {
   let response: Response;
