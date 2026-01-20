@@ -7,8 +7,8 @@ import { buildMetaDescription, buildMetaTitle } from '@/lib/seo/meta';
 const DEFAULT_OG_IMAGE = '/og/price-before.png';
 const DEFAULT_OG_WIDTH = 1200;
 const DEFAULT_OG_HEIGHT = 630;
-const SITE_NAME = 'MaxVideoAI';
-const TWITTER_HANDLE = '@MaxVideoAI';
+const SITE_NAME = 'Perzia AI';
+const TWITTER_HANDLE = '@PerziaAI';
 
 type OpenGraphMetadata = NonNullable<Metadata['openGraph']> & { type?: string };
 type OgType = string;

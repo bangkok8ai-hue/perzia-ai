@@ -1870,7 +1870,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     seo: {
       title: 'Sora 2 – Generate AI Videos from Text or Image with Sound',
       description:
-        'Create rich AI-generated videos from text or image prompts using Sora 2. Native voice-over, ambient effects, and motion sync via MaxVideoAI.',
+        'Create rich AI-generated videos from text or image prompts using Sora 2. Native voice-over, ambient effects, and motion sync via Perzia AI.',
       canonicalPath: '/models/sora-2',
     },
     type: 'Text + Image',
@@ -1899,7 +1899,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     faqs: [
       {
         question: 'Can I access Sora 2 from Europe?',
-        answer: 'Yes. MaxVideoAI brokers access so European teams can render without waiting on an OpenAI invite.',
+        answer: 'Yes. Perzia AI brokers access so European teams can render without waiting on an OpenAI invite.',
       },
       {
         question: 'Do Sora 2 renders include a watermark?',
@@ -1960,7 +1960,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     seo: {
       title: 'Sora 2 Pro – Longer AI Videos with Audio & Enhanced Prompt Control',
       description:
-        'Create longer, more immersive AI videos from text or images using Sora 2 Pro. Native voice, ambient sound, prompt chaining, and advanced control via MaxVideoAI.',
+        'Create longer, more immersive AI videos from text or images using Sora 2 Pro. Native voice, ambient sound, prompt chaining, and advanced control via Perzia AI.',
       canonicalPath: '/models/sora-2-pro',
     },
     type: 'Text + Image',
@@ -2048,7 +2048,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     seo: {
       title: 'Veo 3.1 – Advanced Text-to-Video & Native Audio Engine',
       description:
-        'Generate cinematic 8-second videos with native audio using Veo 3.1 by Google DeepMind on MaxVideoAI. Reference-to-video guidance, multi-image fidelity, pay-as-you-go pricing from $0.52/s.',
+        'Generate cinematic 8-second videos with native audio using Veo 3.1 by Google DeepMind on Perzia AI. Reference-to-video guidance, multi-image fidelity, pay-as-you-go pricing from $0.52/s.',
       canonicalPath: '/models/veo-3-1',
     },
     type: 'Text or image',
@@ -2061,7 +2061,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     prompts: [
       {
         title: 'Scripted hero read',
-        prompt: 'Two person street interview in New York City.\nSample dialogue:\nHost: “Did you hear the news?”\nPerson: “Yes, Veo 3.1 text-to-video just landed inside MaxVideoAI.”\nCinematic handheld camera, rich ambient audio, confident VO tone.',
+        prompt: 'Two person street interview in New York City.\nSample dialogue:\nHost: “Did you hear the news?”\nPerson: “Yes, Veo 3.1 text-to-video just landed inside Perzia AI.”\nCinematic handheld camera, rich ambient audio, confident VO tone.',
         mode: 't2v',
       },
       {
@@ -2074,7 +2074,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     faqs: [
       {
         question: 'Does Veo 3 ship with the latest motion tuning?',
-        answer: 'Yes. MaxVideoAI syncs routing with Google DeepMind updates so motion tuning stays current without manual work.',
+        answer: 'Yes. Perzia AI syncs routing with Google DeepMind updates so motion tuning stays current without manual work.',
       },
       {
         question: 'Can I brief Veo 3 with reference images?',
@@ -2145,7 +2145,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     prompts: [
       {
         title: 'Street interview',
-        prompt: 'Casual street interview on a busy sidewalk, handheld camera, native dialogue: “Have you seen Veo 3.1 Fast inside MaxVideoAI?”',
+        prompt: 'Casual street interview on a busy sidewalk, handheld camera, native dialogue: “Have you seen Veo 3.1 Fast inside Perzia AI?”',
         mode: 't2v',
       },
       {
@@ -2158,7 +2158,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     faqs: [
       {
         question: 'Does Veo 3 ship with the latest motion tuning?',
-        answer: 'Yes. MaxVideoAI syncs routing with Google DeepMind updates so motion tuning stays current without manual work.',
+        answer: 'Yes. Perzia AI syncs routing with Google DeepMind updates so motion tuning stays current without manual work.',
       },
       {
         question: 'Can I brief Veo 3 with reference images?',
@@ -2304,7 +2304,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     seo: {
       title: 'Pika 2.2 – Stylized Text & Image to Video',
       description:
-        'Generate stylized AI video from prompts or animate uploaded stills using Pika 2.2. Perfect for short-form loops without audio via MaxVideoAI.',
+        'Generate stylized AI video from prompts or animate uploaded stills using Pika 2.2. Perfect for short-form loops without audio via Perzia AI.',
       canonicalPath: '/models/pika-text-to-video',
     },
     type: 'textImage',
@@ -2341,7 +2341,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
       },
       {
         question: 'Does Pika 2.2 include audio?',
-        answer: 'Base renders are silent. Layer audio afterwards in MaxVideoAI using the soundtrack add-on.',
+        answer: 'Base renders are silent. Layer audio afterwards in Perzia AI using the soundtrack add-on.',
       },
     ],
     pricingHint: {
@@ -2409,9 +2409,9 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     ],
     defaultFalModelId: 'fal-ai/kling-video/v2.5-turbo/pro/text-to-video',
     seo: {
-      title: 'Kling 2.5 Turbo – Text & Image to Video on MaxVideoAI',
+      title: 'Kling 2.5 Turbo – Text & Image to Video on Perzia AI',
       description:
-        'Route cinematic Kling 2.5 Turbo shots through MaxVideoAI with instant switching between Pro text, Pro image, and Standard budget tiers.',
+        'Route cinematic Kling 2.5 Turbo shots through Perzia AI with instant switching between Pro text, Pro image, and Standard budget tiers.',
       canonicalPath: '/models/kling-2-5-turbo',
     },
     type: 'textImage',
@@ -2453,7 +2453,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
       {
         question: 'Does Kling generate audio?',
         answer:
-          'Kling 2.5 Turbo outputs silent MP4 files. Layer VO or music afterwards in MaxVideoAI or route the brief through Sora 2 Pro if you need narration baked in.',
+          'Kling 2.5 Turbo outputs silent MP4 files. Layer VO or music afterwards in Perzia AI or route the brief through Sora 2 Pro if you need narration baked in.',
       },
       {
         question: 'Can I tweak CFG scale?',
@@ -2512,7 +2512,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     ],
     defaultFalModelId: 'fal-ai/kling-video/v2.6/pro/text-to-video',
     seo: {
-      title: 'Kling 2.6 Pro AI Video – Text & Image to Video with Native Audio | MaxVideoAI',
+      title: 'Kling 2.6 Pro AI Video – Text & Image to Video with Native Audio | Perzia AI',
       description:
         'Generate cinematic AI videos with Kling 2.6 Pro. Text and image to video with fluid motion, rich details, and native audio, ideal for social content, ads, and storytelling.',
       canonicalPath: '/models/kling-2-6-pro',
@@ -2706,9 +2706,9 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     ],
     defaultFalModelId: 'wan/v2.6/text-to-video',
     seo: {
-      title: 'Wan 2.6 AI Video Generator (Text, Image & Reference) – MaxVideoAI',
+      title: 'Wan 2.6 AI Video Generator (Text, Image & Reference) – Perzia AI',
       description:
-        'Generate 5–15s cinematic clips with Wan 2.6 inside MaxVideoAI. Use multi-shot text prompts, animate a still image, or keep subject consistency with 1–3 reference videos. 720p/1080p, per-second pricing.',
+        'Generate 5–15s cinematic clips with Wan 2.6 inside Perzia AI. Use multi-shot text prompts, animate a still image, or keep subject consistency with 1–3 reference videos. 720p/1080p, per-second pricing.',
       canonicalPath: '/models/wan-2-6',
     },
     type: 'textImage',
@@ -2814,7 +2814,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     seo: {
       title: 'MiniMax Hailuo 02 – Stylized Text & Image to Video',
       description:
-        'Generate fast, stylized motion from prompts or animate uploaded stills with MiniMax Hailuo 02. Ideal for testing motion concepts, loops, and storyboard passes—silent and budget-friendly via MaxVideoAI.',
+        'Generate fast, stylized motion from prompts or animate uploaded stills with MiniMax Hailuo 02. Ideal for testing motion concepts, loops, and storyboard passes—silent and budget-friendly via Perzia AI.',
       canonicalPath: '/models/minimax-hailuo-02-text',
     },
     type: 'Text + Image · Stylized',
@@ -2845,7 +2845,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
       },
       {
         question: 'Can I supply an end frame for Hailuo image-to-video runs?',
-        answer: 'Upload an optional end frame in the composer. MaxVideoAI forwards it so the clip resolves on your target image.',
+        answer: 'Upload an optional end frame in the composer. Perzia AI forwards it so the clip resolves on your target image.',
       },
     ],
     pricingHint: {
@@ -2900,7 +2900,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     ],
     defaultFalModelId: 'fal-ai/ltx-2/text-to-video/fast',
     seo: {
-      title: 'LTX-2 Fast AI Video – Text & Image to Video with Audio | MaxVideoAI',
+      title: 'LTX-2 Fast AI Video – Text & Image to Video with Audio | Perzia AI',
       description:
         'Generate fast cinematic AI videos with LTX-2 Fast. Text and image to video with synchronized audio, up to 4K, ideal for rapid iteration and social content.',
       canonicalPath: '/models/ltx-2-fast',
@@ -2979,7 +2979,7 @@ export const FAL_ENGINE_REGISTRY: FalEngineEntry[] = [
     ],
     defaultFalModelId: 'fal-ai/ltx-2/text-to-video',
     seo: {
-      title: 'LTX-2 Pro AI Video – High-Fidelity Text & Image to Video with Audio | MaxVideoAI',
+      title: 'LTX-2 Pro AI Video – High-Fidelity Text & Image to Video with Audio | Perzia AI',
       description:
         'Create high-fidelity cinematic AI videos with LTX-2 Pro. Text and image to video with synchronized audio, up to 4K and 50 fps, ideal for premium campaigns and production work.',
       canonicalPath: '/models/ltx-2',

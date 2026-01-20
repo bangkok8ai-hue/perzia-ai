@@ -36,7 +36,7 @@ export function HeaderBar() {
   const menuRef = useRef<HTMLDivElement>(null);
   const walletPromptCloseTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const walletPromptId = useId();
-  const brand = t('nav.brand', 'Perzia AI') ?? 'MaxVideo AI';
+  const brand = t('nav.brand', 'Perzia AI') ?? 'Perzia AI';
   const loginLabel = t('nav.login', 'Log in');
   const ctaLabel = t('nav.cta', 'Start a render');
   const generateLabel = t('nav.generate', 'Generate');
@@ -595,7 +595,7 @@ function LogoMark() {
   return (
     <Link href="/" className="flex items-center gap-2" aria-label={t('workspace.header.logoAria', 'Go to marketing homepage')}>
       <Image src="/assets/branding/logo-mark.svg" alt="Perzia AI" width={28} height={28} priority />
-      <span className="text-lg font-semibold tracking-tight text-text-primary">MaxVideo AI</span>
+      <span className="text-lg font-semibold tracking-tight text-text-primary">Perzia AI</span>
     </Link>
   );
 }

@@ -99,7 +99,7 @@ export async function generateVideoSitemapResponse(): Promise<NextResponse> {
             const duration = Math.max(0, Math.floor(video.durationSec ?? 0));
             const publicationDate = new Date(video.createdAt).toISOString();
             const thumbUrl = video.thumbUrl ?? video.videoUrl ?? loc;
-            const keywords = [video.engineLabel, video.aspectRatio ?? 'auto', 'MaxVideoAI']
+            const keywords = [video.engineLabel, video.aspectRatio ?? 'auto', 'Perzia AI']
               .map((keyword) => `<video:tag>${escapeXml(keyword)}</video:tag>`)
               .join('');
 

@@ -25,7 +25,7 @@ type PageProps = {
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://maxvideoai.com').replace(/\/$/, '');
 const FALLBACK_THUMB = `${SITE}/og/price-before.png`;
 const FALLBACK_POSTER = `${SITE}/og/price-before.png`;
-const TITLE_SUFFIX = ' — MaxVideoAI';
+const TITLE_SUFFIX = ' — Perzia AI';
 const META_TITLE_LIMIT = 60;
 
 export const revalidate = 60 * 30; // 30 minutes
@@ -33,8 +33,8 @@ export const revalidate = 60 * 30; // 30 minutes
 const DEFAULT_VIDEO_COPY = {
   backLink: '← Back',
   hero: {
-    titleFallback: 'MaxVideoAI render',
-    intro: 'This video was generated with {engine} on MaxVideoAI — discover how to create similar renders below.',
+    titleFallback: 'Perzia AI render',
+    intro: 'This video was generated with {engine} on Perzia AI — discover how to create similar renders below.',
     promptLabel: 'Prompt',
     promptFallback: 'Prompt unavailable.',
     copy: 'Copy prompt',
@@ -51,7 +51,7 @@ const DEFAULT_VIDEO_COPY = {
     aspectFallback: 'an adaptive aspect ratio',
     sentences: [
       'This AI-generated video showcases {promptStyle} and ships straight from our public Examples playlist.',
-      '{engineName} handled this render inside MaxVideoAI, delivering {durationLabel} at {aspectRatioLabel} with {audioState}.',
+      '{engineName} handled this render inside Perzia AI, delivering {durationLabel} at {aspectRatioLabel} with {audioState}.',
       'The footage highlights consistent motion, crisp lighting, and natural reflections so creative and product teams can judge how the model behaves.',
       'Prompt styling keeps {promptTone} cues that you can remix or extend with image references, narration, or upscaling.',
       'Use the engine card, pricing link, and blog resources below to compare models or start a similar run in your workspace.',
@@ -105,9 +105,9 @@ const DEFAULT_VIDEO_COPY = {
 type VideoPageCopy = typeof DEFAULT_VIDEO_COPY;
 
 function formatPrompt(prompt?: string | null, maxLength = 320): string {
-  if (!prompt) return 'AI-generated video created with MaxVideoAI.';
+  if (!prompt) return 'AI-generated video created with Perzia AI.';
   const clean = prompt.replace(/\s+/g, ' ').trim();
-  if (!clean) return 'AI-generated video created with MaxVideoAI.';
+  if (!clean) return 'AI-generated video created with Perzia AI.';
   if (clean.length <= maxLength) return clean;
   return `${clean.slice(0, maxLength - 1)}…`;
 }
@@ -175,7 +175,7 @@ function truncateForMeta(title: string, limit: number) {
 
 function buildMetaTitle(primary: string) {
   const available = Math.max(10, META_TITLE_LIMIT - TITLE_SUFFIX.length);
-  const safePrimary = primary && primary.trim().length ? primary.trim() : 'MaxVideoAI render';
+  const safePrimary = primary && primary.trim().length ? primary.trim() : 'Perzia AI render';
   const truncated = truncateForMeta(safePrimary, available);
   return `${truncated}${TITLE_SUFFIX}`;
 }

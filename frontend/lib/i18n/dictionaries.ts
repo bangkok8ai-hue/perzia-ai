@@ -278,7 +278,7 @@ type Dictionary = {
 
 const en: Dictionary = {
   nav: {
-    brand: 'MaxVideo AI',
+    brand: 'Perzia AI',
     links: [
       { key: 'models', href: '/models' },
       { key: 'examples', href: '/examples' },
@@ -331,7 +331,7 @@ const en: Dictionary = {
     heroScreenshot: {
       title: 'Every control in one view.',
       body: 'Composer, live pricing, gallery rail, and job feed stay together so you can tweak prompts, review outputs, and monitor the queue without leaving the screen.',
-      alt: 'MaxVideo AI workspace showing the composer, live price chip, and gallery preview in a single dashboard.',
+      alt: 'Perzia AI workspace showing the composer, live price chip, and gallery preview in a single dashboard.',
     },
     proofTabs: [
       {
@@ -584,7 +584,7 @@ const en: Dictionary = {
   calculator: {
     hero: {
       title: 'Estimate your AI video cost before you generate.',
-      subtitle: 'This public calculator mirrors the estimator inside MaxVideo AI. Pick an engine, duration, and resolution to preview the cost chip with no login required.',
+      subtitle: 'This public calculator mirrors the estimator inside Perzia AI. Pick an engine, duration, and resolution to preview the cost chip with no login required.',
     },
     lite: {
       title: 'Lite calculator',
@@ -679,7 +679,7 @@ const en: Dictionary = {
   examples: {
     hero: {
       title: 'Engine showcases.',
-      subtitle: 'Hover to loop, click to expand. Each clip previews the motion and style you can route in MaxVideo AI.',
+      subtitle: 'Hover to loop, click to expand. Each clip previews the motion and style you can route in Perzia AI.',
     },
     items: [
       {
@@ -813,7 +813,7 @@ const en: Dictionary = {
   },
   blog: {
     hero: {
-      title: 'The MaxVideo AI blog.',
+      title: 'The Perzia AI blog.',
       subtitle:
         'News on engines, customer stories, prompt guides, and price-before best practices. Subscribe in-app to get updates in your queue digest.',
     },
@@ -824,7 +824,7 @@ const en: Dictionary = {
     hero: {
       title: 'Quiet confidence for AI video teams.',
       subtitle:
-        'MaxVideo AI is the independent hub for AI video production. We route to the right engine for every shot, price before you generate, and keep your team in control without vendor lock-in.',
+        'Perzia AI is the independent hub for AI video production. We route to the right engine for every shot, price before you generate, and keep your team in control without vendor lock-in.',
     },
     paragraphs: [
       'We believe professional teams deserve clarity before they hit render. That means price transparency, reliable routing, and shared context between creatives, producers, and stakeholders.',
@@ -832,7 +832,7 @@ const en: Dictionary = {
       'The product is engineered for teams that need precision without noise. Quiet UI, premium defaults, precise controls, and price-before chips that keep finance in the loop.',
     ],
     note:
-      'Trademarks and service marks are property of their respective owners. MaxVideo AI stays independent so you can stay current without switching platforms.',
+      'Trademarks and service marks are property of their respective owners. Perzia AI stays independent so you can stay current without switching platforms.',
   },
   contact: {
     hero: {
@@ -862,7 +862,7 @@ const en: Dictionary = {
       sections: [
         {
           heading: '1. Overview',
-          body: 'These Terms govern your use of MaxVideo AI. By accessing the service you agree to the obligations below.',
+          body: 'These Terms govern your use of Perzia AI. By accessing the service you agree to the obligations below.',
         },
         {
           heading: '2. Accounts',
@@ -871,7 +871,7 @@ const en: Dictionary = {
         {
           heading: '3. Usage & Compliance',
           body:
-            'Use MaxVideo AI only in compliance with applicable laws, respect licensing limits, never upload illegal or infringing assets, and do not attempt to generate prohibited or unsafe content. We may review, block, or remove renders and suspend access when videos violate these Terms or our policies.',
+            'Use Perzia AI only in compliance with applicable laws, respect licensing limits, never upload illegal or infringing assets, and do not attempt to generate prohibited or unsafe content. We may review, block, or remove renders and suspend access when videos violate these Terms or our policies.',
         },
         {
           heading: '4. User Content & Generated Media',
@@ -884,7 +884,7 @@ const en: Dictionary = {
         },
         {
           heading: '6. Liability',
-          body: 'MaxVideo AI is provided as-is. We limit liability to the maximum extent permitted by law.',
+          body: 'Perzia AI is provided as-is. We limit liability to the maximum extent permitted by law.',
         },
       ],
     },

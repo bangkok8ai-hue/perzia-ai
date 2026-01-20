@@ -1442,7 +1442,7 @@
       "galleryRail": {
         "title": "Latest renders",
         "viewAll": "View all",
-        "curated": "Starter samples curated by the MaxVideo team are shown until you generate your own videos.",
+        "curated": "Starter samples curated by the Perzia AI team are shown until you generate your own videos.",
         "error": "Failed to load latest renders. Please retry.",
         "retry": "Retry",
         "imageCta": "Generate images",
@@ -1714,7 +1714,7 @@
         "beta": "Coming soon — shared wallets, approvals, and budgets. Join the beta at {email}.",
         "email": "support@Perzia AI.com"
       },
-      "curated": "Starter renders curated by the MaxVideo team appear here until you generate your own clips.",
+      "curated": "Starter renders curated by the Perzia AI team appear here until you generate your own clips.",
       "error": "Failed to load jobs.",
       "retry": "Retry",
       "empty": "No renders yet. Start a generation to populate your history.",

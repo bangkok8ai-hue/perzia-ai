@@ -57,7 +57,7 @@ export function MarketingFooter() {
       'Perzia AI allows AI crawlers (GPTBot, OAI-SearchBot, Google-Extended, and CCBot) to index public model pages and documentation for educational and research visibility.'
     ) ??
     'Perzia AI allows AI crawlers (GPTBot, OAI-SearchBot, Google-Extended, and CCBot) to index public model pages and documentation for educational and research visibility.';
-  const brandLabel = t('nav.brand', 'Perzia AI') ?? 'MaxVideo AI';
+  const brandLabel = t('nav.brand', 'Perzia AI') ?? 'Perzia AI';
   const languageLabel = t('footer.languageLabel', 'Language') ?? 'Language';
   return (
     <footer className="border-t border-hairline bg-white">

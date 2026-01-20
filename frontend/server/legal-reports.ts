@@ -57,7 +57,7 @@ async function notifyLegalTeam(reportId: string, payload: CreateLegalReportInput
   const mailer = getMailer();
   const fromAddress = getDefaultFromAddress();
   if (LEGAL_NOTIFY_EMAIL && mailer && fromAddress) {
-    const subject = `[MaxVideoAI] New legal report (${payload.reason})`;
+    const subject = `[Perzia AI] New legal report (${payload.reason})`;
     const attachment =
       payload.attachmentBase64 && payload.attachmentName
         ? [

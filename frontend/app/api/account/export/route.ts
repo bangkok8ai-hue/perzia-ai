@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
     const json = JSON.stringify(payload, null, 2);
     const compressed = gzipSync(Buffer.from(json, 'utf8'));
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const fileName = `maxvideoai-dsar-${timestamp}.json.gz`;
+    const fileName = `perzia-ai-dsar-${timestamp}.json.gz`;
 
     const upload = await uploadFileBuffer({
       data: compressed,

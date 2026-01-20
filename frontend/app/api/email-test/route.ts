@@ -18,7 +18,7 @@ async function runTest(to?: string) {
     await mailer.sendMail({
       to: recipient,
       from,
-      subject: 'MaxVideoAI SMTP test',
+      subject: 'Perzia AI SMTP test',
       html: `<p>This is a test email sent at ${new Date().toISOString()}.</p>`,
     });
     return NextResponse.json({ success: true });

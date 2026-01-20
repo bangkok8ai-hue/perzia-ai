@@ -70,7 +70,7 @@ export async function GET(req: NextRequest) {
       return stripe.accounts.create({
         account_token: token.id,
         business_profile: {
-          name: 'MaxVideoAI Ops',
+          name: 'Perzia AI Ops',
           url: 'https://maxvideoai.com',
         },
         capabilities: {
@@ -93,7 +93,7 @@ export async function GET(req: NextRequest) {
           card_issuing: { requested: true },
         },
         business_profile: {
-          name: 'MaxVideoAI Ops',
+          name: 'Perzia AI Ops',
           url: 'https://maxvideoai.com',
         },
       });

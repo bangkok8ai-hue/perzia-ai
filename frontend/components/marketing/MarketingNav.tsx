@@ -30,7 +30,7 @@ export function MarketingNav() {
   const menuRef = useRef<HTMLDivElement | null>(null);
   const walletPromptCloseTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const walletPromptId = useId();
-  const brand = t('nav.brand', 'Perzia AI') ?? 'MaxVideo AI';
+  const brand = t('nav.brand', 'Perzia AI') ?? 'Perzia AI';
   const defaultLinks: Array<{ key: string; href: string }> = [
     { key: 'models', href: '/models' },
     { key: 'examples', href: '/examples' },

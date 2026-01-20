@@ -1439,7 +1439,7 @@
       "galleryRail": {
         "title": "Últimos renders",
         "viewAll": "Ver todo",
-        "curated": "Los renders de muestra del equipo MaxVideo se muestran aquí hasta que generes tus propios videos.",
+        "curated": "Los renders de muestra del equipo Perzia AI se muestran aquí hasta que generes tus propios videos.",
         "error": "No se pudieron cargar los últimos renders. Intenta de nuevo.",
         "retry": "Reintentar",
         "imageCta": "Generar imágenes",
@@ -1601,7 +1601,7 @@
         "beta": "Próximamente — billeteras compartidas, aprobaciones y presupuestos. Únete a la beta en {email}.",
         "email": "support@Perzia AI.com"
       },
-      "curated": "Los renders iniciales seleccionados por el equipo MaxVideo aparecen aquí hasta que generes tus propios clips.",
+      "curated": "Los renders iniciales seleccionados por el equipo Perzia AI aparecen aquí hasta que generes tus propios clips.",
       "error": "No se pudieron cargar los trabajos.",
       "retry": "Reintentar",
       "empty": "Todavía no hay renders. Inicia una generación para llenar tu historial.",
