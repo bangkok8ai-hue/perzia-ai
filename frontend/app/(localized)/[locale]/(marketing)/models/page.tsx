@@ -188,9 +188,12 @@ export default async function ModelsPage() {
     .sort((a, b) => getEngineDisplayName(a).localeCompare(getEngineDisplayName(b)));
   const engines = [...priorityEngines, ...remainingEngines];
 
+  // Filter out image-only models (nano-banana variants)
+  const videoEngines = engines.filter((engine) => (engine.category ?? 'video') !== 'image');
+
   const localizedMap = new Map<string, Awaited<ReturnType<typeof getEngineLocalized>>>(
     await Promise.all(
-      engines.map(async (engine) => {
+      videoEngines.map(async (engine) => {
         const localized = await getEngineLocalized(engine.modelSlug, activeLocale);
         return [engine.modelSlug, localized] as const;
       })
@@ -217,7 +220,7 @@ export default async function ModelsPage() {
     .map((slug) => engineIndex.get(slug))
     .filter((entry): entry is FalEngineEntry => Boolean(entry));
 
-  const modelCards = engines.map((engine) => {
+  const modelCards = videoEngines.map((engine) => {
     const meta = engineMetaCopy[engine.modelSlug] ?? engineMetaCopy[engine.id] ?? null;
     const localized = localizedMap.get(engine.modelSlug);
     const engineTypeKey = getEngineTypeKey(engine);
