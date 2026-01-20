@@ -3,12 +3,12 @@
   "versionLabel": "2.5 Turbo",
   "seo": {
     "title": "Kling 2.5 Turbo – AI Text-to-Video & Image-to-Video (1080p, 5–10s, Silent)",
-    "description": "Cinematic, silent 1080p clips in 5–10 seconds from text or a single image. Pro Text / Pro Image / Standard tiers, 16:9/9:16/1:1, price-before-render in MaxVideoAI.",
+    "description": "Cinematic, silent 1080p clips in 5–10 seconds from text or a single image. Pro Text / Pro Image / Standard tiers, 16:9/9:16/1:1, price-before-render in Perzia AI.",
     "image": "/hero/kling-25.jpg"
   },
-  "overview": "Kling 2.5 Turbo in MaxVideoAI: cinematic, silent 1080p clips from text or one image, 5–10 seconds, 16:9/9:16/1:1. Choose Pro Text, Pro Image or Standard per render to balance quality and cost.",
+  "overview": "Kling 2.5 Turbo in Perzia AI: cinematic, silent 1080p clips from text or one image, 5–10 seconds, 16:9/9:16/1:1. Choose Pro Text, Pro Image or Standard per render to balance quality and cost.",
   "hero": {
-    "title": "Kling 2.5 Turbo – AI Text-to-Video & Image-to-Video in MaxVideoAI (1080p, 5–10s)",
+    "title": "Kling 2.5 Turbo – AI Text-to-Video & Image-to-Video in Perzia AI (1080p, 5–10s)",
     "intro": "Kling 2.5 Turbo – Cinematic, Silent 1080p AI Video (5–10s, Text or Image Input)",
     "badge": "1080p · 5–10s · Text or Image input · Silent output",
     "ctaPrimary": {
@@ -95,7 +95,7 @@
   "custom": {
     "heroDesc1": "Generate cinematic, silent 1080p clips from text or a single still. Choose Pro Text, Pro Image or Standard per render to balance fidelity and cost.",
     "heroDesc2": "Pick 5 or 10 seconds, 16:9/9:16/1:1, upload one image or write a focused prompt, and get crisp footage ready for editors and social teams.",
-    "whyTitle": "Why Kling 2.5 Turbo is powerful inside MaxVideoAI",
+    "whyTitle": "Why Kling 2.5 Turbo is powerful inside Perzia AI",
     "heroHighlights": [
       "1080p by default for sharp, broadcast-style footage",
       "5 or 10 second clips tuned for cinematic beats",
@@ -104,7 +104,7 @@
       "Aspect ratios: 16:9, 9:16, 1:1 per render",
       "Silent exports ready to score however you like",
       "Strong motion & physics with consistent style",
-      "Price-before-render and live timing via MaxVideoAI wallet/queue"
+      "Price-before-render and live timing via Perzia AI wallet/queue"
     ],
     "bestUseCasesTitle": "Best use cases",
     "bestUseCases": [
@@ -114,10 +114,10 @@
       "Budget B-roll/mood loops using Standard image tier",
       "Short social intros where 10s is the whole story"
     ],
-    "whatTitle": "What Kling 2.5 Turbo Actually Is in MaxVideoAI",
+    "whatTitle": "What Kling 2.5 Turbo Actually Is in Perzia AI",
     "whatIntro1": "Kling 2.5 Turbo is a high-performance short-form video model for cinematic motion, strong prompt adherence and consistent style.",
-    "whatIntro2": "In MaxVideoAI it is a single, multi-tier engine you can switch per render.",
-    "whatFlowTitle": "MaxVideoAI flow",
+    "whatIntro2": "In Perzia AI it is a single, multi-tier engine you can switch per render.",
+    "whatFlowTitle": "Perzia AI flow",
     "whatFlowSteps": [
       "1. Choose Kling 2.5 Turbo.",
       "2. Pick Text → Video (Pro Text) or Image → Video (Pro Image / Standard).",
@@ -127,8 +127,8 @@
       "6. Check exact price before you render.",
       "7. Compare against Sora, Veo, Wan, MiniMax in the same workspace."
     ],
-    "specTitle": "Real Specs – Kling 2.5 Turbo in MaxVideoAI (1080p, 5–10s)",
-    "specNote": "This describes Kling 2.5 Turbo as used in MaxVideoAI.",
+    "specTitle": "Real Specs – Kling 2.5 Turbo in Perzia AI (1080p, 5–10s)",
+    "specNote": "This describes Kling 2.5 Turbo as used in Perzia AI.",
     "specSections": [
       {
         "title": "Duration & Output",
@@ -180,7 +180,7 @@
     ],
     "specValueProp": "Kling 2.5 Turbo is a silent 1080p engine for cinematic short beats with strong motion and physics.",
     "galleryTitle": "Example Gallery: Kling 2.5 Turbo",
-    "galleryIntro": "Actual runs from the current Kling route in MaxVideoAI.",
+    "galleryIntro": "Actual runs from the current Kling route in Perzia AI.",
     "gallerySceneCta": "Open this scene in Generate and adapt it with your own script →",
     "galleryAllCta": "View all Kling 2.5 Turbo examples →",
     "recreateLabel": "Recreate this shot →",
@@ -250,7 +250,7 @@
       "No explicit sexual content or sexualized minors",
       "Avoid hateful, harassing or extremist content",
       "Don’t use real likeness without consent; avoid IP infringement",
-      "Provider and MaxVideoAI moderation may block/adjust content"
+      "Provider and Perzia AI moderation may block/adjust content"
     ],
     "safetyInterpretation": [
       "Use Kling for brand-safe, legal, ethical content"
@@ -265,7 +265,7 @@
       "Pika 2.2: stylized, silent animation for loops and playful visuals"
     ],
     "comparisonCta": "Compare Kling vs Sora 2 Pro →",
-    "faqTitle": "FAQ – Kling 2.5 Turbo in MaxVideoAI",
+    "faqTitle": "FAQ – Kling 2.5 Turbo in Perzia AI",
     "faqs": [
       { "q": "Does Kling 2.5 Turbo output audio?", "a": "No. It is video-only and silent; add sound in your editor or via audio-capable engines." },
       { "q": "What durations and formats are supported?", "a": "5 or 10 seconds; 16:9, 9:16, 1:1 for text and image runs." },
@@ -274,9 +274,10 @@
       { "q": "When should I choose another engine?", "a": "Use Sora/Veo/Wan for native audio; Pika for stylized/pixel looks; Sora/Veo for multi-beat audio stories." }
     ],
     "relatedTitle": "Explore other models",
-    "relatedSubtitle": "Compare pricing, latency, and outputs across the MaxVideoAI catalog.",
-    "finalPara1": "Kling 2.5 Turbo in MaxVideoAI is your 1080p, silent, cinematic engine for short, punchy beats.",
+    "relatedSubtitle": "Compare pricing, latency, and outputs across the Perzia AI catalog.",
+    "finalPara1": "Kling 2.5 Turbo in Perzia AI is your 1080p, silent, cinematic engine for short, punchy beats.",
     "finalPara2": "Use it when camera work and motion carry the story, then layer audio in post or pair with audio engines.",
     "finalButton": "Open Generate"
   }
 }
+

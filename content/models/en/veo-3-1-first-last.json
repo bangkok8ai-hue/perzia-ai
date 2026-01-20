@@ -3,12 +3,12 @@
   "versionLabel": "3.1 First/Last",
   "seo": {
     "title": "Veo 3.1 First/Last – First & Last Frame to Video (720p/1080p, up to 8s)",
-    "description": "Bridge two frames with Veo 3.1 First/Last. Upload start + end frames, add a prompt, choose 4/6/8s at 720p or 1080p, optional native audio. Perfect for seamless transitions and before/after stories in MaxVideoAI.",
+    "description": "Bridge two frames with Veo 3.1 First/Last. Upload start + end frames, add a prompt, choose 4/6/8s at 720p or 1080p, optional native audio. Perfect for seamless transitions and before/after stories in Perzia AI.",
     "image": "/hero/veo3.jpg"
   },
-  "overview": "Veo 3.1 First/Last in MaxVideoAI bridges two images with a directed, cinematic transition. You provide a first frame, a last frame, and a short prompt; Veo generates a smooth 4/6/8 second clip at 720p or 1080p, with optional native audio.",
+  "overview": "Veo 3.1 First/Last in Perzia AI bridges two images with a directed, cinematic transition. You provide a first frame, a last frame, and a short prompt; Veo generates a smooth 4/6/8 second clip at 720p or 1080p, with optional native audio.",
   "hero": {
-    "title": "Veo 3.1 First/Last – First & Last Frame to Video in MaxVideoAI (720p/1080p, up to 8s)",
+    "title": "Veo 3.1 First/Last – First & Last Frame to Video in Perzia AI (720p/1080p, up to 8s)",
     "intro": "Veo 3.1 First/Last – Seamless transitions between two frames, with native audio",
     "badge": "720p/1080p · up to 8 s · First & last frame + text prompt",
     "ctaPrimary": {
@@ -42,7 +42,7 @@
       "prompt": "Animate a 6s 16:9 cinematic transition from a bright office desk still to a night rooftop still with the same person. Slow dolly forward that gently arcs as the rooftop appears; daylight fades into cool blue/neon; audio shifts from office ambience to distant traffic and wind, no dialogue."
     }
   ],
-  "faqTitle": "FAQ – Veo 3.1 First/Last in MaxVideoAI",
+  "faqTitle": "FAQ – Veo 3.1 First/Last in Perzia AI",
   "faqs": [
     {
       "q": "Do I have to provide both a first and a last frame?",
@@ -50,7 +50,7 @@
     },
     {
       "q": "How long can these clips be?",
-      "a": "Up to ~8 seconds in the underlying APIs. MaxVideoAI exposes 4/6/8s presets to keep prompts predictable."
+      "a": "Up to ~8 seconds in the underlying APIs. Perzia AI exposes 4/6/8s presets to keep prompts predictable."
     },
     {
       "q": "Does it always generate audio?",
@@ -68,7 +68,7 @@
   "custom": {
     "heroDesc1": "Bridge two frames with Veo 3.1 First/Last: upload start and end images, add a prompt, and get a smooth 4/6/8s transition at 720p or 1080p with optional native audio.",
     "heroDesc2": "Use it for scene bridges, before/after stories, logo/UI morphs, and designed transitions where you already know the start and end composition.",
-    "whyTitle": "Why Veo 3.1 First/Last is powerful inside MaxVideoAI",
+    "whyTitle": "Why Veo 3.1 First/Last is powerful inside Perzia AI",
     "heroHighlights": [
       "Bridges two stills into a continuous, cinematic transition",
       "Native audio support when enabled",
@@ -85,10 +85,10 @@
       "Stylized morphs between character or layout designs",
       "Camera moves from one layout to another without cuts"
     ],
-    "whatTitle": "What Veo 3.1 First/Last actually is in MaxVideoAI",
+    "whatTitle": "What Veo 3.1 First/Last actually is in Perzia AI",
     "whatIntro1": "Google’s Veo 3.1 “first and last frame” / “Frames to Video” mode that interpolates between two images with optional audio.",
-    "whatIntro2": "In MaxVideoAI, you pick 4/6/8s, 16:9/9:16/1:1, 720p or 1080p, upload First + Last frames, toggle audio, and let Veo handle the transition.",
-    "whatFlowTitle": "In-app flow in MaxVideoAI",
+    "whatIntro2": "In Perzia AI, you pick 4/6/8s, 16:9/9:16/1:1, 720p or 1080p, upload First + Last frames, toggle audio, and let Veo handle the transition.",
+    "whatFlowTitle": "In-app flow in Perzia AI",
     "whatFlowSteps": [
       "1. Select Veo 3.1 First/Last.",
       "2. Upload First frame and Last frame images.",
@@ -97,8 +97,8 @@
       "5. Write a prompt that describes how to go from A to B (camera, subject, pacing, style, audio).",
       "6. Preview price per second, then generate."
     ],
-    "specTitle": "Real Specs – Veo 3.1 First/Last in MaxVideoAI",
-    "specNote": "Reflects the current first/last-frame route in MaxVideoAI.",
+    "specTitle": "Real Specs – Veo 3.1 First/Last in Perzia AI",
+    "specNote": "Reflects the current first/last-frame route in Perzia AI.",
     "specSections": [
       {
         "title": "Duration & Output",
@@ -191,7 +191,7 @@
       "Don’t impersonate private individuals without consent",
       "No explicit sexual content or sexualized minors",
       "Avoid hateful, harassing or extremist content",
-      "Some prompts or images may be blocked or adjusted by provider and MaxVideoAI safety layers"
+      "Some prompts or images may be blocked or adjusted by provider and Perzia AI safety layers"
     ],
     "safetyNote": "Use First/Last for fictional characters, brand assets and product imagery—not deepfakes.",
     "comparisonTitle": "Veo 3.1 First/Last vs Veo 3.1 vs Veo 3.1 Fast",
@@ -202,9 +202,10 @@
     ],
     "comparisonCta": "Compare Veo 3.1 First/Last vs Veo 3.1 / Veo 3.1 Fast →",
     "relatedTitle": "Explore other models",
-    "relatedSubtitle": "Compare pricing, latency and control surfaces across the MaxVideoAI catalog.",
-    "finalPara1": "Veo 3.1 First/Last in MaxVideoAI is your start–end transition engine—built for moments where you already know the first and last frame.",
+    "relatedSubtitle": "Compare pricing, latency and control surfaces across the Perzia AI catalog.",
+    "finalPara1": "Veo 3.1 First/Last in Perzia AI is your start–end transition engine—built for moments where you already know the first and last frame.",
     "finalPara2": "Use it to bridge scenes, logos, UI layouts or before/after beats with optional native audio, then stitch everything in one workflow.",
     "finalButton": "Open Generate"
   }
 }
+

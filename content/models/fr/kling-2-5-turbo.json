@@ -3,12 +3,12 @@
   "versionLabel": "2.5 Turbo",
   "seo": {
     "title": "Kling 2.5 Turbo – Texte→vidéo & image→vidéo (1080p, 5–10 s, silencieux)",
-    "description": "Clips cinématiques 1080p silencieux de 5–10 s depuis texte ou une image. Tiers Pro Text / Pro Image / Standard, 16:9/9:16/1:1 et prix avant rendu dans MaxVideoAI.",
+    "description": "Clips cinématiques 1080p silencieux de 5–10 s depuis texte ou une image. Tiers Pro Text / Pro Image / Standard, 16:9/9:16/1:1 et prix avant rendu dans Perzia AI.",
     "image": "/hero/kling-25.jpg"
   },
-  "overview": "Kling 2.5 Turbo dans MaxVideoAI : clips 1080p, silencieux, 5–10 s, depuis texte ou un seul still, en 16:9/9:16/1:1. Choisissez Pro Text, Pro Image ou Standard à chaque rendu pour équilibrer qualité et coût.",
+  "overview": "Kling 2.5 Turbo dans Perzia AI : clips 1080p, silencieux, 5–10 s, depuis texte ou un seul still, en 16:9/9:16/1:1. Choisissez Pro Text, Pro Image ou Standard à chaque rendu pour équilibrer qualité et coût.",
   "hero": {
-    "title": "Kling 2.5 Turbo – Texte→vidéo & image→vidéo dans MaxVideoAI (1080p, 5–10 s)",
+    "title": "Kling 2.5 Turbo – Texte→vidéo & image→vidéo dans Perzia AI (1080p, 5–10 s)",
     "intro": "Kling 2.5 Turbo – Vidéo IA cinématique et silencieuse (5–10 s, entrée texte ou image)",
     "badge": "1080p · 5–10 s · Texte ou image · Sortie silencieuse",
     "ctaPrimary": {
@@ -92,7 +92,7 @@
   "custom": {
     "heroDesc1": "Générez des clips 1080p ciné et silencieux depuis texte ou une image. Choisissez Pro Text, Pro Image ou Standard par rendu.",
     "heroDesc2": "Prenez 5 ou 10 s, 16:9/9:16/1:1, uploadez une image ou un prompt concis et obtenez un plan net prêt pour l’édition et le social.",
-    "whyTitle": "Pourquoi Kling 2.5 Turbo est puissant dans MaxVideoAI",
+    "whyTitle": "Pourquoi Kling 2.5 Turbo est puissant dans Perzia AI",
     "heroHighlights": [
       "1080p par défaut pour du metraje net",
       "Clips 5 ou 10 s pour des beats ciné",
@@ -111,10 +111,10 @@
       "B-roll/loops économiques via Standard",
       "Intros sociales courtes où 10 s suffit"
     ],
-    "whatTitle": "Ce qu’est Kling 2.5 Turbo dans MaxVideoAI",
+    "whatTitle": "Ce qu’est Kling 2.5 Turbo dans Perzia AI",
     "whatIntro1": "Modèle vidéo court haute performance pour motion ciné, bon respect du prompt et style cohérent.",
-    "whatIntro2": "Dans MaxVideoAI c’est un moteur multitier, switchable par rendu.",
-    "whatFlowTitle": "Flux MaxVideoAI",
+    "whatIntro2": "Dans Perzia AI c’est un moteur multitier, switchable par rendu.",
+    "whatFlowTitle": "Flux Perzia AI",
     "whatFlowSteps": [
       "1. Choisir Kling 2.5 Turbo.",
       "2. Texte → Vidéo (Pro Text) ou Image → Vidéo (Pro Image / Standard).",
@@ -124,8 +124,8 @@
       "6. Vérifier le prix exact avant rendu.",
       "7. Comparer à Sora, Veo, Wan, MiniMax dans la même app."
     ],
-    "specTitle": "Specs réelles – Kling 2.5 Turbo dans MaxVideoAI (1080p, 5–10 s)",
-    "specNote": "Telles qu’utilisées dans MaxVideoAI.",
+    "specTitle": "Specs réelles – Kling 2.5 Turbo dans Perzia AI (1080p, 5–10 s)",
+    "specNote": "Telles qu’utilisées dans Perzia AI.",
     "specSections": [
       {
         "title": "Durée & sortie",
@@ -177,7 +177,7 @@
     ],
     "specValueProp": "Kling 2.5 Turbo est un moteur 1080p silencieux pour beats courts et ciné avec bon motion/physique.",
     "galleryTitle": "Galerie : Kling 2.5 Turbo",
-    "galleryIntro": "Runs réels de la route Kling actuelle dans MaxVideoAI.",
+    "galleryIntro": "Runs réels de la route Kling actuelle dans Perzia AI.",
     "gallerySceneCta": "Ouvrir cette scène dans Generate et l’adapter à votre script →",
     "galleryAllCta": "Voir tous les exemples Kling 2.5 Turbo →",
     "recreateLabel": "Recréer ce plan →",
@@ -247,7 +247,7 @@
       "Pas de contenu sexuel explicite ni de mineurs sexualisés",
       "Pas de haine, harcèlement ou extrémisme",
       "Pas d’usage de ressemblance sans consentement; évitez l’IP",
-      "Modération fournisseur + MaxVideoAI peut bloquer/ajuster"
+      "Modération fournisseur + Perzia AI peut bloquer/ajuster"
     ],
     "safetyInterpretation": [
       "Utilisez Kling pour du contenu légal, éthique et brand-safe"
@@ -262,7 +262,7 @@
       "Pika 2.2 : animation stylisée et silencieuse pour loops et visuels ludiques"
     ],
     "comparisonCta": "Comparer Kling vs Sora 2 Pro →",
-    "faqTitle": "FAQ – Kling 2.5 Turbo dans MaxVideoAI",
+    "faqTitle": "FAQ – Kling 2.5 Turbo dans Perzia AI",
     "faqs": [
       { "q": "Kling 2.5 Turbo génère-t-il de l’audio ?", "a": "Non. Vidéo seule et silencieuse; ajoutez le son en post ou via des moteurs audio." },
       { "q": "Quelles durées/ratios sont supportées ?", "a": "5 ou 10 s; 16:9, 9:16, 1:1 en texte et image." },
@@ -271,9 +271,10 @@
       { "q": "Quand choisir un autre moteur ?", "a": "Sora/Veo/Wan pour audio natif; Pika pour styles/pixel; Sora/Veo pour mini-histoires audio." }
     ],
     "relatedTitle": "Explorer d’autres modèles",
-    "relatedSubtitle": "Comparez prix, latence et sorties dans le catalogue MaxVideoAI.",
-    "finalPara1": "Kling 2.5 Turbo dans MaxVideoAI est votre moteur 1080p, silencieux et ciné pour des beats courts et percutants.",
+    "relatedSubtitle": "Comparez prix, latence et sorties dans le catalogue Perzia AI.",
+    "finalPara1": "Kling 2.5 Turbo dans Perzia AI est votre moteur 1080p, silencieux et ciné pour des beats courts et percutants.",
     "finalPara2": "Utilisez-le quand caméra et motion portent l’histoire, puis ajoutez l’audio en post ou via des moteurs audio.",
     "finalButton": "Ouvrir Generate"
   }
 }
+

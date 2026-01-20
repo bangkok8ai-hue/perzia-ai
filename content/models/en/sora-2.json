@@ -3,12 +3,12 @@
   "versionLabel": "2",
   "seo": {
     "title": "Sora 2 – Generate AI Videos from Text or Image with Sound",
-    "description": "Create rich AI-generated videos from text or image prompts using Sora 2. Native voice-over, ambient effects, and motion sync via MaxVideoAI.",
+    "description": "Create rich AI-generated videos from text or image prompts using Sora 2. Native voice-over, ambient effects, and motion sync via Perzia AI.",
     "image": "https://videohub-uploads-us.s3.amazonaws.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/a5cbd8d3-33c7-47b5-8480-7f23aab89891-job_684c1b3d-2679-40d1-adb7-06151b3e8739.jpg"
   },
   "hero": {
-    "title": "Sora 2 – AI Text-to-Video & Image-to-Video in MaxVideoAI (720p, 4–12s)",
-    "intro": "Sora 2 – Cinematic AI Video, Directly in MaxVideoAI (4–12s, 720p)",
+    "title": "Sora 2 – AI Text-to-Video & Image-to-Video in Perzia AI (720p, 4–12s)",
+    "intro": "Sora 2 – Cinematic AI Video, Directly in Perzia AI (4–12s, 720p)",
     "badge": "720p · 4–12s · Text or Image input",
     "ctaPrimary": {
       "label": "Start generating with Sora 2",
@@ -22,10 +22,10 @@
     ]
   },
   "custom": {
-    "heroDesc1": "Create short, cinematic videos with Sora 2 straight from your browser. MaxVideoAI gives you instant access to Sora 2 text-to-video and image-to-video, with transparent per-second pricing and a workspace built for testing, prototyping and producing social-ready clips.",
+    "heroDesc1": "Create short, cinematic videos with Sora 2 straight from your browser. Perzia AI gives you instant access to Sora 2 text-to-video and image-to-video, with transparent per-second pricing and a workspace built for testing, prototyping and producing social-ready clips.",
     "heroDesc2": "Describe your scene, choose a duration (4, 8 or 12 seconds), pick 16:9 or 9:16, and let Sora 2 generate polished footage you can use in ads, content or client work.",
     "secondaryCta": "Compare Sora 2 vs Sora 2 Pro (1080p) →",
-    "whyTitle": "Why Sora 2 is powerful inside MaxVideoAI:",
+    "whyTitle": "Why Sora 2 is powerful inside Perzia AI:",
     "heroHighlights": [
       "Text → Video and Image → Video in one place",
       "Multi-shot / sequenced prompts for mini-stories in a single clip",
@@ -40,10 +40,10 @@
       "Product hero visuals",
       "Storyboards & concept tests"
     ],
-    "whatTitle": "What Sora 2 Actually Is in MaxVideoAI",
+    "whatTitle": "What Sora 2 Actually Is in Perzia AI",
     "whatIntro1": "On paper, OpenAI Sora 2 is OpenAI’s short-form text-to-video engine. In practice, the way it behaves for you depends on how it’s integrated.",
-    "whatIntro2": "In MaxVideoAI, Sora 2 is exposed as a focused, production-ready engine:",
-    "whatFlowTitle": "MaxVideoAI wraps all of this in a simple flow:",
+    "whatIntro2": "In Perzia AI, Sora 2 is exposed as a focused, production-ready engine:",
+    "whatFlowTitle": "Perzia AI wraps all of this in a simple flow:",
     "whatFlowSteps": [
       "1. Pick Sora 2 as the engine.",
       "2. Choose Text → Video or Image → Video.",
@@ -52,8 +52,8 @@
       "5. See the final price per clip before you generate.",
       "6. Compare against other engines in the same GUI."
     ],
-    "specTitle": "Real Specs – Sora 2 in MaxVideoAI (720p, 4–12s)",
-    "specNote": "These specs describe Sora 2 exactly as you can use it today via MaxVideoAI – not theoretical capabilities.",
+    "specTitle": "Real Specs – Sora 2 in Perzia AI (720p, 4–12s)",
+    "specNote": "These specs describe Sora 2 exactly as you can use it today via Perzia AI – not theoretical capabilities.",
     "specSections": [
       {
         "title": "Duration & Output",
@@ -96,10 +96,10 @@
         ]
       }
     ],
-    "specValueProp": "Key value proposition: Sora 2 in MaxVideoAI is the fastest way to test ideas, prototypes and social concepts – you get studio-style motion & sound at a predictable cost per second.",
+    "specValueProp": "Key value proposition: Sora 2 in Perzia AI is the fastest way to test ideas, prototypes and social concepts – you get studio-style motion & sound at a predictable cost per second.",
     "microCta": "Start generating with Sora 2 →",
     "galleryTitle": "Example Gallery: Real Sora 2 Outputs",
-    "galleryIntro": "See a handful of live Sora 2 renders powered by the same settings you have in MaxVideoAI.",
+    "galleryIntro": "See a handful of live Sora 2 renders powered by the same settings you have in Perzia AI.",
     "gallerySceneCta": "Open this scene in Generate and adapt it with your own brand →",
     "galleryAllCta": "View all Sora 2 examples →",
     "recreateLabel": "Recreate this shot →",
@@ -114,9 +114,9 @@
       "Format & duration – mention 16:9 or 9:16 and whether it’s a 4, 8 or 12 second moment"
     ],
     "promptSkeleton": "Wide shot of [subject] in [environment], lit by [lighting], camera [movement], 8 seconds, 16:9, cinematic, natural colors.",
-    "promptSkeletonNote": "Drop that into MaxVideoAI, choose Sora 2, and you’re off.",
+    "promptSkeletonNote": "Drop that into Perzia AI, choose Sora 2, and you’re off.",
     "imageTitle": "Image-to-Video Workflow with Sora 2 (+ Nano Banana)",
-    "imageIntro": "One advantage of Sora in MaxVideoAI is pairing it with an image engine like Nano Banana.",
+    "imageIntro": "One advantage of Sora in Perzia AI is pairing it with an image engine like Nano Banana.",
     "imageFlow": [
       "Generate a reference frame in Nano Banana that matches your brand style or idea.",
       "Send that still into Sora 2 as Image → Video.",
@@ -180,7 +180,7 @@
       "Generic characters and scenes are fine.",
       "Famous people or sensitive prompts may be blocked."
     ],
-    "safetyNote": "This is how both MaxVideoAI and Sora 2 stay usable and safe for professionals.",
+    "safetyNote": "This is how both Perzia AI and Sora 2 stay usable and safe for professionals.",
     "comparisonTitle": "Sora 2 vs Sora 2 Pro – Quick Overview",
     "comparisonPoints": [
       "Sora 2 is your fast 720p idea machine.",
@@ -188,7 +188,7 @@
       "Storyboard with Sora 2, then regenerate finals in Sora 2 Pro with 1080p and audio control."
     ],
     "comparisonCta": "Start with Sora 2, move to Sora 2 Pro when you’re ready for 1080p →",
-    "faqTitle": "FAQ – Sora 2 in MaxVideoAI",
+    "faqTitle": "FAQ – Sora 2 in Perzia AI",
     "faqs": [
       {
         "q": "Is Sora 2 available in Europe / the UK?",
@@ -212,9 +212,10 @@
       }
     ],
     "relatedTitle": "Explore other models",
-    "relatedSubtitle": "Compare pricing, latency, and output options across other engines available in MaxVideoAI.",
-    "finalPara1": "Sora 2 in MaxVideoAI gives you a direct, pay-as-you-go way to use one of the most impressive short-form video models available – without infrastructure setup or guesswork.",
+    "relatedSubtitle": "Compare pricing, latency, and output options across other engines available in Perzia AI.",
+    "finalPara1": "Sora 2 in Perzia AI gives you a direct, pay-as-you-go way to use one of the most impressive short-form video models available – without infrastructure setup or guesswork.",
     "finalPara2": "Use it to explore ideas, build mini-sequences, and test creative directions fast. When you need more resolution or control, you can always step up to Sora 2 Pro.",
     "finalButton": "Start generating with Sora 2 now →"
   }
 }
+

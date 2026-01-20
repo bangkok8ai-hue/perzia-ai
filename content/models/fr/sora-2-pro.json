@@ -3,7 +3,7 @@
   "versionLabel": "Pro",
   "seo": {
     "title": "Sora 2 Pro – Vidéos IA plus longues avec audio et contrôle avancé des invites",
-    "description": "Créez des vidéos IA plus longues et plus immersives à partir de texte ou d'images avec Sora 2 Pro. Voix native, ambiance sonore, enchaînement de prompts et contrôle avancé via MaxVideoAI.",
+    "description": "Créez des vidéos IA plus longues et plus immersives à partir de texte ou d'images avec Sora 2 Pro. Voix native, ambiance sonore, enchaînement de prompts et contrôle avancé via Perzia AI.",
     "image": "https://videohub-uploads-us.s3.amazonaws.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/a5cbd8d3-33c7-47b5-8480-7f23aab89891-job_684c1b3d-2679-40d1-adb7-06151b3e8739.jpg"
   },
   "hero": {
@@ -34,7 +34,7 @@
     "heroDesc1": "Sora 2 Pro est le grand frère 720p/1080p de Sora 2. Vous obtenez des clips plus cinématographiques, un contrôle explicite de l'audio et un chaînage de prompts plus riche pour des séquences multi-temps — idéal pour des publicités, bandes-annonces et livrables clients.",
     "heroDesc2": "Prototypage rapide avec Sora 2, puis passage à Sora 2 Pro pour régénérer vos plans gagnants en 1080p avec plus de contrôle sur le rythme, le mouvement et le son.",
     "secondaryCta": "Comparer avec Sora 2 (720p) →",
-    "whyTitle": "Pourquoi Sora 2 Pro dans MaxVideoAI :",
+    "whyTitle": "Pourquoi Sora 2 Pro dans Perzia AI :",
     "heroHighlights": [
       "Sortie 720p ou 1080p prête pour les clients",
       "Rendus 4–12s avec contrôle cinématographique renforcé",
@@ -42,8 +42,8 @@
       "Chaînage de prompts pour une continuité multi-scènes",
       "Parcours Sora 2 (proto) → Sora 2 Pro (finalisation)"
     ],
-    "specTitle": "Specs réelles – Sora 2 Pro dans MaxVideoAI (720p/1080p, 4–12s)",
-    "specNote": "Ces specs reflètent Sora 2 Pro tel qu'exposé dans MaxVideoAI—config production, pas de démo théorique.",
+    "specTitle": "Specs réelles – Sora 2 Pro dans Perzia AI (720p/1080p, 4–12s)",
+    "specNote": "Ces specs reflètent Sora 2 Pro tel qu'exposé dans Perzia AI—config production, pas de démo théorique.",
     "specSections": [
       {
         "title": "Durée & sortie",
@@ -71,7 +71,7 @@
       {
         "title": "Audio",
         "items": [
-          "Bascule audio dans MaxVideoAI (on/off)",
+          "Bascule audio dans Perzia AI (on/off)",
           "Voix off + couches d'ambiance prises en charge",
           "Écrivez vos repères audio dans le prompt"
         ]
@@ -79,7 +79,7 @@
       {
         "title": "Tarifs",
         "items": [
-          "Coût/seconde plus élevé que Sora 2 (taux affiché dans Generate inclut la marge MaxVideoAI)",
+          "Coût/seconde plus élevé que Sora 2 (taux affiché dans Generate inclut la marge Perzia AI)",
           "Facturation transparente au temps généré",
           "Vérifiez le tarif en direct dans Generate avant de lancer"
         ]
@@ -88,7 +88,7 @@
     "specValueProp": "Sora 2 Pro sert les sorties 1080p polies avec contrôle audio et continuité multi-scènes—parfait une fois vos explorations Sora 2 validées.",
     "microCta": "Commencer avec Sora 2 Pro →",
     "galleryTitle": "Galerie d'exemples : rendus Sora 2 Pro",
-    "galleryIntro": "Découvrez des clips 1080p multi-beats réalisés avec Sora 2 Pro dans MaxVideoAI.",
+    "galleryIntro": "Découvrez des clips 1080p multi-beats réalisés avec Sora 2 Pro dans Perzia AI.",
     "gallerySceneCta": "Ouvrir cette scène dans Generate et l'adapter à votre marque →",
     "galleryAllCta": "Voir tous les exemples Sora 2 Pro →",
     "recreateLabel": "Recréer ce plan Pro →",
@@ -174,11 +174,11 @@
       "Même workflow : changez d'engin dans la même interface pour upscaler."
     ],
     "comparisonCta": "Comparer Sora 2 et Sora 2 Pro →",
-    "faqTitle": "FAQ – Sora 2 Pro dans MaxVideoAI",
+    "faqTitle": "FAQ – Sora 2 Pro dans Perzia AI",
     "faqs": [
       {
         "q": "Sora 2 Pro propose-t-il un contrôle audio ?",
-        "a": "Oui. Activez/désactivez l'audio dans MaxVideoAI et écrivez vos repères (voix, ambiance, FX) dans le prompt."
+        "a": "Oui. Activez/désactivez l'audio dans Perzia AI et écrivez vos repères (voix, ambiance, FX) dans le prompt."
       },
       {
         "q": "Est-ce plus cher que Sora 2 ?",
@@ -194,8 +194,8 @@
       }
     ],
     "relatedTitle": "Explorer d'autres modèles",
-    "relatedSubtitle": "Comparez tarifs, latence et options de sortie sur les autres moteurs MaxVideoAI.",
-    "finalPara1": "Sora 2 Pro dans MaxVideoAI sert les sorties premium, prêtes pour les clients, avec contrôle du mouvement, de l'audio et de la continuité.",
+    "relatedSubtitle": "Comparez tarifs, latence et options de sortie sur les autres moteurs Perzia AI.",
+    "finalPara1": "Sora 2 Pro dans Perzia AI sert les sorties premium, prêtes pour les clients, avec contrôle du mouvement, de l'audio et de la continuité.",
     "finalPara2": "Prototypage en Sora 2, puis passage à Sora 2 Pro pour polir et livrer en 1080p.",
     "finalButton": "Générer avec Sora 2 Pro →"
   },
@@ -222,8 +222,8 @@
       "label": "Résolution",
       "body": "Livraison 1080p en 16:9, 9:16, 1:1",
       "link": {
-        "label": "Docs MaxVideoAI",
-        "href": "https://docs.maxvideoai.com/engines/sora-2-pro"
+        "label": "Docs Perzia AI",
+        "href": "https://docs.Perzia AI.com/engines/sora-2-pro"
       }
     },
     {
@@ -235,7 +235,7 @@
       "body": "Prompts texte, images de référence ou storyboard",
       "link": {
         "label": "Tutoriel storyboard",
-        "href": "https://blog.maxvideoai.com/storyboard-sora-pro"
+        "href": "https://blog.Perzia AI.com/storyboard-sora-pro"
       }
     },
     {
@@ -244,7 +244,7 @@
     },
     {
       "label": "Tarification",
-      "body": "Tarification dynamique via le wallet MaxVideoAI — ouvrez la page Generate pour connaître le tarif actuel."
+      "body": "Tarification dynamique via le wallet Perzia AI — ouvrez la page Generate pour connaître le tarif actuel."
     }
   ],
   "promptStructure": {
@@ -297,3 +297,4 @@
   ],
   "pricingNotes": "Les prix évoluent directement dans Generate. Vérifiez le tarif en direct avant de lancer un rendu."
 }
+

@@ -2,11 +2,11 @@
   "marketingName": "Kling 2.6 Pro",
   "versionLabel": "v2.6 Pro",
   "seo": {
-    "title": "Kling 2.6 Pro – Vidéo IA texte et image avec audio natif | MaxVideoAI",
-    "description": "Générez des vidéos IA cinématographiques avec Kling 2.6 Pro dans MaxVideoAI. Transformez textes ou images en clips courts avec dialogues, ambiance et effets sonores natifs — parfait pour le storytelling, les publicités produits, les vidéos sociales et le préviz VFX.",
+    "title": "Kling 2.6 Pro – Vidéo IA texte et image avec audio natif | Perzia AI",
+    "description": "Générez des vidéos IA cinématographiques avec Kling 2.6 Pro dans Perzia AI. Transformez textes ou images en clips courts avec dialogues, ambiance et effets sonores natifs — parfait pour le storytelling, les publicités produits, les vidéos sociales et le préviz VFX.",
     "image": "https://videohub-uploads-us.s3.amazonaws.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/4db8923c-6762-47af-a0bd-5d50c28842f6-job_45f1fe48-ed93-452d-819b-9b956cd2d489.jpg"
   },
-  "overview": "Kling 2.6 Pro dans MaxVideoAI : clips courts cinématographiques avec audio natif, texte ou image, 1080p, 5–10 s, audio on/off.",
+  "overview": "Kling 2.6 Pro dans Perzia AI : clips courts cinématographiques avec audio natif, texte ou image, 1080p, 5–10 s, audio on/off.",
   "hero": {
     "title": "Kling 2.6 Pro – Vidéo IA cinématographique avec audio natif",
     "intro": "Vidéo IA cinématographique avec audio natif, idéale pour les histoires émotionnelles, les pubs produits et les effets spéciaux.",
@@ -82,7 +82,7 @@
     { "q": "Quelles durées ?", "a": "5–10 s conseillées ; assembler plusieurs rendus pour plus long." }
   ],
   "custom": {
-    "whyTitle": "Pourquoi Kling 2.6 Pro dans MaxVideoAI",
+    "whyTitle": "Pourquoi Kling 2.6 Pro dans Perzia AI",
     "heroDesc1": "Clips ciné 5–10 s où vidéo, dialogues, ambiance, effets sonores et musique sont générés ensemble en 1080p. Texte ou image dans une seule carte, avec audio natif en anglais et chinois inclus.",
     "heroDesc2": "À choisir pour des rendus émotionnels avec son totalement synchronisé ; coupez l’audio pour des brouillons muets ou un sound design manuel.",
     "heroHighlights": [
@@ -134,7 +134,7 @@
         ]
       }
     ],
-    "whatTitle": "Comment utiliser Kling 2.6 Pro dans MaxVideoAI",
+    "whatTitle": "Comment utiliser Kling 2.6 Pro dans Perzia AI",
     "whatIntro1": "Choisissez texte ou image, 5 ou 10 s en 1080p, ratio 16:9 / 9:16 / 1:1, toggle audio, puis prompt.",
     "whatIntro2": "Parfait pour des clips courts avec dialogues et ambiance synchronisés.",
     "whatFlowTitle": "Parcours",
@@ -173,3 +173,4 @@
     ]
   }
 }
+

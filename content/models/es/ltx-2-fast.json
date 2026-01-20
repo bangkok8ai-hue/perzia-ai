@@ -2,11 +2,11 @@
   "marketingName": "LTX-2 Fast",
   "versionLabel": "Fast",
   "seo": {
-    "title": "LTX-2 Fast – Vídeo IA rápido con audio | MaxVideoAI",
+    "title": "LTX-2 Fast – Vídeo IA rápido con audio | Perzia AI",
     "description": "Genera vídeos IA cinematográficos en segundos con LTX-2 Fast. Convierte texto o imágenes en clips de 6 a 20 segundos con audio sincronizado y resolución de hasta 4K, ideal para contenido social y pruebas rápidas.",
     "image": "https://videohub-uploads-us.s3.amazonaws.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/1bd62e34-0e55-4f49-b434-295276b991d4-job_d895c3b0-562a-4e36-ae06-4ce083a47126.jpg"
   },
-  "overview": "LTX-2 Fast en MaxVideoAI: 6–20 s, 1080p/1440p/4K, 25 o 50 fps, texto o imagen, audio nativo on/off, cobro por segundo.",
+  "overview": "LTX-2 Fast en Perzia AI: 6–20 s, 1080p/1440p/4K, 25 o 50 fps, texto o imagen, audio nativo on/off, cobro por segundo.",
   "hero": {
     "title": "LTX-2 Fast – Vídeo IA con audio nativo",
     "intro": "Vídeo IA de hasta 20 segundos con audio nativo. Perfecto para tests, redes sociales y iteraciones rápidas.",
@@ -90,7 +90,7 @@
     { "q": "¿Aspectos soportados?", "a": "16:9 en esta ruta Fast." }
   ],
   "custom": {
-    "whyTitle": "Por qué LTX-2 Fast en MaxVideoAI",
+    "whyTitle": "Por qué LTX-2 Fast en Perzia AI",
     "heroDesc1": "Genera clips de 6 a 20 segundos con audio nativo, 1080p–4K y 25/50 fps en una tarjeta. LTX-2 Fast es el nivel “instantáneo” de la familia LTX-2: perfecto para cortes sociales rápidos, borradores, storyboards y mood pieces cuando quieres 4K sin esperar.",
     "heroDesc2": "Por encima de 10 s bloqueamos 1080p/25 fps según el routing Fal para mantener la estabilidad.",
     "heroHighlights": [
@@ -150,7 +150,7 @@
         ]
       }
     ],
-    "whatTitle": "Cómo usar LTX-2 Fast en MaxVideoAI",
+    "whatTitle": "Cómo usar LTX-2 Fast en Perzia AI",
     "whatIntro1": "Elige texto o imagen, define 6–20 s, resolución y fps. Audio activado por defecto, se puede apagar.",
     "whatIntro2": "Para 12–20 s bloqueamos 1080p/25 fps según el routing Fal.",
     "whatFlowTitle": "Flujo",
@@ -241,3 +241,4 @@
     "finalButton": "Abrir LTX-2 Fast en Generate →"
   }
 }
+

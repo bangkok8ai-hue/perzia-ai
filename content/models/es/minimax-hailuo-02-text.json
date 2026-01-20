@@ -2,11 +2,11 @@
   "marketingName": "MiniMax Hailuo 02",
   "versionLabel": "02",
   "seo": {
-    "title": "Minimax Hailuo-02 texto→video modelo IA – MaxVideoAI",
-    "description": "Genera borradores de MiniMax Hailuo 02 a bajo coste en 512p/768p desde texto o imágenes. Crea clips silenciosos de 6–10 segundos para storyboards, loops y pruebas de movimiento y luego lleva los ganadores a Veo, Kling, Wan o Sora dentro de MaxVideoAI.",
+    "title": "Minimax Hailuo-02 texto→video modelo IA – Perzia AI",
+    "description": "Genera borradores de MiniMax Hailuo 02 a bajo coste en 512p/768p desde texto o imágenes. Crea clips silenciosos de 6–10 segundos para storyboards, loops y pruebas de movimiento y luego lleva los ganadores a Veo, Kling, Wan o Sora dentro de Perzia AI.",
     "image": "/hero/minimax-video01.jpg"
   },
-  "overview": "MiniMax Hailuo 02 en MaxVideoAI: clips cortos y económicos con buena física en 512p/768p, 6 o 10 s. Entrada texto o imagen, frame final opcional, salida silenciosa y pricing por wallet para bocetar rápido.",
+  "overview": "MiniMax Hailuo 02 en Perzia AI: clips cortos y económicos con buena física en 512p/768p, 6 o 10 s. Entrada texto o imagen, frame final opcional, salida silenciosa y pricing por wallet para bocetar rápido.",
   "hero": {
     "title": "MiniMax Hailuo 02 – Bocetos de video IA económicos con buena física",
     "intro": "MiniMax Hailuo 02 – Drafts rápidos y estilizados con buena física (6–10 s, silencioso)",
@@ -81,14 +81,14 @@
   "faqs": [
     { "q": "¿Por qué elegir MiniMax en vez de motores premium?", "a": "Buena física/motion a menor costo por segundo; ideal para ads de volumen y pruebas." },
     { "q": "¿Qué estilo de prompt funciona mejor?", "a": "2–3 frases con sujeto, entorno, cámara y física; una idea principal por clip." },
-    { "q": "¿Soporta vertical?", "a": "Sí—16:9, 9:16, 1:1 disponibles en MaxVideoAI." },
+    { "q": "¿Soporta vertical?", "a": "Sí—16:9, 9:16, 1:1 disponibles en Perzia AI." },
     { "q": "¿Soporta audio?", "a": "No. Salida silenciosa; añade sonido en post o con motores con audio." },
     { "q": "¿Y si necesito 1080p?", "a": "Boceta en Hailuo 02 (512p/768p) y luego upscale o re-ejecuta en 1080p (Veo, Kling, Wan, Sora 2 Pro)." }
   ],
   "custom": {
     "heroDesc1": "Genera drafts rápidos con física en 512p/768p desde texto o una imagen, con frame final opcional para fijar el cierre.",
     "heroDesc2": "Elige 6 o 10 s, 16:9/9:16/1:1, y obtén clips silenciosos listos para storyboards, loops y pruebas de motion.",
-    "whyTitle": "Por qué MiniMax Hailuo 02 es potente en MaxVideoAI",
+    "whyTitle": "Por qué MiniMax Hailuo 02 es potente en Perzia AI",
     "heroHighlights": [
       "Texto → Video e Imagen → Video en un motor",
       "Clips de 6 o 10 s para intros y pruebas de motion",
@@ -106,10 +106,10 @@
       "Loops y fondos experimentales",
       "Campañas multivariantes económicas"
     ],
-    "whatTitle": "Qué es MiniMax Hailuo 02 en MaxVideoAI",
+    "whatTitle": "Qué es MiniMax Hailuo 02 en Perzia AI",
     "whatIntro1": "Modelo insignia de MiniMax para secuencias cortas con buena física y apego al prompt.",
-    "whatIntro2": "En MaxVideoAI es un motor rápido y silencioso en 512p/768p.",
-    "whatFlowTitle": "Flujo MaxVideoAI",
+    "whatIntro2": "En Perzia AI es un motor rápido y silencioso en 512p/768p.",
+    "whatFlowTitle": "Flujo Perzia AI",
     "whatFlowSteps": [
       "1. Elige MiniMax Hailuo 02.",
       "2. Selecciona Texto → Video o Imagen → Video.",
@@ -118,8 +118,8 @@
       "5. Pega un prompt breve enfocado en motion (menciona física si aplica).",
       "6. Revisa precio en vivo antes de renderizar."
     ],
-    "specTitle": "Specs reales – MiniMax Hailuo 02 en MaxVideoAI (512p/768p, 6–10 s)",
-    "specNote": "Specs tal como se usan hoy en MaxVideoAI.",
+    "specTitle": "Specs reales – MiniMax Hailuo 02 en Perzia AI (512p/768p, 6–10 s)",
+    "specNote": "Specs tal como se usan hoy en Perzia AI.",
     "specSections": [
       {
         "title": "Duración y salida",
@@ -229,7 +229,7 @@
       "Sin contenido sexual explícito ni menores sexualizados",
       "Evita odio, acoso o extremismo",
       "No suplantes a personas reales sin consentimiento",
-      "Moderación proveedor + MaxVideoAI puede bloquear/ajustar"
+      "Moderación proveedor + Perzia AI puede bloquear/ajustar"
     ],
     "safetyInterpretation": [
       "Úsalo para historias ficticias y brand-safe"
@@ -244,18 +244,19 @@
       "Wan 2.5: 5–10 s con audio nativo o pista subida y varios tiers"
     ],
     "comparisonCta": "Comparar MiniMax vs Pika 2.2 →",
-    "faqTitle": "FAQ – MiniMax Hailuo 02 en MaxVideoAI",
+    "faqTitle": "FAQ – MiniMax Hailuo 02 en Perzia AI",
     "faqs": [
       { "q": "¿Por qué elegir MiniMax en vez de un motor premium?", "a": "Buena motion/física a menor costo; ideal para ads de volumen y pruebas." },
       { "q": "¿Qué estilo de prompt funciona mejor?", "a": "Prompts cortos centrados en motion: sujeto, entorno, cámara, física; una idea por clip." },
-      { "q": "¿Puede hacer vertical?", "a": "Sí—16:9, 9:16, 1:1 en MaxVideoAI." },
+      { "q": "¿Puede hacer vertical?", "a": "Sí—16:9, 9:16, 1:1 en Perzia AI." },
       { "q": "¿Soporta audio?", "a": "No. Salida silenciosa; añade audio en post o con motores con sonido." },
       { "q": "¿Y si necesito 1080p?", "a": "Boceta en 512p/768p y luego upscale o re-ejecuta en 1080p (Veo/Kling/Wan/Sora 2 Pro)." }
     ],
     "relatedTitle": "Explora otros modelos",
-    "relatedSubtitle": "Compara precio, latencia y salidas en el catálogo MaxVideoAI.",
+    "relatedSubtitle": "Compara precio, latencia y salidas en el catálogo Perzia AI.",
     "finalPara1": "MiniMax Hailuo 02 es tu motor rápido con física para tests de motion silenciosos y baratos.",
     "finalPara2": "Explora ideas y luego pasa las ganadoras a modelos de alta gama para audio y finales en 1080p.",
     "finalButton": "Abrir Generate"
   }
 }
+

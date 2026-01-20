@@ -2,11 +2,11 @@
   "marketingName": "Pika 2.2",
   "versionLabel": "2.2",
   "seo": {
-    "title": "Pika 2.2 texte→vidéo & image en vidéo IA – MaxVideoAI",
-    "description": "Générez des vidéos Pika Labs 2.2 sans abonnement. Texte-vers-vidéo et image-vers-vidéo en 5 à 8 secondes, 720p/1080p. Payez uniquement par clip avec MaxVideoAI.",
+    "title": "Pika 2.2 texte→vidéo & image en vidéo IA – Perzia AI",
+    "description": "Générez des vidéos Pika Labs 2.2 sans abonnement. Texte-vers-vidéo et image-vers-vidéo en 5 à 8 secondes, 720p/1080p. Payez uniquement par clip avec Perzia AI.",
     "image": "/hero/pika-22.jpg"
   },
-  "overview": "Pika 2.2 dans MaxVideoAI : clips courts et silencieux (5–8 s) en 720p/1080p depuis un texte ou une image, en 1:1, 16:9 ou 9:16. Idéal pour anime, comics, pixel et 3D ludique pour les feeds sociaux.",
+  "overview": "Pika 2.2 dans Perzia AI : clips courts et silencieux (5–8 s) en 720p/1080p depuis un texte ou une image, en 1:1, 16:9 ou 9:16. Idéal pour anime, comics, pixel et 3D ludique pour les feeds sociaux.",
   "hero": {
     "title": "Pika Labs 2.2 – Texte-vers-Vidéo & Image-vers-Vidéo",
     "intro": "Pika 2.2 – Vidéo IA stylisée pour des clips social-first (5–8 s, 720p/1080p, sans audio)",
@@ -91,7 +91,7 @@
   "custom": {
     "heroDesc1": "Transformez un prompt ou une image en animation stylisée taillée pour TikTok, Reels et le gaming.",
     "heroDesc2": "Choisissez 5 ou 8 secondes, 1:1/16:9/9:16, partez d’un texte ou d’une référence et obtenez un clip silencieux prêt à monter.",
-    "whyTitle": "Pourquoi Pika 2.2 est puissant dans MaxVideoAI",
+    "whyTitle": "Pourquoi Pika 2.2 est puissant dans Perzia AI",
     "heroHighlights": [
       "Texte → Vidéo et Image → Vidéo dans une seule carte",
       "Motion stylisé (anime, comics, look gamer, expérimental) qui ressort en feed",
@@ -99,7 +99,7 @@
       "Sans audio : exports légers à sonoriser comme vous voulez",
       "Seeds et négatifs pour la cohérence et la réduction des artefacts",
       "Pay-as-you-go ; pas d’abonnement Pika Labs",
-      "Disponible Europe/UK/monde via votre wallet MaxVideoAI",
+      "Disponible Europe/UK/monde via votre wallet Perzia AI",
       "Fonctionne avec Sora, Veo, Kling, Wan, MiniMax Hailuo, Nano Banana"
     ],
     "bestUseCasesTitle": "Meilleurs usages",
@@ -110,9 +110,9 @@
       "Visuels ludiques pour gaming, mode, fandom, culture pop",
       "Arrière-plans et motion UI derrière titres/captures"
     ],
-    "whatTitle": "Ce qu’est Pika 2.2 dans MaxVideoAI",
+    "whatTitle": "Ce qu’est Pika 2.2 dans Perzia AI",
     "whatIntro1": "Modèle vidéo court et stylisé pensé pour l’animation social-first.",
-    "whatIntro2": "Dans MaxVideoAI, il est câblé comme moteur silencieux avec contrôle de durée, résolution et ratio.",
+    "whatIntro2": "Dans Perzia AI, il est câblé comme moteur silencieux avec contrôle de durée, résolution et ratio.",
     "whatFlowTitle": "Flux in-app",
     "whatFlowSteps": [
       "1. Choisir Pika 2.2.",
@@ -122,8 +122,8 @@
       "5. Coller un prompt axé style et mouvement.",
       "6. Voir le prix par clip avant de lancer."
     ],
-    "specTitle": "Specs réelles – Pika 2.2 dans MaxVideoAI (720p/1080p, 5–8 s)",
-    "specNote": "Specs telles qu’utilisées aujourd’hui dans MaxVideoAI.",
+    "specTitle": "Specs réelles – Pika 2.2 dans Perzia AI (720p/1080p, 5–8 s)",
+    "specNote": "Specs telles qu’utilisées aujourd’hui dans Perzia AI.",
     "specSections": [
       {
         "title": "Durée & sortie",
@@ -159,7 +159,7 @@
       {
         "title": "Tarifs",
         "items": [
-          "Modèle à la seconde dans MaxVideoAI",
+          "Modèle à la seconde dans Perzia AI",
           "Exemple : perSecondCents720 = 4 ; perSecondCents1080 = 9",
           "720p (~0,04 $/s) : 5s ≈ 0,20 $ ; 8s ≈ 0,32 $",
           "1080p (~0,09 $/s) : 5s ≈ 0,45 $ ; 8s ≈ 0,72 $",
@@ -169,7 +169,7 @@
     ],
     "specValueProp": "Pika 2.2 est le moteur stylisé et silencieux pour clips courts : itération rapide avec seeds/négatifs, parfait pour feeds et motion inserts.",
     "galleryTitle": "Galerie Pika 2.2",
-    "galleryIntro": "Clips curés générés avec la même config que vous avez dans MaxVideoAI.",
+    "galleryIntro": "Clips curés générés avec la même config que vous avez dans Perzia AI.",
     "gallerySceneCta": "Ouvrir cette scène dans Generate et l’adapter à votre marque →",
     "galleryAllCta": "Voir tous les exemples Pika 2.2 →",
     "recreateLabel": "Recréer ce plan →",
@@ -240,12 +240,12 @@
       "Ne recréez pas de personnes réelles, célébrités ou politiques.",
       "Pas de contenu explicite/pornographique/fétichiste ; pas de mineurs sexualisés ; pas de gore graphique.",
       "Évitez le contenu haineux ou harcelant, ou trompeur/nocif.",
-      "Des prompts ou images peuvent être bloqués/ajustés par le fournisseur et MaxVideoAI."
+      "Des prompts ou images peuvent être bloqués/ajustés par le fournisseur et Perzia AI."
     ],
     "safetyInterpretation": [
       "Utilisez des personnages fictifs, des mondes stylisés et du contenu brand-safe."
     ],
-    "safetyNote": "Ces garde-fous gardent Pika 2.2 utilisable et conforme dans MaxVideoAI.",
+    "safetyNote": "Ces garde-fous gardent Pika 2.2 utilisable et conforme dans Perzia AI.",
     "comparisonTitle": "Pika 2.2 vs MiniMax Hailuo 02 – Résumé",
     "comparisonPoints": [
       "Pika 2.2 : clips courts, stylisés et silencieux en 720p/1080p pour looks animés et loops.",
@@ -253,7 +253,7 @@
       "Sora 2 / Wan 2.5 / Veo 3.1 : à choisir quand vous avez besoin d’audio natif ou de plus de réalisme."
     ],
     "comparisonCta": "Comparer Pika 2.2 vs MiniMax Hailuo 02 →",
-    "faqTitle": "FAQ – Pika 2.2 dans MaxVideoAI",
+    "faqTitle": "FAQ – Pika 2.2 dans Perzia AI",
     "faqs": [
       { "q": "Pika 2.2 génère-t-il de l’audio ?", "a": "Non. Clips silencieux ; ajoutez votre bande-son ou utilisez un moteur avec audio." },
       { "q": "Quelle durée choisir ?", "a": "5s pour hooks/loops ; 8s pour un peu plus de narration ou de parallax." },
@@ -262,9 +262,10 @@
       { "q": "Quand changer de moteur ?", "a": "Pour fotoréalisme/audio, utilisez Sora/Veo ; pour audio prêt sur du court, Wan 2.5 ; pour hero shots, Sora 2 Pro ou Veo 3.1." }
     ],
     "relatedTitle": "Explorer d’autres modèles",
-    "relatedSubtitle": "Comparez prix, latence et options de sortie dans le catalogue MaxVideoAI.",
-    "finalPara1": "Pika 2.2 dans MaxVideoAI est votre cheval de bataille stylisé et silencieux pour loops et animation expressive.",
+    "relatedSubtitle": "Comparez prix, latence et options de sortie dans le catalogue Perzia AI.",
+    "finalPara1": "Pika 2.2 dans Perzia AI est votre cheval de bataille stylisé et silencieux pour loops et animation expressive.",
     "finalPara2": "Esquissez vos hooks ici, puis passez les gagnants à Sora ou Veo pour réalisme ou audio natif.",
     "finalButton": "Ouvrir Generate"
   }
 }
+

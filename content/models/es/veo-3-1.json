@@ -3,12 +3,12 @@
   "versionLabel": "3.1",
   "seo": {
     "title": "Veo 3.1 – Texto→video e imagen→video con audio nativo",
-    "description": "Genera videos cinemáticos de 4–8 s en 720p/1080p con Veo 3.1. Entrada de texto o imagen, presets de encuadre, audio nativo on/off, seeds, extend y pago por uso en MaxVideoAI.",
+    "description": "Genera videos cinemáticos de 4–8 s en 720p/1080p con Veo 3.1. Entrada de texto o imagen, presets de encuadre, audio nativo on/off, seeds, extend y pago por uso en Perzia AI.",
     "image": "/hero/veo3.jpg"
   },
-  "overview": "Veo 3.1 en MaxVideoAI: clips de 4–8 s en 720p/1080p, entrada texto o imagen, presets de encuadre/tono, audio nativo con interruptor, seeds y Extend, precio por segundo.",
+  "overview": "Veo 3.1 en Perzia AI: clips de 4–8 s en 720p/1080p, entrada texto o imagen, presets de encuadre/tono, audio nativo con interruptor, seeds y Extend, precio por segundo.",
   "hero": {
-    "title": "Veo 3.1 – Texto→video e imagen→video en MaxVideoAI (720p/1080p, 4–8 s)",
+    "title": "Veo 3.1 – Texto→video e imagen→video en Perzia AI (720p/1080p, 4–8 s)",
     "intro": "Veo 3.1 – Video cinemático con audio nativo y control de encuadre (4–8 s, 720p/1080p)",
     "badge": "720p/1080p · 4–8 s · Entrada de texto o imagen",
     "ctaPrimary": {
@@ -80,16 +80,16 @@
     }
   ],
   "faqs": [
-    { "q": "¿Está disponible Veo 3.1 en Europa o UK?", "a": "Sí. MaxVideoAI enruta Veo vía endpoints licenciados de DeepMind; no necesitas contratos separados." },
+    { "q": "¿Está disponible Veo 3.1 en Europa o UK?", "a": "Sí. Perzia AI enruta Veo vía endpoints licenciados de DeepMind; no necesitas contratos separados." },
     { "q": "¿Puede generar video vertical?", "a": "Sí: 16:9, 9:16 y 1:1. Elige 9:16 para Reels/TikTok/Shorts y centra la acción." },
     { "q": "¿Admite imagen→video?", "a": "Sí. Empieza con un still (Imagen→Video) o usa 1–4 imágenes de referencia en Texto→Video." },
     { "q": "¿Puedo pasar de 8 segundos?", "a": "Bases de 4/6/8 s. Usa Extend y encadena clips; cada extensión es otro bloque de 4–8 s." },
     { "q": "¿Cómo lo mantengo on-brand?", "a": "Usa stills de referencia (Nano Banana o librería de marca), descripciones consistentes y paleta/luz explícitas." }
   ],
   "custom": {
-    "heroDesc1": "Genera videos cortos y cinematográficos con Veo 3.1 (DeepMind) dentro de tu workspace de MaxVideoAI: texto→video, imagen→video, presets de encuadre y audio nativo, con precio transparente por segundo.",
+    "heroDesc1": "Genera videos cortos y cinematográficos con Veo 3.1 (DeepMind) dentro de tu workspace de Perzia AI: texto→video, imagen→video, presets de encuadre y audio nativo, con precio transparente por segundo.",
     "heroDesc2": "Describe la escena, elige 4, 6 u 8 segundos, selecciona 16:9, 9:16 o 1:1, decide si quieres audio nativo, y deja que Veo 3.1 entregue metraje pulido para anuncios, explainers, campañas y trabajo con clientes.",
-    "whyTitle": "Por qué Veo 3.1 es potente en MaxVideoAI:",
+    "whyTitle": "Por qué Veo 3.1 es potente en Perzia AI:",
     "heroHighlights": [
       "Texto → Video, Imagen → Video y referencia multi-imagen en un solo lugar",
       "Controles cinematográficos para encuadre, tono y movimiento antes de renderizar",
@@ -107,10 +107,10 @@
       "Explicativos cortos, educación y B-roll cinemático",
       "Pre-viz y tests de concepto donde importa el lenguaje de cámara"
     ],
-    "whatTitle": "Qué es realmente Veo 3.1 en MaxVideoAI",
+    "whatTitle": "Qué es realmente Veo 3.1 en Perzia AI",
     "whatIntro1": "Sobre el papel, Veo 3.1 es el modelo de video de formato corto más reciente de DeepMind, con audio más rico y mejor adherencia al prompt.",
-    "whatIntro2": "En MaxVideoAI, Veo 3.1 se expone como un motor controlado y listo para producción:",
-    "whatFlowTitle": "Flujo MaxVideoAI:",
+    "whatIntro2": "En Perzia AI, Veo 3.1 se expone como un motor controlado y listo para producción:",
+    "whatFlowTitle": "Flujo Perzia AI:",
     "whatFlowSteps": [
       "1. Elige Veo 3.1 como motor.",
       "2. Selecciona Texto → Video o Imagen → Video.",
@@ -119,8 +119,8 @@
       "5. Ve el precio final por clip antes de generar.",
       "6. Compara con otros motores en la misma interfaz."
     ],
-    "specTitle": "Specs reales – Veo 3.1 en MaxVideoAI (720p/1080p, 4–8 s)",
-    "specNote": "Estas specs describen Veo 3.1 exactamente como lo puedes usar hoy vía MaxVideoAI — no demos teóricas de laboratorio.",
+    "specTitle": "Specs reales – Veo 3.1 en Perzia AI (720p/1080p, 4–8 s)",
+    "specNote": "Estas specs describen Veo 3.1 exactamente como lo puedes usar hoy vía Perzia AI — no demos teóricas de laboratorio.",
     "specSections": [
       {
         "title": "Duración y salida",
@@ -158,11 +158,11 @@
       {
         "title": "Precio",
         "items": [
-          "Por segundo dentro de MaxVideoAI",
+          "Por segundo dentro de Perzia AI",
           "Ejemplo de config: perSecondCentsAudioOn = 40; perSecondCentsAudioOff = 20",
           "Audio on (~$0.40/s): 4 s ≈ $1.60; 6 s ≈ $2.40; 8 s ≈ $3.20",
           "Audio off (~$0.20/s): 4 s ≈ $0.80; 6 s ≈ $1.20; 8 s ≈ $1.60",
-          "Sin suscripción: recarga tu wallet de MaxVideoAI y previsualiza el precio antes de renderizar"
+          "Sin suscripción: recarga tu wallet de Perzia AI y previsualiza el precio antes de renderizar"
         ]
       },
       {
@@ -172,9 +172,9 @@
         ]
       }
     ],
-    "specValueProp": "Veo 3.1 en MaxVideoAI te da presets de encuadre, control de audio nativo, seeds y Extend—para que se comporte como una cámara dirigible, no como una caja negra.",
+    "specValueProp": "Veo 3.1 en Perzia AI te da presets de encuadre, control de audio nativo, seeds y Extend—para que se comporte como una cámara dirigible, no como una caja negra.",
     "galleryTitle": "Galería de ejemplos: salidas reales de Veo 3.1",
-    "galleryIntro": "Mira renders de Veo 3.1 en vivo con los mismos ajustes que tienes en MaxVideoAI.",
+    "galleryIntro": "Mira renders de Veo 3.1 en vivo con los mismos ajustes que tienes en Perzia AI.",
     "gallerySceneCta": "Abrir esta escena en Generate y adaptarla a tu marca →",
     "galleryAllCta": "Ver todos los ejemplos de Veo 3.1 →",
     "recreateLabel": "Recrear este plano →",
@@ -190,7 +190,7 @@
       "Formato y duración – ej. 8 s, 16:9 (o 9:16 / 1:1)."
     ],
     "promptSkeleton": "Plano medio de [sujeto] en [entorno], [acción clara] en 8 s. Cámara [movimiento], 16:9 a 1080p, look ciné con [luz y color]. Audio: [ambiente] + [música/VO], sin subtítulos.",
-    "promptSkeletonNote": "Pégalo en MaxVideoAI, elige Veo 3.1, ajusta duración/orientación y renderiza.",
+    "promptSkeletonNote": "Pégalo en Perzia AI, elige Veo 3.1, ajusta duración/orientación y renderiza.",
     "imageTitle": "Flujo Imagen→Video con Veo 3.1 (+ Nano Banana)",
     "imageIntro": "Combina Veo 3.1 con Nano Banana para fijar estilo e iterar en movimiento.",
     "imageFlow": [
@@ -252,7 +252,7 @@
     ],
     "safetyInterpretation": [
       "Personajes genéricos y escenas ficticias están bien.",
-      "Aplican políticas del proveedor y marcas de procedencia tipo SynthID; MaxVideoAI añade sus propios filtros."
+      "Aplican políticas del proveedor y marcas de procedencia tipo SynthID; Perzia AI añade sus propios filtros."
     ],
     "safetyNote": "Estas barreras mantienen Veo 3.1 usable y conforme para trabajo profesional.",
     "comparisonTitle": "Veo 3.1 vs Veo 3.1 Fast – Resumen",
@@ -262,9 +262,9 @@
       "Borrador en Veo 3.1 Fast, luego regenera ganadores en Veo 3.1 a 1080p con audio nativo."
     ],
     "comparisonCta": "Comparar Veo 3.1 vs Veo 3.1 Fast →",
-    "faqTitle": "FAQ – Veo 3.1 en MaxVideoAI",
+    "faqTitle": "FAQ – Veo 3.1 en Perzia AI",
     "faqs": [
-      { "q": "¿Está disponible Veo 3.1 en Europa o UK?", "a": "Sí. MaxVideoAI enruta Veo vía endpoints licenciados de DeepMind; no necesitas contratos separados." },
+      { "q": "¿Está disponible Veo 3.1 en Europa o UK?", "a": "Sí. Perzia AI enruta Veo vía endpoints licenciados de DeepMind; no necesitas contratos separados." },
       { "q": "¿Puede generar video vertical?", "a": "Sí: 16:9, 9:16 y 1:1. Elige 9:16 para Reels/TikTok/Shorts y centra la acción." },
       { "q": "¿Admite imagen→video?", "a": "Sí. Empieza con un still (Imagen→Video) o usa 1–4 imágenes de referencia en Texto→Video." },
       { "q": "¿Puedo pasar de 8 segundos?", "a": "Bases de 4/6/8 s. Usa Extend y encadena clips; cada extensión es otro bloque de 4–8 s." },
@@ -272,8 +272,9 @@
     ],
     "relatedTitle": "Explora otros modelos",
     "relatedSubtitle": "Compara precio, latencia y presets con el resto del catálogo.",
-    "finalPara1": "Veo 3.1 en MaxVideoAI te da acceso directo y pago por uso al motor de video de formato corto más controlable de DeepMind.",
+    "finalPara1": "Veo 3.1 en Perzia AI te da acceso directo y pago por uso al motor de video de formato corto más controlable de DeepMind.",
     "finalPara2": "Los controles de encuadre y audio hacen que se sienta como una cámara virtual, no solo otro generador caja negra.",
     "finalButton": "Abrir Generate"
   }
 }
+

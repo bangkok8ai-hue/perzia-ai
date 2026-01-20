@@ -2,11 +2,11 @@
   "marketingName": "Nano Banana",
   "versionLabel": "Imagen",
   "seo": {
-    "title": "Nano Banana – Generación de imágenes fotorrealistas | MaxVideoAI",
+    "title": "Nano Banana – Generación de imágenes fotorrealistas | Perzia AI",
     "description": "Genera imágenes y ediciones fotorrealistas con Nano Banana. Texto→Imagen e Imagen→Imagen para keyframes, miniaturas y referencias antes de animar en Sora, Veo o Kling.",
     "image": "/hero/pika-22.jpg"
   },
-  "overview": "Nano Banana es tu copiloto de imagen en MaxVideoAI. Fija estilo, iluminación y encuadre antes de renderizar video: texto→imagen y edición de imagen con la misma billetera y laboratorio de prompts.",
+  "overview": "Nano Banana es tu copiloto de imagen en Perzia AI. Fija estilo, iluminación y encuadre antes de renderizar video: texto→imagen y edición de imagen con la misma billetera y laboratorio de prompts.",
   "hero": {
     "title": "Nano Banana – Generación de imágenes fotorrealistas",
     "intro": "Genera imágenes, keyframes y product shots coherentes antes de pulsar Render. Nano Banana es tu copiloto de imagen para Sora, Veo, Kling y el resto del stack.",
@@ -112,7 +112,7 @@
   ],
   "pricingNotes": "El precio se muestra en vivo en el workspace. Revisa el chip antes de lanzar un job.",
   "custom": {
-    "whyTitle": "Por qué Nano Banana en MaxVideoAI",
+    "whyTitle": "Por qué Nano Banana en Perzia AI",
     "heroDesc1": "Genera stills y ediciones fotorrealistas para fijar estilo, luz y encuadre antes de animar en Sora, Veo o Kling.",
     "heroDesc2": "Texto→imagen e imagen→imagen comparten el mismo wallet y prompt lab que los motores de video, con 1–8 salidas por ejecución.",
     "heroHighlights": [
@@ -161,3 +161,4 @@
     ]
   }
 }
+

@@ -2,11 +2,11 @@
   "marketingName": "LTX-2 Pro",
   "versionLabel": "Pro",
   "seo": {
-    "title": "LTX-2 Pro – Vidéo IA haute fidélité avec audio | MaxVideoAI",
+    "title": "LTX-2 Pro – Vidéo IA haute fidélité avec audio | Perzia AI",
     "description": "Créez des vidéos IA cinématographiques haut de gamme avec LTX-2 Pro. Clips de 6 à 10 secondes depuis texte ou image, audio synchronisé, 1080p à 4K et 25–50 i/s, idéal pour les campagnes premium et la production pro.",
     "image": "https://videohub-uploads-us.s3.amazonaws.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/f397ab6d-d0ef-44eb-977a-3419f494d17e-job_cda079d3-9895-45a0-866c-2dbf57593463.jpg"
   },
-  "overview": "LTX-2 Pro dans MaxVideoAI : 6–10 s, 1080p/1440p/4K, 25 ou 50 fps, texte ou image, audio natif on/off, facturation à la seconde.",
+  "overview": "LTX-2 Pro dans Perzia AI : 6–10 s, 1080p/1440p/4K, 25 ou 50 fps, texte ou image, audio natif on/off, facturation à la seconde.",
   "hero": {
     "title": "LTX-2 Pro – Vidéo IA haute fidélité avec audio",
     "intro": "Vidéo IA cinématographique haute fidélité avec audio synchronisé, jusqu’en 4K et 50 i/s pour les projets premium.",
@@ -82,7 +82,7 @@
     { "q": "Quels ratios ?", "a": "16:9 dans cette configuration. Pour multi-AR, utiliser Wan ou un autre moteur." }
   ],
   "custom": {
-    "whyTitle": "Pourquoi LTX-2 Pro dans MaxVideoAI",
+    "whyTitle": "Pourquoi LTX-2 Pro dans Perzia AI",
     "heroDesc1": "Rendus haute fidélité de 6 à 10 secondes avec audio natif, jusqu’en 4K/50 fps, pour des histoires premium et des plans héros. LTX-2 Pro est le niveau le plus qualitatif de la famille LTX-2, pensé pour les campagnes finales plutôt que les brouillons.",
     "heroDesc2": "Choisissez Pro pour le détail le plus propre, un motion stable et un audio nuancé. Coupez l’audio pour scorer en post.",
     "heroHighlights": [
@@ -90,7 +90,7 @@
       "1080p/1440p/4K à 25/50 fps pour un motion prêt prod",
       "Texte → Vidéo et Image → Vidéo avec le même lab que LTX-2 Fast",
       "Réglé pour les campagnes premium : détail plus net, motion plus fluide, audio plus nuancé que Fast",
-      "Paiement à la seconde via le wallet MaxVideoAI — aucun compte LTX requis"
+      "Paiement à la seconde via le wallet Perzia AI — aucun compte LTX requis"
     ],
     "specTitle": "Specs réelles – LTX-2 Pro",
     "specNote": "Basé sur le routing Fal live.",
@@ -140,7 +140,7 @@
         ]
       }
     ],
-    "whatTitle": "Comment fonctionne LTX-2 Pro dans MaxVideoAI",
+    "whatTitle": "Comment fonctionne LTX-2 Pro dans Perzia AI",
     "whatIntro1": "Choisissez texte ou image, 6–10 s, résolution et fps, puis prompt. Audio activé par défaut, désactivable.",
     "whatIntro2": "La route Pro sert les besoins premium : détail maximal et audio synchronisé.",
     "whatFlowTitle": "Parcours",
@@ -231,3 +231,4 @@
     "finalButton": "Ouvrir LTX-2 Pro dans Generate →"
   }
 }
+

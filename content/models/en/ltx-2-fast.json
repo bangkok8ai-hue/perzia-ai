@@ -2,11 +2,11 @@
   "marketingName": "LTX-2 Fast",
   "versionLabel": "Fast",
   "seo": {
-    "title": "LTX-2 Fast AI Video – Text & Image to Video with Audio | MaxVideoAI",
+    "title": "LTX-2 Fast AI Video – Text & Image to Video with Audio | Perzia AI",
     "description": "Generate fast cinematic AI videos with LTX-2 Fast. Turn text or images into 6–20 second clips with synchronized audio, up to 4K and 25–50 fps, ideal for social content and rapid iteration.",
     "image": "https://videohub-uploads-us.s3.amazonaws.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/1bd62e34-0e55-4f49-b434-295276b991d4-job_d895c3b0-562a-4e36-ae06-4ce083a47126.jpg"
   },
-  "overview": "LTX-2 Fast in MaxVideoAI: 6–20s renders, 1080p/1440p/4K, 25 or 50 fps, text or image input, native audio on/off, priced per second.",
+  "overview": "LTX-2 Fast in Perzia AI: 6–20s renders, 1080p/1440p/4K, 25 or 50 fps, text or image input, native audio on/off, priced per second.",
   "hero": {
     "title": "LTX-2 Fast – AI Video with Native Audio",
     "intro": "Fast 20-second AI video with native audio. Perfect for tests, social clips, and quick iterations.",
@@ -91,7 +91,7 @@
     { "q": "Which aspect ratios are supported?", "a": "16:9 only in the current Fast routing. Use Wan or Pika for flexible ratios." }
   ],
   "custom": {
-    "whyTitle": "Why LTX-2 Fast inside MaxVideoAI",
+    "whyTitle": "Why LTX-2 Fast inside Perzia AI",
     "heroDesc1": "Create 6–20 second clips with native audio, 1080p–4K and 25/50 fps in one card. LTX-2 Fast is the “instant” tier of the LTX-2 family: perfect for rapid social cuts, drafts, storyboards and mood pieces when you want 4K quality without waiting.",
     "heroDesc2": "Above 10 seconds we automatically keep runs at 1080p/25 fps to match the Fal routing and keep turnarounds reliable.",
     "heroHighlights": [
@@ -102,7 +102,7 @@
       "Native audio (dialogue/ambience/SFX/music) included by default",
       "Wallet-based per-second pricing; no extra contracts or LTX Studio account needed"
     ],
-    "specTitle": "Real Specs – LTX-2 Fast in MaxVideoAI",
+    "specTitle": "Real Specs – LTX-2 Fast in Perzia AI",
     "specNote": "Specs reflect the live routing via Fal today.",
     "specSections": [
       {
@@ -147,11 +147,11 @@
         "title": "Pricing",
         "items": [
           "$0.04/s @1080p; $0.08/s @1440p; $0.16/s @4K",
-          "Wallet-based pay-as-you-go inside MaxVideoAI"
+          "Wallet-based pay-as-you-go inside Perzia AI"
         ]
       }
     ],
-    "whatTitle": "How LTX-2 Fast works in MaxVideoAI",
+    "whatTitle": "How LTX-2 Fast works in Perzia AI",
     "whatIntro1": "Pick text or image mode, set 6–20 seconds, choose resolution and fps, then prompt. Audio is on by default and can be toggled off.",
     "whatIntro2": "For 12–20s runs we automatically constrain to 1080p/25 fps to keep routes stable.",
     "whatFlowTitle": "Workflow",
@@ -242,3 +242,4 @@
     "finalButton": "Open LTX-2 Fast in Generate →"
   }
 }
+

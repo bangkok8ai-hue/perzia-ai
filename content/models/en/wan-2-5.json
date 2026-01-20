@@ -3,12 +3,12 @@
   "versionLabel": "2.5",
   "seo": {
     "title": "Wan 2.5 – Text or Image to Video with Optional Audio (480p–1080p, 5–10s)",
-    "description": "Audio-ready 5–10s clips at 480p/720p/1080p. Text or image input, optional WAV/MP3 upload, native audio, prompt expansion toggle, and pay-as-you-go pricing in MaxVideoAI.",
+    "description": "Audio-ready 5–10s clips at 480p/720p/1080p. Text or image input, optional WAV/MP3 upload, native audio, prompt expansion toggle, and pay-as-you-go pricing in Perzia AI.",
     "image": "/hero/wan-25.jpg"
   },
-  "overview": "Wan 2.5 in MaxVideoAI: audio-ready 5–10s clips from text or a single image, at 480p/720p/1080p. Optional WAV/MP3 upload, native audio when no track is provided, prompt expansion toggle, and per-second pricing by resolution.",
+  "overview": "Wan 2.5 in Perzia AI: audio-ready 5–10s clips from text or a single image, at 480p/720p/1080p. Optional WAV/MP3 upload, native audio when no track is provided, prompt expansion toggle, and per-second pricing by resolution.",
   "hero": {
-    "title": "Wan 2.5 – Text or Image to Video with Optional Audio in MaxVideoAI (480p–1080p, 5–10s)",
+    "title": "Wan 2.5 – Text or Image to Video with Optional Audio in Perzia AI (480p–1080p, 5–10s)",
     "intro": "Wan 2.5 – Audio-Ready AI Video for Cinematic 5–10s Clips (480p/720p/1080p)",
     "badge": "480p/720p/1080p · 5–10s · Text or Image input · Optional audio",
     "ctaPrimary": {
@@ -107,7 +107,7 @@
   "custom": {
     "heroDesc1": "Wan 2.5 lets you storyboard cinematic beats with built-in audio: prompt or image input, optional WAV/MP3, 5 or 10 seconds at 480p/720p/1080p.",
     "heroDesc2": "Use it for hero beats and reveals where music, ambience or dialogue matter. Upload a track for tight sync or let Wan score the scene natively.",
-    "whyTitle": "Why Wan 2.5 is powerful inside MaxVideoAI",
+    "whyTitle": "Why Wan 2.5 is powerful inside Perzia AI",
     "heroHighlights": [
       "Text → Video and Image → Video in one engine",
       "Optional audio upload (WAV/MP3) to lock timing to music or VO",
@@ -116,7 +116,7 @@
       "5 or 10 second beats that feel like finished shots",
       "Prompt expansion toggle to enrich short briefs",
       "Pay-as-you-go pricing with clear per-second rates",
-      "Available in Europe, UK and worldwide via the MaxVideoAI wallet",
+      "Available in Europe, UK and worldwide via the Perzia AI wallet",
       "Fits alongside Sora, Veo, Pika, Kling, MiniMax Hailuo for cross-engine tests"
     ],
     "bestUseCasesTitle": "Best use cases",
@@ -127,9 +127,9 @@
       "English/Chinese prompts with optional expansion",
       "Sound-led ideas where music hits or VO matter"
     ],
-    "whatTitle": "What Wan 2.5 Actually Is in MaxVideoAI",
+    "whatTitle": "What Wan 2.5 Actually Is in Perzia AI",
     "whatIntro1": "Wan 2.5 is a text-and-image-to-video model built for short cinematic clips with native audio.",
-    "whatIntro2": "In MaxVideoAI it’s a flexible, audio-ready engine with tiered pricing by resolution.",
+    "whatIntro2": "In Perzia AI it’s a flexible, audio-ready engine with tiered pricing by resolution.",
     "whatFlowTitle": "In-app flow",
     "whatFlowSteps": [
       "1. Pick Wan 2.5.",
@@ -140,8 +140,8 @@
       "6. Paste a clear, cinematic prompt with subject, camera and sound.",
       "7. Check live pricing and render."
     ],
-    "specTitle": "Real Specs – Wan 2.5 in MaxVideoAI (480p–1080p, 5–10s)",
-    "specNote": "These specs describe Wan 2.5 exactly as you can use it today via MaxVideoAI.",
+    "specTitle": "Real Specs – Wan 2.5 in Perzia AI (480p–1080p, 5–10s)",
+    "specNote": "These specs describe Wan 2.5 exactly as you can use it today via Perzia AI.",
     "specSections": [
       {
         "title": "Duration & Output",
@@ -186,13 +186,13 @@
         "items": [
           "$0.05/s (480p), $0.10/s (720p), $0.15/s (1080p)",
           "Examples: 5s @1080p ≈ $0.75; 10s ≈ $1.50",
-          "Runs from the shared MaxVideoAI wallet with live rates shown"
+          "Runs from the shared Perzia AI wallet with live rates shown"
         ]
       }
     ],
     "specValueProp": "Wan 2.5 is the audio-ready short-form engine for 5–10s beats where visuals and sound need to land together.",
     "galleryTitle": "Wan 2.5 Example Gallery",
-    "galleryIntro": "Clips generated with the exact configuration you have access to in MaxVideoAI.",
+    "galleryIntro": "Clips generated with the exact configuration you have access to in Perzia AI.",
     "gallerySceneCta": "Open this scene in Generate and adapt it with your own script →",
     "galleryAllCta": "View all Wan 2.5 examples →",
     "recreateLabel": "Recreate this shot →",
@@ -270,7 +270,7 @@
     "safetyInterpretation": [
       "Use Wan 2.5 for brand-safe, legal and ethical content"
     ],
-    "safetyNote": "Wan 2.5 outputs run through provider and MaxVideoAI safeguards.",
+    "safetyNote": "Wan 2.5 outputs run through provider and Perzia AI safeguards.",
     "comparisonTitle": "Wan 2.5 vs Sora 2 – Quick Overview",
     "comparisonPoints": [
       "Wan 2.5: audio-ready 5–10s beats with optional track upload and flexible resolution tiers",
@@ -278,7 +278,7 @@
       "Veo 3.1 / Kling / Pika: pick these for framing presets, silent 1080p realism, or stylized loops"
     ],
     "comparisonCta": "Compare Wan 2.5 vs Sora 2 →",
-    "faqTitle": "FAQ – Wan 2.5 in MaxVideoAI",
+    "faqTitle": "FAQ – Wan 2.5 in Perzia AI",
     "faqs": [
       { "q": "Does Wan 2.5 always generate audio?", "a": "Yes. Native audio if no track is uploaded; uploaded WAV/MP3 becomes the main soundtrack, trimmed or looped to 5/10 s." },
       { "q": "What resolutions and durations should I use?", "a": "480p/5s for fastest and cheapest tests; 720p/5–10s for internal and social; 1080p/10s for hero beats and client delivery." },
@@ -287,9 +287,10 @@
       { "q": "How is Wan 2.5 priced versus other engines?", "a": "Per-second by resolution (0.05/0.10/0.15 $/s); mid-tier compared to premium long-form and ultra-budget silent engines." }
     ],
     "relatedTitle": "Explore other models",
-    "relatedSubtitle": "Compare price, latency and output options across the MaxVideoAI catalog.",
-    "finalPara1": "Wan 2.5 in MaxVideoAI is your audio-ready short-form engine for 5–10 second beats.",
+    "relatedSubtitle": "Compare price, latency and output options across the Perzia AI catalog.",
+    "finalPara1": "Wan 2.5 in Perzia AI is your audio-ready short-form engine for 5–10 second beats.",
     "finalPara2": "Use native or uploaded audio, iterate cheap, and finish in HD when visuals and sound must land together.",
     "finalButton": "Open Generate"
   }
 }
+

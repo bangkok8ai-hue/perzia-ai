@@ -2,11 +2,11 @@
   "marketingName": "Nano Banana",
   "versionLabel": "Image",
   "seo": {
-    "title": "Nano Banana – Photoreal Image Generation | MaxVideoAI",
+    "title": "Nano Banana – Photoreal Image Generation | Perzia AI",
     "description": "Generate photoreal stills and edits with Nano Banana. Text-to-image and image-to-image for keyframes, thumbnails, and references before you animate in Sora, Veo, or Kling.",
     "image": "/hero/pika-22.jpg"
   },
-  "overview": "Nano Banana is your photoreal image sidekick in MaxVideoAI. Lock style, lighting, and framing before you render video—text-to-image plus image edits from the same wallet and prompt lab.",
+  "overview": "Nano Banana is your photoreal image sidekick in Perzia AI. Lock style, lighting, and framing before you render video—text-to-image plus image edits from the same wallet and prompt lab.",
   "hero": {
     "title": "Nano Banana – Photoreal Image Generation",
     "intro": "Generate on-brand stills, keyframes, and product shots before you hit Render. Nano Banana is the image sidekick for Sora, Veo, Kling, and the rest of the stack.",
@@ -112,7 +112,7 @@
   ],
   "pricingNotes": "Live pricing updates inside the workspace. Check the chip before you render.",
   "custom": {
-    "whyTitle": "Why Nano Banana inside MaxVideoAI",
+    "whyTitle": "Why Nano Banana inside Perzia AI",
     "heroDesc1": "Generate photoreal stills and edits to lock style, lighting, and framing before you animate in Sora, Veo, or Kling.",
     "heroDesc2": "Text-to-image and image-to-image share the same wallet and prompt lab as your video engines, with 1–8 outputs per run.",
     "heroHighlights": [
@@ -122,7 +122,7 @@
       "1–8 outputs per run with seeds for consistency",
       "Wallet-based pricing shared with video engines; no separate Nano Banana account needed"
     ],
-    "whatTitle": "How Nano Banana works in MaxVideoAI",
+    "whatTitle": "How Nano Banana works in Perzia AI",
     "whatIntro1": "Choose text-to-image or image-to-image, set the batch size (1–8), write your prompt or edit instructions, and generate.",
     "whatIntro2": "Use it to lock style, lighting, and framing before animating in video engines.",
     "whatFlowTitle": "Workflow",
@@ -161,3 +161,4 @@
     ]
   }
 }
+

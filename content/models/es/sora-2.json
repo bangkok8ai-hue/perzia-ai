@@ -2,13 +2,13 @@
   "marketingName": "OpenAI Sora 2",
   "versionLabel": "2",
   "seo": {
-    "title": "Sora 2 – Generador de video IA (Texto a Video / Imagen a Video) | Sin invitación – MaxVideoAI",
+    "title": "Sora 2 – Generador de video IA (Texto a Video / Imagen a Video) | Sin invitación – Perzia AI",
     "description": "Genera videos con Sora 2 desde Latinoamérica o España, sin invitación. Texto a video y imagen a video en 4–12 s, 720p, con precio transparente por segundo.",
     "image": "https://videohub-uploads-us.s3.amazonaws.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/a5cbd8d3-33c7-47b5-8480-7f23aab89891-job_684c1b3d-2679-40d1-adb7-06151b3e8739.jpg"
   },
   "hero": {
     "title": "Sora 2 – Generador de video IA (texto a video / imagen a video)",
-    "intro": "Sora 2 – Video cinematográfico (4–12 s, 720p) directo en MaxVideoAI",
+    "intro": "Sora 2 – Video cinematográfico (4–12 s, 720p) directo en Perzia AI",
     "badge": "720p · 4–12 s · Texto o imagen de entrada",
     "ctaPrimary": {
       "label": "Empezar con Sora 2",
@@ -22,10 +22,10 @@
     ]
   },
   "custom": {
-    "heroDesc1": "Crea videos cortos y cinematográficos con Sora 2 directamente en el navegador. MaxVideoAI te da acceso instantáneo al generador de video IA (texto→video e imagen→video), con precio transparente por segundo y un espacio de trabajo listo para iterar y producir clips sociales.",
+    "heroDesc1": "Crea videos cortos y cinematográficos con Sora 2 directamente en el navegador. Perzia AI te da acceso instantáneo al generador de video IA (texto→video e imagen→video), con precio transparente por segundo y un espacio de trabajo listo para iterar y producir clips sociales.",
     "heroDesc2": "Describe la escena, elige duración (4, 8 o 12 segundos), selecciona 16:9 o 9:16 y deja que Sora 2 genere planos listos para anuncios, contenido o clientes. Funciona en toda Latinoamérica sin invitación.",
     "secondaryCta": "Comparar Sora 2 vs Sora 2 Pro (1080p) →",
-    "whyTitle": "Por qué Sora 2 es potente en MaxVideoAI:",
+    "whyTitle": "Por qué Sora 2 es potente en Perzia AI:",
     "heroHighlights": [
       "Texto → Video e Imagen → Video en un solo lugar (crear videos con IA)",
       "Prompts secuenciados para 2–3 planos en un clip",
@@ -40,10 +40,10 @@
       "Visuales héroe de producto",
       "Storyboards y pruebas de concepto"
     ],
-    "whatTitle": "Qué es realmente Sora 2 en MaxVideoAI",
+    "whatTitle": "Qué es realmente Sora 2 en Perzia AI",
     "whatIntro1": "En teoría, OpenAI Sora 2 es un motor de texto a video corto. En la práctica, su comportamiento depende de la integración.",
-    "whatIntro2": "En MaxVideoAI, Sora 2 se expone como un motor enfocado y listo para producción:",
-    "whatFlowTitle": "MaxVideoAI lo envuelve en un flujo simple:",
+    "whatIntro2": "En Perzia AI, Sora 2 se expone como un motor enfocado y listo para producción:",
+    "whatFlowTitle": "Perzia AI lo envuelve en un flujo simple:",
     "whatFlowSteps": [
       "1. Elige Sora 2 como motor.",
       "2. Selecciona Texto → Video o Imagen → Video.",
@@ -61,8 +61,8 @@
       "Revisa el precio final antes de generar.",
       "Funciona desde toda Latinoamérica sin invitación."
     ],
-    "specTitle": "Especificaciones reales – Sora 2 en MaxVideoAI (720p, 4–12 s)",
-    "specNote": "Estas especificaciones describen Sora 2 tal como lo usas hoy en MaxVideoAI, no capacidades teóricas.",
+    "specTitle": "Especificaciones reales – Sora 2 en Perzia AI (720p, 4–12 s)",
+    "specNote": "Estas especificaciones describen Sora 2 tal como lo usas hoy en Perzia AI, no capacidades teóricas.",
     "specSections": [
       {
         "title": "Duración y salida",
@@ -105,7 +105,7 @@
         ]
       }
     ],
-    "specValueProp": "Propuesta clave: Sora 2 en MaxVideoAI es la forma más rápida de probar ideas, prototipos y conceptos sociales, con movimiento y audio de estilo cine y un coste predecible por segundo.",
+    "specValueProp": "Propuesta clave: Sora 2 en Perzia AI es la forma más rápida de probar ideas, prototipos y conceptos sociales, con movimiento y audio de estilo cine y un coste predecible por segundo.",
     "microCta": "Empieza a generar con Sora 2 →",
     "quickPricingTitle": "Precios rápidos (sin suscripción)",
     "quickPricingItems": [
@@ -115,7 +115,7 @@
       "Pagas solo lo que generas. Ideal para creadores, agencias y freelancers en Latinoamérica."
     ],
     "galleryTitle": "Galería de ejemplos: salidas reales de Sora 2",
-    "galleryIntro": "Mira algunos renders reales de Sora 2 con los mismos ajustes disponibles en MaxVideoAI. Perfecto para ver cómo responde el generador de video IA a distintos prompts.",
+    "galleryIntro": "Mira algunos renders reales de Sora 2 con los mismos ajustes disponibles en Perzia AI. Perfecto para ver cómo responde el generador de video IA a distintos prompts.",
     "gallerySceneCta": "Abrir esta escena en Generate y adaptarla a tu marca →",
     "galleryAllCta": "Ver todos los ejemplos de Sora 2 →",
     "recreateLabel": "Recrear este plano →",
@@ -130,9 +130,9 @@
       "Formato y duración: indica 16:9 o 9:16 y si son 4, 8 o 12 segundos"
     ],
     "promptSkeleton": "Plano amplio de [sujeto] en [entorno], iluminación [luz], cámara [movimiento], 8 segundos, 16:9, cinematográfico, colores naturales.",
-    "promptSkeletonNote": "Pégalo en MaxVideoAI, elige Sora 2 y genera.",
+    "promptSkeletonNote": "Pégalo en Perzia AI, elige Sora 2 y genera.",
     "imageTitle": "Flujo imagen→video con Nano Banana",
-    "imageIntro": "Otra ventaja de Sora en MaxVideoAI es combinarlo con un motor de imagen como Nano Banana.",
+    "imageIntro": "Otra ventaja de Sora en Perzia AI es combinarlo con un motor de imagen como Nano Banana.",
     "imageFlow": [
       "Genera un frame de referencia en Nano Banana alineado con tu estilo.",
       "Envíalo a Sora 2 en modo Imagen → Video.",
@@ -196,7 +196,7 @@
       "Personajes genéricos: OK.",
       "Celebridades o temas sensibles: pueden bloquearse."
     ],
-    "safetyNote": "Así mantenemos MaxVideoAI y Sora 2 seguros y utilizables para profesionales.",
+    "safetyNote": "Así mantenemos Perzia AI y Sora 2 seguros y utilizables para profesionales.",
     "comparisonTitle": "Sora 2 vs Sora 2 Pro – resumen rápido",
     "comparisonPoints": [
       "Sora 2: máquina rápida de ideas 720p.",
@@ -228,7 +228,7 @@
       },
       {
         "q": "¿Puedo usar Sora 2 desde Latinoamérica?",
-        "a": "Sí. MaxVideoAI funciona en toda Latinoamérica sin invitación directa. Solo necesitas una cuenta y saldo en tu monedero."
+        "a": "Sí. Perzia AI funciona en toda Latinoamérica sin invitación directa. Solo necesitas una cuenta y saldo en tu monedero."
       },
       {
         "q": "¿Sora 2 convierte texto a video o imagen a video?",
@@ -236,9 +236,10 @@
       }
     ],
     "relatedTitle": "Explorar otros modelos",
-    "relatedSubtitle": "Compara precios, latencia y salidas en otros motores de MaxVideoAI.",
-    "finalPara1": "Sora 2 en MaxVideoAI te ofrece acceso directo y sin fricción a uno de los mejores modelos de video corto, sin montar infraestructura ni adivinar.",
+    "relatedSubtitle": "Compara precios, latencia y salidas en otros motores de Perzia AI.",
+    "finalPara1": "Sora 2 en Perzia AI te ofrece acceso directo y sin fricción a uno de los mejores modelos de video corto, sin montar infraestructura ni adivinar.",
     "finalPara2": "Úsalo para explorar ideas, crear mini-secuencias y validar direcciones creativas rápido. Cuando necesites más resolución o control, pasa a Sora 2 Pro.",
     "finalButton": "Generar ahora con Sora 2 →"
   }
 }
+

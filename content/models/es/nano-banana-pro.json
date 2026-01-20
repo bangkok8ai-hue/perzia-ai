@@ -2,11 +2,11 @@
   "marketingName": "Nano Banana Pro",
   "versionLabel": "Pro",
   "seo": {
-    "title": "Nano Banana Pro – Texto a imagen 4K y edición | MaxVideoAI",
-    "description": "Genera imágenes en 1K, 2K y 4K con Nano Banana Pro. Fidelidad basada en Gemini 3, referencias múltiples y licencia comercial directamente en MaxVideoAI.",
+    "title": "Nano Banana Pro – Texto a imagen 4K y edición | Perzia AI",
+    "description": "Genera imágenes en 1K, 2K y 4K con Nano Banana Pro. Fidelidad basada en Gemini 3, referencias múltiples y licencia comercial directamente en Perzia AI.",
     "image": "https://v3b.fal.media/files/b/0a851821/XWMX6UdfAGFISJGdOLus4.png"
   },
-  "overview": "Nano Banana Pro es la actualización con motor Gemini 3 para marcas que necesitan texto legible, personajes consistentes y stills listos para exportar. Borradores en 1K/2K y finales en 4K sin salir del laboratorio de imagen de MaxVideoAI.",
+  "overview": "Nano Banana Pro es la actualización con motor Gemini 3 para marcas que necesitan texto legible, personajes consistentes y stills listos para exportar. Borradores en 1K/2K y finales en 4K sin salir del laboratorio de imagen de Perzia AI.",
   "hero": {
     "title": "Nano Banana Pro – Texto→Imagen 4K y edición",
     "intro": "Stills de calidad de estudio con salidas 1K/2K/4K, tipografía precisa y edición multi-imagen. Diseñado para campañas, lanzamientos de producto y referencias premium.",
@@ -113,7 +113,7 @@
   ],
   "pricingNotes": "$0.15 por imagen 1K/2K, $0.30 en 4K. El chip de precio se actualiza en vivo antes de renderizar.",
   "custom": {
-    "whyTitle": "Por qué Nano Banana Pro en MaxVideoAI",
+    "whyTitle": "Por qué Nano Banana Pro en Perzia AI",
     "heroDesc1": "Genera stills 1K/2K/4K con texto preciso justo al lado de tus motores de video.",
     "heroDesc2": "Misma billetera, mismo prompt lab y logging completo—sin cuenta Fal aparte.",
     "heroHighlights": [
@@ -121,7 +121,7 @@
       "Borradores rápidos 1K/2K + finales 4K",
       "Tipografía legible gracias a Gemini 3",
       "Referencias para mantener personas y productos",
-      "Licencia comercial incluida con créditos MaxVideoAI"
+      "Licencia comercial incluida con créditos Perzia AI"
     ],
     "whatTitle": "Cómo funciona Nano Banana Pro aquí",
     "whatIntro1": "Elige Generar o Editar, define num_images (1–8), selecciona el aspecto y decide si necesitas 1K/2K o 4K.",
@@ -162,3 +162,4 @@
     ]
   }
 }
+

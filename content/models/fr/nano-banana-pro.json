@@ -2,11 +2,11 @@
   "marketingName": "Nano Banana Pro",
   "versionLabel": "Pro",
   "seo": {
-    "title": "Nano Banana Pro – Image 4K et édition | MaxVideoAI",
-    "description": "Générez des images 1K, 2K et 4K avec Nano Banana Pro. Fidélité Gemini 3, références multiples et licence commerciale intégrées à MaxVideoAI.",
+    "title": "Nano Banana Pro – Image 4K et édition | Perzia AI",
+    "description": "Générez des images 1K, 2K et 4K avec Nano Banana Pro. Fidélité Gemini 3, références multiples et licence commerciale intégrées à Perzia AI.",
     "image": "https://v3b.fal.media/files/b/0a851821/XWMX6UdfAGFISJGdOLus4.png"
   },
-  "overview": "Nano Banana Pro est la version propulsée par Gemini 3 pour les équipes qui exigent un texte lisible, des personnages cohérents et des visuels prêts à livrer. Faites vos essais en 1K/2K puis relancez en 4K sans quitter le labo image MaxVideoAI.",
+  "overview": "Nano Banana Pro est la version propulsée par Gemini 3 pour les équipes qui exigent un texte lisible, des personnages cohérents et des visuels prêts à livrer. Faites vos essais en 1K/2K puis relancez en 4K sans quitter le labo image Perzia AI.",
   "hero": {
     "title": "Nano Banana Pro – Texte→Image 4K + édition",
     "intro": "Stills de qualité studio avec sorties 1K/2K/4K, typographie nette et édition multi-références. Parfait pour les campagnes, lancements produit et moodboards haut de gamme.",
@@ -113,7 +113,7 @@
   ],
   "pricingNotes": "$0,15 par image 1K/2K, $0,30 en 4K. Le chip prix s’actualise avant chaque run.",
   "custom": {
-    "whyTitle": "Pourquoi Nano Banana Pro dans MaxVideoAI",
+    "whyTitle": "Pourquoi Nano Banana Pro dans Perzia AI",
     "heroDesc1": "Générez des stills 1K/2K/4K à texte net directement aux côtés de vos moteurs vidéo.",
     "heroDesc2": "Même wallet, même prompt lab, traçabilité complète—pas de compte Fal séparé.",
     "heroHighlights": [
@@ -121,7 +121,7 @@
       "Brouillons rapides 1K/2K + masters 4K",
       "Typographie lisible grâce à Gemini 3",
       "Références pour garder personnes et produits",
-      "Licence commerciale gérée via crédits MaxVideoAI"
+      "Licence commerciale gérée via crédits Perzia AI"
     ],
     "whatTitle": "Comment on l’utilise ici",
     "whatIntro1": "Choisissez Générer ou Éditer, fixez num_images (1–8), l’aspect, puis 1K/2K ou 4K selon le besoin.",
@@ -162,3 +162,4 @@
     ]
   }
 }
+

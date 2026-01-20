@@ -2,7 +2,7 @@
   "marketingName": "OpenAI Sora 2 Pro",
   "versionLabel": "Pro",
   "seo": {
-    "title": "Sora 2 Pro – Generador de video IA 1080p con audio nativo y control de escenas | MaxVideoAI",
+    "title": "Sora 2 Pro – Generador de video IA 1080p con audio nativo y control de escenas | Perzia AI",
     "description": "Genera videos IA de 4–12 s en 720p/1080p con Sora 2 Pro. Funciona desde Latinoamérica sin invitación. Control de audio, multiescena y prompts precisos para anuncios y entregas premium.",
     "image": "https://videohub-uploads-us.s3.amazonaws.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/a5cbd8d3-33c7-47b5-8480-7f23aab89891-job_684c1b3d-2679-40d1-adb7-06151b3e8739.jpg"
   },
@@ -34,7 +34,7 @@
     "heroDesc1": "Sora 2 Pro es el hermano premium 720p/1080p de Sora 2. Obtienes clips más cinematográficos, control explícito de audio y un encadenamiento de prompts más rico para secuencias con varios beats—ideal para anuncios, tráilers y entregables premium. Funciona en Latinoamérica sin invitación.",
     "heroDesc2": "Prototipa rápido con Sora 2 y luego pasa a Sora 2 Pro para regenerar tus mejores tomas en 1080p con más control sobre tiempo, movimiento y sonido.",
     "secondaryCta": "Comparar con Sora 2 (720p) →",
-    "whyTitle": "Por qué Sora 2 Pro en MaxVideoAI:",
+    "whyTitle": "Por qué Sora 2 Pro en Perzia AI:",
     "heroHighlights": [
       "Salida 720p o 1080p lista para clientes (crear videos con IA premium)",
       "Tomas de 4–12s con control cinematográfico",
@@ -51,8 +51,8 @@
       "Review del precio por segundo antes de generar.",
       "Funciona desde toda Latinoamérica sin invitación."
     ],
-    "specTitle": "Specs reales – Sora 2 Pro en MaxVideoAI (720p/1080p, 4–12s)",
-    "specNote": "Estas specs reflejan Sora 2 Pro tal como existe en MaxVideoAI—config de producción, no demos.",
+    "specTitle": "Specs reales – Sora 2 Pro en Perzia AI (720p/1080p, 4–12s)",
+    "specNote": "Estas specs reflejan Sora 2 Pro tal como existe en Perzia AI—config de producción, no demos.",
     "specSections": [
       {
         "title": "Duración y salida",
@@ -80,7 +80,7 @@
       {
         "title": "Audio",
         "items": [
-          "Conmutador de audio en MaxVideoAI (on/off)",
+          "Conmutador de audio en Perzia AI (on/off)",
           "Soporta voz en off + capas ambientales",
           "Escribe las indicaciones de audio en el prompt"
         ]
@@ -88,7 +88,7 @@
       {
         "title": "Precio",
         "items": [
-          "Costo por segundo mayor que Sora 2 (la tarifa que ves en Generate incluye el margen de MaxVideoAI)",
+          "Costo por segundo mayor que Sora 2 (la tarifa que ves en Generate incluye el margen de Perzia AI)",
           "Facturación transparente por segundo generado",
           "Revisa la tarifa en vivo en Generate antes de lanzar"
         ]
@@ -104,7 +104,7 @@
       "Pagas solo lo que generas. Sin suscripción. Adecuado para freelancers y agencias en Latinoamérica."
     ],
     "galleryTitle": "Galería de ejemplos: Sora 2 Pro",
-    "galleryIntro": "Mira clips 1080p con varios beats generados con Sora 2 Pro en MaxVideoAI con el generador de video IA.",
+    "galleryIntro": "Mira clips 1080p con varios beats generados con Sora 2 Pro en Perzia AI con el generador de video IA.",
     "gallerySceneCta": "Abrir esta escena en Generate y adaptarla a tu marca →",
     "galleryAllCta": "Ver todos los ejemplos de Sora 2 Pro →",
     "recreateLabel": "Recrear este plano Pro →",
@@ -194,7 +194,7 @@
     "faqs": [
       {
         "q": "¿Sora 2 Pro permite controlar el audio?",
-        "a": "Sí. Activa/desactiva el audio en MaxVideoAI y escribe las indicaciones de voz, ambiente y FX en tu prompt."
+        "a": "Sí. Activa/desactiva el audio en Perzia AI y escribe las indicaciones de voz, ambiente y FX en tu prompt."
       },
       {
         "q": "¿Es más caro que Sora 2?",
@@ -210,7 +210,7 @@
       },
       {
         "q": "¿Puedo usar Sora 2 Pro desde Latinoamérica?",
-        "a": "Sí. MaxVideoAI funciona en toda Latinoamérica sin invitación. Solo necesitas una cuenta y saldo en tu monedero."
+        "a": "Sí. Perzia AI funciona en toda Latinoamérica sin invitación. Solo necesitas una cuenta y saldo en tu monedero."
       },
       {
         "q": "¿Sora 2 Pro genera video en 1080p con audio nativo?",
@@ -218,8 +218,8 @@
       }
     ],
     "relatedTitle": "Explora otros modelos",
-    "relatedSubtitle": "Compara precios, latencia y opciones de salida en otros motores de MaxVideoAI.",
-    "finalPara1": "Sora 2 Pro en MaxVideoAI está diseñado para outputs premium, listos para clientes, con control de movimiento, audio y continuidad.",
+    "relatedSubtitle": "Compara precios, latencia y opciones de salida en otros motores de Perzia AI.",
+    "finalPara1": "Sora 2 Pro en Perzia AI está diseñado para outputs premium, listos para clientes, con control de movimiento, audio y continuidad.",
     "finalPara2": "Prototipa en Sora 2, luego pasa a Sora 2 Pro cuando necesites pulir y entregar en 1080p.",
     "finalButton": "Generar con Sora 2 Pro →"
   },
@@ -246,8 +246,8 @@
       "label": "Resolución",
       "body": "Entrega 1080p en 16:9, 9:16, 1:1",
       "link": {
-        "label": "Docs MaxVideoAI",
-        "href": "https://docs.maxvideoai.com/engines/sora-2-pro"
+        "label": "Docs Perzia AI",
+        "href": "https://docs.Perzia AI.com/engines/sora-2-pro"
       }
     },
     {
@@ -259,7 +259,7 @@
       "body": "Prompts de texto, referencias visuales o storyboards",
       "link": {
         "label": "Tutorial storyboard",
-        "href": "https://blog.maxvideoai.com/storyboard-sora-pro"
+        "href": "https://blog.Perzia AI.com/storyboard-sora-pro"
       }
     },
     {
@@ -321,3 +321,4 @@
   ],
   "pricingNotes": "Los precios se actualizan dentro de Generate. Comprueba la tarifa en vivo antes de lanzar un render."
 }
+

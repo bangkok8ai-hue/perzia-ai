@@ -2,8 +2,8 @@
   "marketingName": "Google Veo 3.1 Fast",
   "versionLabel": "3.1 Fast",
   "seo": {
-    "title": "Veo 3.1 Fast modelo de video IA cinemático – MaxVideoAI",
-    "description": "Crea videos con Veo 3.1 Fast en línea con audio opcional. Genera clips de 4–8 segundos en 720p/1080p desde texto o imágenes, más baratos que Veo 3.1 completo y disponibles en Europa, LATAM y el resto del mundo vía el monedero de MaxVideoAI.",
+    "title": "Veo 3.1 Fast modelo de video IA cinemático – Perzia AI",
+    "description": "Crea videos con Veo 3.1 Fast en línea con audio opcional. Genera clips de 4–8 segundos en 720p/1080p desde texto o imágenes, más baratos que Veo 3.1 completo y disponibles en Europa, LATAM y el resto del mundo vía el monedero de Perzia AI.",
     "image": "/hero/veo3.jpg"
   },
   "overview": "Veo 3.1 Fast es el nivel de velocidad y costo del ecosistema Veo: clips de 4–8 s, 720p/1080p, entrada texto o imagen, presets de encuadre/tono, audio nativo opcional y precio por segundo para pruebas rápidas.",
@@ -97,20 +97,20 @@
     },
     {
       "q": "¿Puedo ejecutar Veo 3.1 Fast desde Europa / LATAM?",
-      "a": "Sí. Usa el mismo wallet/workspace de MaxVideoAI y el enrutado DeepMind licenciado, sin facturación aparte."
+      "a": "Sí. Usa el mismo wallet/workspace de Perzia AI y el enrutado DeepMind licenciado, sin facturación aparte."
     }
   ],
   "custom": {
     "heroDesc1": "Veo 3.1 Fast baja costo y latencia del motor Veo: ideal para pruebas rápidas y loops sociales.",
     "heroDesc2": "Parte de un brief corto o una imagen, elige 4/6/8 s, 16:9 o 9:16, decide audio on/off y genera varios A/B en una sesión.",
-    "whyTitle": "Por qué Veo 3.1 Fast es potente en MaxVideoAI:",
+    "whyTitle": "Por qué Veo 3.1 Fast es potente en Perzia AI:",
     "heroHighlights": [
       "Clips rápidos y asequibles de 4–8 s para social y experimentación",
       "Texto → Video e Imagen → Video en un mismo compositor",
       "Controles cinemáticos (encuadre, tono, cámara) compartidos con Veo 3.1",
       "Interruptor de audio: nativo cuando lo necesitas, silencio cuando no",
       "Pago por uso para iterar y revisar con clientes",
-      "Disponible en Europa, UK y global con el mismo wallet de MaxVideoAI",
+      "Disponible en Europa, UK y global con el mismo wallet de Perzia AI",
       "Convive con Sora 2, Veo 3.1, Pika 2.2, Kling, Wan, MiniMax Hailuo, Nano Banana para A/B fácil"
     ],
     "bestUseCasesTitle": "Casos de uso",
@@ -120,10 +120,10 @@
       "B-roll y loops de mood para landings y secciones producto",
       "Comms internas ligeras y snippets de training"
     ],
-    "whatTitle": "Qué es Veo 3.1 Fast en MaxVideoAI",
+    "whatTitle": "Qué es Veo 3.1 Fast en Perzia AI",
     "whatIntro1": "Veo 3.1 Fast está afinado para velocidad y eficiencia dentro de la familia Veo.",
     "whatIntro2": "Mantienes presets de encuadre y tono, con runs optimizados en costo y tiempo.",
-    "whatFlowTitle": "Flujo MaxVideoAI:",
+    "whatFlowTitle": "Flujo Perzia AI:",
     "whatFlowSteps": [
       "1. Elige Veo 3.1 Fast.",
       "2. Selecciona Texto → Video o Imagen → Video.",
@@ -132,8 +132,8 @@
       "5. Pega un prompt breve y sensorial.",
       "6. Revisa el precio en vivo y renderiza."
     ],
-    "specTitle": "Specs reales – Veo 3.1 Fast en MaxVideoAI (720p/1080p, 4–8 s)",
-    "specNote": "Specs tal como las usas hoy en MaxVideoAI.",
+    "specTitle": "Specs reales – Veo 3.1 Fast en Perzia AI (720p/1080p, 4–8 s)",
+    "specNote": "Specs tal como las usas hoy en Perzia AI.",
     "specSections": [
       {
         "title": "Duración y salida",
@@ -170,7 +170,7 @@
         "title": "Precio",
         "items": [
           "Por segundo; ejemplo: audio on ≈$0.15/s; audio off ≈$0.10/s",
-          "Sin suscripción: wallet MaxVideoAI y chip de precio en vivo para comparar niveles"
+          "Sin suscripción: wallet Perzia AI y chip de precio en vivo para comparar niveles"
         ]
       },
       {
@@ -253,7 +253,7 @@
       "Las salidas llevan marcas de procedencia (tipo SynthID)."
     ],
     "safetyInterpretation": [
-      "Aplica la seguridad del proveedor; MaxVideoAI añade controles extra."
+      "Aplica la seguridad del proveedor; Perzia AI añade controles extra."
     ],
     "safetyNote": "Estas salvaguardas mantienen Veo 3.1 Fast apto para entornos profesionales.",
     "comparisonTitle": "Veo 3.1 Fast vs Veo 3.1 – Resumen",
@@ -263,7 +263,7 @@
       "Flujo: prototipa en Fast, regenera ganadores en Veo 3.1."
     ],
     "comparisonCta": "Comparar Veo 3.1 Fast vs Veo 3.1 →",
-    "faqTitle": "FAQ – Veo 3.1 Fast en MaxVideoAI",
+    "faqTitle": "FAQ – Veo 3.1 Fast en Perzia AI",
     "faqs": [
       {
         "q": "¿Cuándo usar Veo 3.1 Fast en lugar de Veo 3.1?",
@@ -288,8 +288,9 @@
     ],
     "relatedTitle": "Explora otros modelos",
     "relatedSubtitle": "Compara precio, latencia y presets con el resto del catálogo.",
-    "finalPara1": "Veo 3.1 Fast en MaxVideoAI es tu banco de pruebas rápido para prompts Veo.",
+    "finalPara1": "Veo 3.1 Fast en Perzia AI es tu banco de pruebas rápido para prompts Veo.",
     "finalPara2": "Mismo lenguaje cinemático, menor riesgo y calidad lista para social.",
     "finalButton": "Abrir Generate"
   }
 }
+

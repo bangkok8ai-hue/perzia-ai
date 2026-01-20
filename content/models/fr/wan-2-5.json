@@ -3,12 +3,12 @@
   "versionLabel": "2.5",
   "seo": {
     "title": "Wan 2.5 – Texte ou image vers vidéo avec audio optionnel (480p–1080p, 5–10 s)",
-    "description": "Clips audio-ready de 5–10 s en 480p/720p/1080p. Entrée texte ou image, upload WAV/MP3 optionnel, audio natif, expansion de prompt et paiement à la seconde dans MaxVideoAI.",
+    "description": "Clips audio-ready de 5–10 s en 480p/720p/1080p. Entrée texte ou image, upload WAV/MP3 optionnel, audio natif, expansion de prompt et paiement à la seconde dans Perzia AI.",
     "image": "/hero/wan-25.jpg"
   },
-  "overview": "Wan 2.5 dans MaxVideoAI : clips courts avec audio (5–10 s) depuis un texte ou un seul still, en 480p/720p/1080p. Audio natif si aucune piste, WAV/MP3 optionnel pour la synchro, expansion de prompt en option et prix par seconde selon la résolution.",
+  "overview": "Wan 2.5 dans Perzia AI : clips courts avec audio (5–10 s) depuis un texte ou un seul still, en 480p/720p/1080p. Audio natif si aucune piste, WAV/MP3 optionnel pour la synchro, expansion de prompt en option et prix par seconde selon la résolution.",
   "hero": {
-    "title": "Wan 2.5 – Texte ou image vers vidéo avec audio optionnel dans MaxVideoAI (480p–1080p, 5–10 s)",
+    "title": "Wan 2.5 – Texte ou image vers vidéo avec audio optionnel dans Perzia AI (480p–1080p, 5–10 s)",
     "intro": "Wan 2.5 – Vidéo IA avec audio pour des beats cinématiques de 5–10 s (480p/720p/1080p)",
     "badge": "480p/720p/1080p · 5–10 s · Texte ou image · Audio optionnel",
     "ctaPrimary": {
@@ -89,7 +89,7 @@
   "custom": {
     "heroDesc1": "Wan 2.5 vous permet de scénariser des beats ciné avec audio intégré : prompt ou image, WAV/MP3 optionnel, 5 ou 10 s en 480p/720p/1080p.",
     "heroDesc2": "Parfait pour beats et reveals où musique, ambiance ou dialogue comptent. Uploadez une piste pour la synchro ou laissez Wan scorer nativement.",
-    "whyTitle": "Pourquoi Wan 2.5 est puissant dans MaxVideoAI",
+    "whyTitle": "Pourquoi Wan 2.5 est puissant dans Perzia AI",
     "heroHighlights": [
       "Texte → Vidéo et Image → Vidéo dans un seul moteur",
       "Upload audio (WAV/MP3) pour caler sur une musique ou une VO",
@@ -98,7 +98,7 @@
       "Beats de 5 ou 10 s qui semblent finis",
       "Toggle d’expansion pour enrichir les briefs courts",
       "Pay-as-you-go avec tarifs par seconde clairs",
-      "Disponible Europe/UK/monde via le wallet MaxVideoAI",
+      "Disponible Europe/UK/monde via le wallet Perzia AI",
       "Fonctionne avec Sora, Veo, Pika, Kling, MiniMax Hailuo pour comparer"
     ],
     "bestUseCasesTitle": "Meilleurs usages",
@@ -109,9 +109,9 @@
       "Prompts EN/ZH avec expansion optionnelle",
       "Idées guidées par musique/SFX/VO"
     ],
-    "whatTitle": "Ce qu’est Wan 2.5 dans MaxVideoAI",
+    "whatTitle": "Ce qu’est Wan 2.5 dans Perzia AI",
     "whatIntro1": "Modèle texte/image→vidéo pour des clips courts avec audio natif.",
-    "whatIntro2": "Dans MaxVideoAI, moteur flexible et audio-ready avec prix par résolution.",
+    "whatIntro2": "Dans Perzia AI, moteur flexible et audio-ready avec prix par résolution.",
     "whatFlowTitle": "Flux in-app",
     "whatFlowSteps": [
       "1. Choisir Wan 2.5.",
@@ -122,8 +122,8 @@
       "6. Coller un prompt ciné avec sujet, caméra et son.",
       "7. Vérifier le prix live et lancer."
     ],
-    "specTitle": "Specs réelles – Wan 2.5 dans MaxVideoAI (480p–1080p, 5–10 s)",
-    "specNote": "Specs telles qu’utilisées aujourd’hui dans MaxVideoAI.",
+    "specTitle": "Specs réelles – Wan 2.5 dans Perzia AI (480p–1080p, 5–10 s)",
+    "specNote": "Specs telles qu’utilisées aujourd’hui dans Perzia AI.",
     "specSections": [
       {
         "title": "Durée & sortie",
@@ -174,7 +174,7 @@
     ],
     "specValueProp": "Wan 2.5 est le moteur court audio-ready pour des beats 5–10 s où image et son doivent tomber ensemble.",
     "galleryTitle": "Galerie Wan 2.5",
-    "galleryIntro": "Clips générés avec la même config que vous avez dans MaxVideoAI.",
+    "galleryIntro": "Clips générés avec la même config que vous avez dans Perzia AI.",
     "gallerySceneCta": "Ouvrir cette scène dans Generate et l’adapter à votre script →",
     "galleryAllCta": "Voir tous les exemples Wan 2.5 →",
     "recreateLabel": "Recréer ce plan →",
@@ -252,7 +252,7 @@
     "safetyInterpretation": [
       "Utilisez Wan 2.5 pour du contenu légal, éthique et brand-safe"
     ],
-    "safetyNote": "Wan 2.5 passe par les filtres du fournisseur et de MaxVideoAI.",
+    "safetyNote": "Wan 2.5 passe par les filtres du fournisseur et de Perzia AI.",
     "comparisonTitle": "Wan 2.5 vs Sora 2 – Résumé",
     "comparisonPoints": [
       "Wan 2.5 : beats 5–10 s audio-ready avec piste optionnelle et tiers de résolution",
@@ -260,7 +260,7 @@
       "Veo 3.1 / Kling / Pika : à choisir pour presets de cadrage, réalisme silencieux 1080p ou animation stylisée"
     ],
     "comparisonCta": "Comparer Wan 2.5 vs Sora 2 →",
-    "faqTitle": "FAQ – Wan 2.5 dans MaxVideoAI",
+    "faqTitle": "FAQ – Wan 2.5 dans Perzia AI",
     "faqs": [
       { "q": "Wan 2.5 génère-t-il toujours de l’audio ?", "a": "Oui. Audio natif si aucune piste ; si vous uploadez WAV/MP3, elle est recoupée/loopée à 5/10 s et devient la bande principale." },
       { "q": "Quelles résolutions/durées choisir ?", "a": "480p/5s pour le look-dev; 720p/5–10s pour interne/social; 1080p/10s pour beats hero et livrables." },
@@ -269,9 +269,10 @@
       { "q": "Comment se situe le prix ?", "a": "Tarif à la seconde par résolution (0,05/0,10/0,15 $/s) ; milieu de gamme vs moteurs premium ou muets low-cost." }
     ],
     "relatedTitle": "Explorer d’autres modèles",
-    "relatedSubtitle": "Comparez prix, latence et options de sortie dans le catalogue MaxVideoAI.",
-    "finalPara1": "Wan 2.5 dans MaxVideoAI est votre moteur court audio-ready pour des beats de 5–10 s.",
+    "relatedSubtitle": "Comparez prix, latence et options de sortie dans le catalogue Perzia AI.",
+    "finalPara1": "Wan 2.5 dans Perzia AI est votre moteur court audio-ready pour des beats de 5–10 s.",
     "finalPara2": "Audio natif ou piste upload, itérez à bas coût et finalisez en HD quand image et son doivent coïncider.",
     "finalButton": "Ouvrir Generate"
   }
 }
+

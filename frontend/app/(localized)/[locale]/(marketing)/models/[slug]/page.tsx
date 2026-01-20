@@ -149,7 +149,7 @@ export function generateStaticParams() {
   return locales.flatMap((locale) => engines.map((entry) => ({ locale, slug: entry.modelSlug })));
 }
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://maxvideoai.com';
+const SITE = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://perzia-ai.com';
 const PROVIDER_INFO_MAP: Record<string, { name: string; url: string }> = {
   openai: { name: 'OpenAI', url: 'https://openai.com' },
   'google-veo': { name: 'Google DeepMind', url: 'https://deepmind.google/technologies/veo/' },
@@ -722,7 +722,7 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
   const engine = getFalEngineBySlug(slug);
   if (!engine) {
     return {
-      title: 'Model not found - MaxVideo AI',
+      title: 'Model not found - Perzia AI',
       robots: { index: false, follow: false },
     };
   }
@@ -730,12 +730,12 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
   const localized = await getEngineLocalized(slug, locale);
   const detailSlugMap = buildDetailSlugMap(slug);
   const publishableLocales = Array.from(resolveLocalesForEnglishPath(`/models/${slug}`));
-  const fallbackTitle = engine.seo.title ?? `${engine.marketingName} — MaxVideo AI`;
+  const fallbackTitle = engine.seo.title ?? `${engine.marketingName} — Perzia AI`;
   const title = localized.seo.title ?? fallbackTitle;
   const description =
     localized.seo.description ??
     engine.seo.description ??
-    'Explore availability, prompts, pricing, and render policies for this model on MaxVideoAI.';
+    'Explore availability, prompts, pricing, and render policies for this model on Perzia AI.';
   const ogImagePath = localized.seo.image ?? MODEL_OG_IMAGE_MAP[slug] ?? engine.media?.imagePath ?? '/og/price-before.png';
   return buildSeoMetadata({
     locale,
@@ -796,7 +796,7 @@ function toGalleryCard(
   engineSlug = 'sora-2',
   fromPath?: string
 ): ExampleGalleryVideo {
-  const promptExcerpt = formatPromptExcerpt(video.promptExcerpt || video.prompt || 'MaxVideoAI render');
+  const promptExcerpt = formatPromptExcerpt(video.promptExcerpt || video.prompt || 'Perzia AI render');
   const videoHrefBase = `/video/${encodeURIComponent(video.id)}`;
   const videoHref = fromPath ? `${videoHrefBase}?from=${encodeURIComponent(fromPath)}` : videoHrefBase;
   return {

@@ -3,7 +3,7 @@
   "versionLabel": "Pro",
   "seo": {
     "title": "Sora 2 Pro – Longer AI Videos with Audio & Enhanced Prompt Control",
-    "description": "Create longer, more immersive AI videos from text or images using Sora 2 Pro. Native voice, ambient sound, prompt chaining, and advanced control via MaxVideoAI.",
+    "description": "Create longer, more immersive AI videos from text or images using Sora 2 Pro. Native voice, ambient sound, prompt chaining, and advanced control via Perzia AI.",
     "image": "https://videohub-uploads-us.s3.amazonaws.com/renders/301cc489-d689-477f-94c4-0b051deda0bc/a5cbd8d3-33c7-47b5-8480-7f23aab89891-job_684c1b3d-2679-40d1-adb7-06151b3e8739.jpg"
   },
   "hero": {
@@ -34,7 +34,7 @@
     "heroDesc1": "Sora 2 Pro is the premium sibling to Sora 2. You get 720p or 1080p output, longer cinematic control, explicit audio toggle, and richer prompt chaining for multi-beat sequences—ideal for ads, trailers, and client-ready deliveries.",
     "heroDesc2": "Prototype fast with Sora 2, then move into Sora 2 Pro to regenerate your winning shots in 1080p with tighter control over timing, motion, and sound.",
     "secondaryCta": "Compare with Sora 2 (720p) →",
-    "whyTitle": "Why Sora 2 Pro in MaxVideoAI:",
+    "whyTitle": "Why Sora 2 Pro in Perzia AI:",
     "heroHighlights": [
       "720p or 1080p output for client-ready delivery",
       "4–12s runs with richer cinematic control",
@@ -42,8 +42,8 @@
       "Prompt chaining for multi-scene continuity",
       "Upgrade path from Sora 2 prototyping to Pro finals"
     ],
-    "specTitle": "Real Specs – Sora 2 Pro in MaxVideoAI (720p/1080p, 4–12s)",
-    "specNote": "These specs reflect Sora 2 Pro exactly as exposed in MaxVideoAI—production-ready defaults, no placeholder demos.",
+    "specTitle": "Real Specs – Sora 2 Pro in Perzia AI (720p/1080p, 4–12s)",
+    "specNote": "These specs reflect Sora 2 Pro exactly as exposed in Perzia AI—production-ready defaults, no placeholder demos.",
     "specSections": [
       {
         "title": "Duration & Output",
@@ -71,7 +71,7 @@
       {
         "title": "Audio",
         "items": [
-          "Audio toggle in MaxVideoAI (on/off)",
+          "Audio toggle in Perzia AI (on/off)",
           "Supports voice-over + ambient layers",
           "Write audio cues directly in your prompt"
         ]
@@ -79,7 +79,7 @@
       {
         "title": "Pricing",
         "items": [
-          "Higher cost-per-second than Sora 2 (rate shown in Generate includes MaxVideoAI margin)",
+          "Higher cost-per-second than Sora 2 (rate shown in Generate includes Perzia AI margin)",
           "Transparent wallet-based billing per second",
           "Check the live rate in Generate before you run"
         ]
@@ -88,7 +88,7 @@
     "specValueProp": "Sora 2 Pro is for polished, 1080p outputs with audio control and multi-scene continuity—ideal once your Sora 2 explorations are locked.",
     "microCta": "Start generating with Sora 2 Pro →",
     "galleryTitle": "Example Gallery: Sora 2 Pro Outputs",
-    "galleryIntro": "See 1080p, multi-beat clips rendered with Sora 2 Pro in MaxVideoAI.",
+    "galleryIntro": "See 1080p, multi-beat clips rendered with Sora 2 Pro in Perzia AI.",
     "gallerySceneCta": "Open this scene in Generate and adapt it with your own brand →",
     "galleryAllCta": "View all Sora 2 Pro examples →",
     "recreateLabel": "Recreate this Pro shot →",
@@ -174,11 +174,11 @@
       "Same workflow: swap engines in the same GUI when you’re ready to upscale."
     ],
     "comparisonCta": "Compare Sora 2 and Sora 2 Pro →",
-    "faqTitle": "FAQ – Sora 2 Pro in MaxVideoAI",
+    "faqTitle": "FAQ – Sora 2 Pro in Perzia AI",
     "faqs": [
       {
         "q": "Does Sora 2 Pro include audio control?",
-        "a": "Yes. Toggle audio on/off in MaxVideoAI, and write voice/ambience/FX cues into your prompt."
+        "a": "Yes. Toggle audio on/off in Perzia AI, and write voice/ambience/FX cues into your prompt."
       },
       {
         "q": "Is it more expensive than Sora 2?",
@@ -194,8 +194,8 @@
       }
     ],
     "relatedTitle": "Explore other models",
-    "relatedSubtitle": "Compare pricing, latency, and output options across other engines available in MaxVideoAI.",
-    "finalPara1": "Sora 2 Pro in MaxVideoAI is built for premium, client-ready outputs with control over motion, audio, and continuity.",
+    "relatedSubtitle": "Compare pricing, latency, and output options across other engines available in Perzia AI.",
+    "finalPara1": "Sora 2 Pro in Perzia AI is built for premium, client-ready outputs with control over motion, audio, and continuity.",
     "finalPara2": "Prototype in Sora 2, then step into Sora 2 Pro when it’s time to polish and deliver in 1080p.",
     "finalButton": "Generate with Sora 2 Pro →"
   },
@@ -222,8 +222,8 @@
       "label": "Resolution",
       "body": "1080p delivery across 16:9, 9:16, 1:1",
       "link": {
-        "label": "MaxVideoAI docs",
-        "href": "https://docs.maxvideoai.com/engines/sora-2-pro"
+        "label": "Perzia AI docs",
+        "href": "https://docs.Perzia AI.com/engines/sora-2-pro"
       }
     },
     {
@@ -235,7 +235,7 @@
       "body": "Text prompts, reference images, or frame-accurate storyboards",
       "link": {
         "label": "Storyboard tutorial",
-        "href": "https://blog.maxvideoai.com/storyboard-sora-pro"
+        "href": "https://blog.Perzia AI.com/storyboard-sora-pro"
       }
     },
     {
@@ -293,3 +293,4 @@
   ],
   "pricingNotes": "Live pricing updates inside the Generate workspace. Check the current rate before you run a job."
 }
+

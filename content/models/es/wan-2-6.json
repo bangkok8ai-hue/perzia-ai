@@ -2,11 +2,11 @@
   "marketingName": "Wan 2.6",
   "versionLabel": "2.6",
   "seo": {
-    "title": "Wan 2.6 – Generador de video IA (Texto, Imagen y Referencia) | MaxVideoAI",
-    "description": "Genera clips cinematográficos de 5–15 s (Texto/Imagen) con Wan 2.6 en MaxVideoAI. Prompts multi-shot, animación de un still, o consistencia de sujeto con 1–3 videos de referencia (5–10 s). 720p/1080p, precio por segundo.",
+    "title": "Wan 2.6 – Generador de video IA (Texto, Imagen y Referencia) | Perzia AI",
+    "description": "Genera clips cinematográficos de 5–15 s (Texto/Imagen) con Wan 2.6 en Perzia AI. Prompts multi-shot, animación de un still, o consistencia de sujeto con 1–3 videos de referencia (5–10 s). 720p/1080p, precio por segundo.",
     "image": "/hero/wan-26.jpg"
   },
-  "overview": "Wan 2.6 en MaxVideoAI: clips cortos multi-shot de 5–15 s desde texto o imagen, más modo referencia (5–10 s) para consistencia de sujeto. Salida 720p/1080p, audio opcional en T2V/I2V, pago por uso.",
+  "overview": "Wan 2.6 en Perzia AI: clips cortos multi-shot de 5–15 s desde texto o imagen, más modo referencia (5–10 s) para consistencia de sujeto. Salida 720p/1080p, audio opcional en T2V/I2V, pago por uso.",
   "hero": {
     "title": "Wan 2.6 – Video IA multi-shot (Texto/Imagen 5–15 s, Referencia 5–10 s, 720p/1080p)",
     "intro": "Clips cortos cinematográficos pensados para prompts estructurados, transiciones limpias y sujetos coherentes.",
@@ -81,7 +81,7 @@
     { "q": "¿Qué duraciones están disponibles?", "a": "Texto e Imagen: 5, 10 o 15 s. Referencia: 5 o 10 s." }
   ],
   "custom": {
-    "whyTitle": "Por qué Wan 2.6 es potente en MaxVideoAI",
+    "whyTitle": "Por qué Wan 2.6 es potente en Perzia AI",
     "heroDesc1": "Wan 2.6 unifica entradas de Texto, Imagen y Referencia en una sola tarjeta para iterar rápido en beats cinemáticos.",
     "heroDesc2": "Usa prompts multi-shot para mini trailers, anima un still o bloquea la identidad con 1–3 videos de referencia.",
     "heroHighlights": [
@@ -89,7 +89,7 @@
       "Prompts multi-shot con timestamps para mini narrativas",
       "Audio opcional vía URL en T2V/I2V (desactivado en R2V)",
       "Ratios ampliados para redes sociales",
-      "Precio transparente por segundo en el wallet MaxVideoAI"
+      "Precio transparente por segundo en el wallet Perzia AI"
     ],
     "bestUseCasesTitle": "Casos de uso",
     "bestUseCases": [
@@ -98,7 +98,7 @@
       "Consistencia de sujeto con videos de referencia",
       "Salidas sociales multi-formato"
     ],
-    "whatTitle": "Cómo funciona Wan 2.6 en MaxVideoAI",
+    "whatTitle": "Cómo funciona Wan 2.6 en Perzia AI",
     "whatIntro1": "Elige modo Texto, Imagen o Referencia, define duración y resolución, y redacta el prompt.",
     "whatIntro2": "El modo Referencia mantiene la identidad usando videos reales.",
     "whatFlowTitle": "In-app flow",
@@ -110,7 +110,7 @@
       "5. Opcional: audio de fondo (T2V/I2V).",
       "6. Ve el precio final antes de renderizar."
     ],
-    "specTitle": "Specs reales – Wan 2.6 en MaxVideoAI",
+    "specTitle": "Specs reales – Wan 2.6 en Perzia AI",
     "specNote": "Specs basadas en el routing Fal actual.",
     "specSections": [
       {
@@ -195,14 +195,14 @@
     "comparisonCta": "Comparar Wan 2.6 vs Wan 2.5 →",
     "relatedCtaSora2": "Comparar Wan 2.6 vs Sora 2 →",
     "relatedCtaSora2Pro": "Comparar Wan 2.6 vs Sora 2 Pro →",
-    "faqTitle": "FAQ – Wan 2.6 en MaxVideoAI",
+    "faqTitle": "FAQ – Wan 2.6 en Perzia AI",
     "faqs": [
       { "q": "¿Wan 2.6 soporta audio?", "a": "URL de audio opcional en modos Texto e Imagen. El modo Referencia no soporta audio subido." },
       { "q": "¿Cuántos videos de referencia puedo subir?", "a": "1–3 videos MP4/MOV. Etiquétalos como @Video1, @Video2 y @Video3." },
       { "q": "¿Qué duraciones están disponibles?", "a": "Texto e Imagen: 5, 10 o 15 s. Referencia: 5 o 10 s." }
     ],
     "relatedTitle": "Explora otros modelos",
-    "relatedSubtitle": "Compara precio, latencia y opciones de salida en el catálogo MaxVideoAI.",
+    "relatedSubtitle": "Compara precio, latencia y opciones de salida en el catálogo Perzia AI.",
     "finalPara1": "Wan 2.6 está diseñado para secuencias cortas con control multi-shot.",
     "finalPara2": "Empieza con texto o imagen y luego pasa a referencia para consistencia.",
     "finalButton": "Abrir Wan 2.6 en Generate →",
@@ -248,3 +248,4 @@
     ]
   }
 }
+

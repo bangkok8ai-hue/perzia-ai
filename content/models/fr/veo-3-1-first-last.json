@@ -3,12 +3,12 @@
   "versionLabel": "3.1 First/Last",
   "seo": {
     "title": "Veo 3.1 First/Last – First & Last Frame vers Vidéo (720p/1080p, jusqu’à 8s)",
-    "description": "Reliez deux frames avec Veo 3.1 First/Last. Uploadez début + fin, ajoutez un prompt, choisissez 4/6/8 s en 720p ou 1080p, audio natif en option. Parfait pour transitions et before/after dans MaxVideoAI.",
+    "description": "Reliez deux frames avec Veo 3.1 First/Last. Uploadez début + fin, ajoutez un prompt, choisissez 4/6/8 s en 720p ou 1080p, audio natif en option. Parfait pour transitions et before/after dans Perzia AI.",
     "image": "/hero/veo3.jpg"
   },
-  "overview": "Veo 3.1 First/Last dans MaxVideoAI fait une transition cinématographique entre deux images. Vous fournissez un frame de début, un frame de fin et un prompt concis; Veo génère un clip fluide de 4/6/8 s en 720p ou 1080p, avec audio optionnel.",
+  "overview": "Veo 3.1 First/Last dans Perzia AI fait une transition cinématographique entre deux images. Vous fournissez un frame de début, un frame de fin et un prompt concis; Veo génère un clip fluide de 4/6/8 s en 720p ou 1080p, avec audio optionnel.",
   "hero": {
-    "title": "Veo 3.1 First/Last – First & Last Frame vers Vidéo dans MaxVideoAI (720p/1080p, jusqu’à 8s)",
+    "title": "Veo 3.1 First/Last – First & Last Frame vers Vidéo dans Perzia AI (720p/1080p, jusqu’à 8s)",
     "intro": "Veo 3.1 First/Last – Transitions fluides entre deux frames, avec audio natif",
     "badge": "720p/1080p · jusqu’à 8 s · First & last frame + prompt texte",
     "ctaPrimary": {
@@ -42,7 +42,7 @@
       "prompt": "Transition 6s 16:9 d’un bureau lumineux vers un rooftop de nuit avec la même personne. Dolly lent qui devient arc quand le rooftop apparaît; lumière jour → bleu/neon; audio passe de l’ambiance bureau au trafic et vent, pas de dialogue."
     }
   ],
-  "faqTitle": "FAQ – Veo 3.1 First/Last dans MaxVideoAI",
+  "faqTitle": "FAQ – Veo 3.1 First/Last dans Perzia AI",
   "faqs": [
     {
       "q": "Faut-il fournir début et fin ?",
@@ -50,7 +50,7 @@
     },
     {
       "q": "Durée maximale ?",
-      "a": "Jusqu’à ~8 s dans les APIs. MaxVideoAI propose 4/6/8 s pour garder des prompts prévisibles."
+      "a": "Jusqu’à ~8 s dans les APIs. Perzia AI propose 4/6/8 s pour garder des prompts prévisibles."
     },
     {
       "q": "Génère-t-il toujours l’audio ?",
@@ -68,7 +68,7 @@
   "custom": {
     "heroDesc1": "Reliez deux frames avec Veo 3.1 First/Last : uploadez début/fin, ajoutez un prompt, obtenez une transition fluide 4/6/8s en 720p ou 1080p avec audio optionnel.",
     "heroDesc2": "Servez-vous-en pour ponts de scène, before/after, morphs logo/UI et transitions dirigées où début et fin sont connus.",
-    "whyTitle": "Pourquoi Veo 3.1 First/Last est puissant dans MaxVideoAI",
+    "whyTitle": "Pourquoi Veo 3.1 First/Last est puissant dans Perzia AI",
     "heroHighlights": [
       "Relie deux images en une transition ciné continue",
       "Supporte l’audio natif quand activé",
@@ -85,9 +85,9 @@
       "Morphs stylisés entre designs",
       "Caméra d’un layout à un autre sans coupe"
     ],
-    "whatTitle": "Ce qu’est Veo 3.1 First/Last dans MaxVideoAI",
+    "whatTitle": "Ce qu’est Veo 3.1 First/Last dans Perzia AI",
     "whatIntro1": "Mode “first and last frame” / “Frames to Video” de Veo 3.1 qui interpole entre deux images avec audio optionnel.",
-    "whatIntro2": "Dans MaxVideoAI : 4/6/8 s, 16:9/9:16/1:1, 720p ou 1080p, frames début/fin, audio on/off, et Veo gère la transition.",
+    "whatIntro2": "Dans Perzia AI : 4/6/8 s, 16:9/9:16/1:1, 720p ou 1080p, frames début/fin, audio on/off, et Veo gère la transition.",
     "whatFlowTitle": "Flux in-app",
     "whatFlowSteps": [
       "1. Choisir Veo 3.1 First/Last.",
@@ -97,8 +97,8 @@
       "5. Décrire comment passer de A à B (caméra, sujet, rythme, style, audio).",
       "6. Vérifier le prix/seconde puis générer."
     ],
-    "specTitle": "Specs réelles – Veo 3.1 First/Last dans MaxVideoAI",
-    "specNote": "Décrit la route first/last actuelle dans MaxVideoAI.",
+    "specTitle": "Specs réelles – Veo 3.1 First/Last dans Perzia AI",
+    "specNote": "Décrit la route first/last actuelle dans Perzia AI.",
     "specSections": [
       {
         "title": "Durée & sortie",
@@ -202,8 +202,9 @@
     "comparisonCta": "Comparer Veo 3.1 First/Last vs Veo 3.1 / Veo 3.1 Fast →",
     "relatedTitle": "Explorer d’autres modèles",
     "relatedSubtitle": "Comparez prix, latence et contrôles dans le catalogue.",
-    "finalPara1": "Veo 3.1 First/Last dans MaxVideoAI est votre moteur de transition start–end quand vous connaissez déjà les frames de début et fin.",
+    "finalPara1": "Veo 3.1 First/Last dans Perzia AI est votre moteur de transition start–end quand vous connaissez déjà les frames de début et fin.",
     "finalPara2": "Servez-vous-en pour relier scènes, logos ou UI avec audio optionnel, puis assemblez tout dans un seul flux.",
     "finalButton": "Ouvrir Generate"
   }
 }
+

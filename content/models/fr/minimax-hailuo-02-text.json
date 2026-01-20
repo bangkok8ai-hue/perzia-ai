@@ -2,11 +2,11 @@
   "marketingName": "MiniMax Hailuo 02",
   "versionLabel": "02",
   "seo": {
-    "title": "Minimax Hailuo-02 texte→vidéo modèle IA – MaxVideoAI",
-    "description": "Générez des brouillons MiniMax Hailuo 02 à petit prix en 512p/768p à partir de texte ou d’images. Créez des clips silencieux de 6 à 10 secondes pour storyboards, boucles et tests de mouvement, puis passez les meilleurs en Veo, Kling, Wan ou Sora dans MaxVideoAI.",
+    "title": "Minimax Hailuo-02 texte→vidéo modèle IA – Perzia AI",
+    "description": "Générez des brouillons MiniMax Hailuo 02 à petit prix en 512p/768p à partir de texte ou d’images. Créez des clips silencieux de 6 à 10 secondes pour storyboards, boucles et tests de mouvement, puis passez les meilleurs en Veo, Kling, Wan ou Sora dans Perzia AI.",
     "image": "/hero/minimax-video01.jpg"
   },
-  "overview": "MiniMax Hailuo 02 dans MaxVideoAI : clips courts et économiques avec bonne physique en 512p/768p, 6 ou 10 s. Entrée texte ou image, frame final optionnel, sortie silencieuse, pricing wallet pour prototyper vite.",
+  "overview": "MiniMax Hailuo 02 dans Perzia AI : clips courts et économiques avec bonne physique en 512p/768p, 6 ou 10 s. Entrée texte ou image, frame final optionnel, sortie silencieuse, pricing wallet pour prototyper vite.",
   "hero": {
     "title": "MiniMax Hailuo 02 – Brouillons vidéo IA économiques avec forte physique",
     "intro": "MiniMax Hailuo 02 – Drafts rapides et stylisés avec bonne physique (6–10 s, silencieux)",
@@ -81,14 +81,14 @@
   "faqs": [
     { "q": "Pourquoi choisir MiniMax plutôt qu’un moteur premium ?", "a": "Bonne motion/physique à moindre coût; idéal pour pubs volumineuses et tests." },
     { "q": "Quel style de prompt marche le mieux ?", "a": "Prompts courts centrés motion : sujet, décor, caméra, physique; une idée par clip." },
-    { "q": "Supporte-t-il le vertical ?", "a": "Oui—16:9, 9:16, 1:1 dans MaxVideoAI." },
+    { "q": "Supporte-t-il le vertical ?", "a": "Oui—16:9, 9:16, 1:1 dans Perzia AI." },
     { "q": "Supporte-t-il l’audio ?", "a": "Non. Sortie silencieuse; ajoutez le son en post ou via moteurs audio." },
     { "q": "Et si j’ai besoin de 1080p ?", "a": "Prototypage en 512p/768p, puis upscale ou relance en 1080p (Veo/Kling/Wan/Sora 2 Pro)." }
   ],
   "custom": {
     "heroDesc1": "Générez des drafts rapides avec physique en 512p/768p depuis texte ou une image, frame final optionnel pour verrouiller la fin.",
     "heroDesc2": "Choisissez 6 ou 10 s, 16:9/9:16/1:1, obtenez des clips silencieux prêts pour storyboards, loops et tests motion.",
-    "whyTitle": "Pourquoi MiniMax Hailuo 02 est puissant dans MaxVideoAI",
+    "whyTitle": "Pourquoi MiniMax Hailuo 02 est puissant dans Perzia AI",
     "heroHighlights": [
       "Texte → Vidéo & Image → Vidéo dans un seul moteur",
       "Clips 6 ou 10 s pour intros et tests motion",
@@ -106,10 +106,10 @@
       "Loops et fonds expérimentaux",
       "Campagnes multivariantes à bas coût"
     ],
-    "whatTitle": "Ce qu’est MiniMax Hailuo 02 dans MaxVideoAI",
+    "whatTitle": "Ce qu’est MiniMax Hailuo 02 dans Perzia AI",
     "whatIntro1": "Modèle phare MiniMax pour séquences courtes avec bonne physique et respect du prompt.",
-    "whatIntro2": "Dans MaxVideoAI c’est un moteur rapide et silencieux en 512p/768p.",
-    "whatFlowTitle": "Flux MaxVideoAI",
+    "whatIntro2": "Dans Perzia AI c’est un moteur rapide et silencieux en 512p/768p.",
+    "whatFlowTitle": "Flux Perzia AI",
     "whatFlowSteps": [
       "1. Choisir MiniMax Hailuo 02.",
       "2. Texte → Vidéo ou Image → Vidéo.",
@@ -118,7 +118,7 @@
       "5. Coller un prompt court axé motion (mentionner la physique si besoin).",
       "6. Vérifier le prix en direct avant rendu."
     ],
-    "specTitle": "Specs réelles – MiniMax Hailuo 02 dans MaxVideoAI (512p/768p, 6–10 s)",
+    "specTitle": "Specs réelles – MiniMax Hailuo 02 dans Perzia AI (512p/768p, 6–10 s)",
     "specNote": "Specs telles qu’utilisées aujourd’hui.",
     "specSections": [
       {
@@ -229,7 +229,7 @@
       "Pas de contenu sexuel explicite ni de mineurs sexualisés",
       "Pas de haine, harcèlement ou extrémisme",
       "Pas d’usurpation d’identité sans consentement",
-      "La modération fournisseur + MaxVideoAI peut bloquer/ajuster"
+      "La modération fournisseur + Perzia AI peut bloquer/ajuster"
     ],
     "safetyInterpretation": [
       "Utilisez-le pour des histoires fictives et brand-safe"
@@ -244,18 +244,19 @@
       "Wan 2.5 : 5–10 s avec audio natif ou piste upload et multiples tiers"
     ],
     "comparisonCta": "Comparer MiniMax vs Pika 2.2 →",
-    "faqTitle": "FAQ – MiniMax Hailuo 02 dans MaxVideoAI",
+    "faqTitle": "FAQ – MiniMax Hailuo 02 dans Perzia AI",
     "faqs": [
       { "q": "Pourquoi choisir MiniMax plutôt qu’un moteur premium ?", "a": "Motion/physique solide à moindre coût; idéal pour pubs volumineuses et tests." },
       { "q": "Quel style de prompt marche le mieux ?", "a": "Prompts courts orientés motion : sujet, décor, caméra, physique; une idée par clip." },
-      { "q": "Peut-il faire du vertical ?", "a": "Oui—16:9, 9:16, 1:1 dans MaxVideoAI." },
+      { "q": "Peut-il faire du vertical ?", "a": "Oui—16:9, 9:16, 1:1 dans Perzia AI." },
       { "q": "Supporte-t-il l’audio ?", "a": "Non. Sortie silencieuse; ajoutez le son en post ou via moteurs audio." },
       { "q": "Et si j’ai besoin de 1080p ?", "a": "Prototypage en 512p/768p, puis upscale ou relance en 1080p (Veo/Kling/Wan/Sora 2 Pro)." }
     ],
     "relatedTitle": "Explorer d’autres modèles",
-    "relatedSubtitle": "Comparez prix, latence et sorties dans le catalogue MaxVideoAI.",
-    "finalPara1": "MiniMax Hailuo 02 dans MaxVideoAI est votre moteur rapide avec physique pour tester motion et transitions à bas coût.",
+    "relatedSubtitle": "Comparez prix, latence et sorties dans le catalogue Perzia AI.",
+    "finalPara1": "MiniMax Hailuo 02 dans Perzia AI est votre moteur rapide avec physique pour tester motion et transitions à bas coût.",
     "finalPara2": "Servez-vous-en pour explorer, puis promouvez les gagnants vers des modèles haut de gamme pour l’audio et les finals 1080p.",
     "finalButton": "Ouvrir Generate"
   }
 }
+
