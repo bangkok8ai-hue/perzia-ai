@@ -968,8 +968,8 @@ async function renderSoraModelPage({
     id: `${engine.modelSlug}-hero-fallback`,
     prompt:
       engine.type === 'image'
-        ? `${localizedContent.marketingName ?? engine.marketingName} demo still from MaxVideoAI`
-        : `${localizedContent.marketingName ?? engine.marketingName} demo clip from MaxVideoAI`,
+        ? `${localizedContent.marketingName ?? engine.marketingName} demo still from Perzia AI`
+        : `${localizedContent.marketingName ?? engine.marketingName} demo clip from Perzia AI`,
     videoUrl: engine.type === 'image' ? null : engine.media?.videoUrl ?? engine.demoUrl ?? null,
     posterUrl: buildOptimizedPosterUrl(engine.media?.imagePath) ?? engine.media?.imagePath ?? null,
     durationSec: null,
