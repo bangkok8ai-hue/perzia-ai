@@ -802,7 +802,7 @@ function toGalleryCard(
   return {
     id: video.id,
     href: videoHref,
-    engineLabel: video.engineLabel || fallbackLabel || 'Sora 2',
+    engineLabel: (video.engineLabel || fallbackLabel || 'Sora 2').replace(/MaxVideoAI/g, 'Perzia AI'),
     engineIconId: iconId ?? 'sora-2',
     engineBrandId: brandId,
     priceLabel: formatPriceLabel(video.finalPriceCents ?? null, video.currency ?? null),
@@ -1170,41 +1170,41 @@ function Sora2PageLayout({
     softwareSchema,
     heroVideoAbsolute
       ? {
-          '@context': 'https://schema.org',
-          '@type': 'VideoObject',
-          name: heroTitle,
-          description: heroMedia.prompt ?? pageDescription,
-          thumbnailUrl: heroPosterAbsolute ? [heroPosterAbsolute] : undefined,
-          contentUrl: heroVideoAbsolute,
-          uploadDate: new Date().toISOString(),
-          duration: durationIso,
-          inLanguage,
-        }
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        name: heroTitle,
+        description: heroMedia.prompt ?? pageDescription,
+        thumbnailUrl: heroPosterAbsolute ? [heroPosterAbsolute] : undefined,
+        contentUrl: heroVideoAbsolute,
+        uploadDate: new Date().toISOString(),
+        duration: durationIso,
+        inLanguage,
+      }
       : null,
     {
       '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: resolvedBreadcrumb.home,
-            item: localizedHomeUrl,
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: resolvedBreadcrumb.models,
-            item: localizedModelsUrl,
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: heroTitle,
-            item: localizedCanonical,
-          },
-        ],
-      },
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: resolvedBreadcrumb.home,
+          item: localizedHomeUrl,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: resolvedBreadcrumb.models,
+          item: localizedModelsUrl,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: heroTitle,
+          item: localizedCanonical,
+        },
+      ],
+    },
   ].filter(Boolean) as object[];
 
   return (
@@ -1438,53 +1438,53 @@ function Sora2PageLayout({
                   </Link>
                 </p>
               ) : null}
-            <div className="mt-6 space-y-4">
-              <div className="overflow-x-auto pb-2">
-                <div className="flex min-w-full gap-4">
-                  {galleryVideos.slice(0, 6).map((video) => (
-                    <article
-                      key={video.id}
-                      className="flex w-64 shrink-0 flex-col overflow-hidden rounded-2xl border border-hairline bg-white shadow-card"
-                    >
-                      <Link href={video.href} className="group relative block aspect-video bg-neutral-100">
-                        {video.optimizedPosterUrl || video.rawPosterUrl ? (
-                          <Image
-                            src={video.optimizedPosterUrl ?? video.rawPosterUrl ?? ''}
-                            alt={
-                              video.prompt
-                                ? `MaxVideoAI ${video.engineLabel} example – ${video.prompt}`
-                                : `MaxVideoAI ${video.engineLabel} example`
-                            }
-                            fill
-                            className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
-                            sizes="256px"
-                            quality={70}
-                          />
-                        ) : (
-                          <div className="flex h-full w-full items-center justify-center bg-neutral-200 text-xs font-semibold text-text-muted">
-                            No preview
-                          </div>
-                        )}
-                      </Link>
-                      <div className="space-y-1 px-4 py-3">
-                        <p className="text-xs font-semibold uppercase tracking-micro text-text-muted">
-                          {video.engineLabel} · {video.durationSec}s
-                        </p>
-                        <p className="text-sm font-semibold leading-snug text-text-primary line-clamp-2">{video.prompt}</p>
-                        {video.recreateHref && copy.recreateLabel ? (
-                          <Link
-                            href={video.recreateHref}
-                            className="inline-flex items-center text-[11px] font-semibold text-accent transition hover:text-accentSoft"
-                          >
-                            {copy.recreateLabel}
-                          </Link>
-                        ) : null}
-                      </div>
-                    </article>
-                  ))}
+              <div className="mt-6 space-y-4">
+                <div className="overflow-x-auto pb-2">
+                  <div className="flex min-w-full gap-4">
+                    {galleryVideos.slice(0, 6).map((video) => (
+                      <article
+                        key={video.id}
+                        className="flex w-64 shrink-0 flex-col overflow-hidden rounded-2xl border border-hairline bg-white shadow-card"
+                      >
+                        <Link href={video.href} className="group relative block aspect-video bg-neutral-100">
+                          {video.optimizedPosterUrl || video.rawPosterUrl ? (
+                            <Image
+                              src={video.optimizedPosterUrl ?? video.rawPosterUrl ?? ''}
+                              alt={
+                                video.prompt
+                                  ? `MaxVideoAI ${video.engineLabel} example – ${video.prompt}`
+                                  : `MaxVideoAI ${video.engineLabel} example`
+                              }
+                              fill
+                              className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                              sizes="256px"
+                              quality={70}
+                            />
+                          ) : (
+                            <div className="flex h-full w-full items-center justify-center bg-neutral-200 text-xs font-semibold text-text-muted">
+                              No preview
+                            </div>
+                          )}
+                        </Link>
+                        <div className="space-y-1 px-4 py-3">
+                          <p className="text-xs font-semibold uppercase tracking-micro text-text-muted">
+                            {video.engineLabel} · {video.durationSec}s
+                          </p>
+                          <p className="text-sm font-semibold leading-snug text-text-primary line-clamp-2">{video.prompt}</p>
+                          {video.recreateHref && copy.recreateLabel ? (
+                            <Link
+                              href={video.recreateHref}
+                              className="inline-flex items-center text-[11px] font-semibold text-accent transition hover:text-accentSoft"
+                            >
+                              {copy.recreateLabel}
+                            </Link>
+                          ) : null}
+                        </div>
+                      </article>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
             </>
           ) : (
             <div className="mt-4 rounded-2xl border border-dashed border-hairline bg-white/60 px-4 py-4 text-sm text-text-secondary">
@@ -1574,43 +1574,43 @@ function Sora2PageLayout({
           </div>
         </section>
 
-      {copy.demoTitle || copy.demoPrompt.length || copy.demoNotes.length ? (
-        <section className="mt-14 space-y-6">
-          {copy.demoTitle ? <h2 className="mt-2 text-2xl font-semibold text-text-primary sm:mt-0">{copy.demoTitle}</h2> : null}
-          <div className="grid gap-6 lg:grid-cols-2 lg:items-start">
-            <div className="rounded-2xl border border-hairline bg-white/80 p-3 shadow-card lg:order-2">
-              {demoMedia ? (
-                <MediaPreview media={demoMedia} label={copy.demoTitle ?? 'Sora 2 demo'} />
-              ) : (
-                <div className="flex h-full min-h-[280px] items-center justify-center rounded-xl border border-dashed border-hairline bg-bg text-sm text-text-secondary">
-                  {copy.galleryIntro ?? 'Demo clip coming soon.'}
-                </div>
-              )}
+        {copy.demoTitle || copy.demoPrompt.length || copy.demoNotes.length ? (
+          <section className="mt-14 space-y-6">
+            {copy.demoTitle ? <h2 className="mt-2 text-2xl font-semibold text-text-primary sm:mt-0">{copy.demoTitle}</h2> : null}
+            <div className="grid gap-6 lg:grid-cols-2 lg:items-start">
+              <div className="rounded-2xl border border-hairline bg-white/80 p-3 shadow-card lg:order-2">
+                {demoMedia ? (
+                  <MediaPreview media={demoMedia} label={copy.demoTitle ?? 'Sora 2 demo'} />
+                ) : (
+                  <div className="flex h-full min-h-[280px] items-center justify-center rounded-xl border border-dashed border-hairline bg-bg text-sm text-text-secondary">
+                    {copy.galleryIntro ?? 'Demo clip coming soon.'}
+                  </div>
+                )}
+              </div>
+              <div className="space-y-4 rounded-2xl border border-hairline bg-white/80 p-4 shadow-card lg:order-1">
+                {copy.demoPromptLabel ? (
+                  <p className="text-sm font-semibold text-text-primary">{copy.demoPromptLabel}</p>
+                ) : null}
+                {copy.demoPrompt.length ? (
+                  <div className="rounded-xl border border-dashed border-hairline bg-bg px-4 py-3 text-sm text-text-secondary">
+                    {copy.demoPrompt.map((line) => (
+                      <p key={line} className="mt-2 first:mt-0">
+                        {line}
+                      </p>
+                    ))}
+                  </div>
+                ) : null}
+                {copy.demoNotes.length ? (
+                  <ul className="list-disc space-y-1 pl-5 text-sm text-text-secondary">
+                    {copy.demoNotes.map((note) => (
+                      <li key={note}>{note}</li>
+                    ))}
+                  </ul>
+                ) : null}
+              </div>
             </div>
-            <div className="space-y-4 rounded-2xl border border-hairline bg-white/80 p-4 shadow-card lg:order-1">
-              {copy.demoPromptLabel ? (
-                <p className="text-sm font-semibold text-text-primary">{copy.demoPromptLabel}</p>
-              ) : null}
-              {copy.demoPrompt.length ? (
-                <div className="rounded-xl border border-dashed border-hairline bg-bg px-4 py-3 text-sm text-text-secondary">
-                  {copy.demoPrompt.map((line) => (
-                    <p key={line} className="mt-2 first:mt-0">
-                      {line}
-                    </p>
-                  ))}
-                </div>
-              ) : null}
-              {copy.demoNotes.length ? (
-                <ul className="list-disc space-y-1 pl-5 text-sm text-text-secondary">
-                  {copy.demoNotes.map((note) => (
-                    <li key={note}>{note}</li>
-                  ))}
-                </ul>
-              ) : null}
-            </div>
-          </div>
-        </section>
-      ) : null}
+          </section>
+        ) : null}
 
         {copy.tipsTitle || strengths.length || boundaries.length ? (
           <section id="tips" className="mt-14 space-y-6">
@@ -1721,18 +1721,18 @@ function Sora2PageLayout({
               {copy.relatedTitle ?? 'Explore other models'}
             </h2>
             {copy.relatedSubtitle ? <p className="text-sm text-text-secondary">{copy.relatedSubtitle}</p> : null}
-          <div className="grid gap-4 md:grid-cols-3">
-            {relatedEngines.map((entry) => {
-              const label = entry.marketingName ?? entry.engine.label;
+            <div className="grid gap-4 md:grid-cols-3">
+              {relatedEngines.map((entry) => {
+                const label = entry.marketingName ?? entry.engine.label;
                 const ctaLabel =
                   engineSlug === 'veo-3-1-first-last'
                     ? entry.modelSlug === 'veo-3-1'
                       ? 'Explore Veo 3.1 →'
                       : entry.modelSlug === 'veo-3-1-fast'
                         ? 'Explore Veo 3.1 Fast →'
-                      : entry.modelSlug === 'sora-2'
-                        ? 'Explore Sora 2 →'
-                        : copy.comparisonCta ?? 'View model →'
+                        : entry.modelSlug === 'sora-2'
+                          ? 'Explore Sora 2 →'
+                          : copy.comparisonCta ?? 'View model →'
                     : engineSlug === 'wan-2-6'
                       ? entry.modelSlug === 'sora-2'
                         ? relatedCtaSora2 ?? secondaryCta ?? copy.comparisonCta ?? 'View model →'
@@ -1740,30 +1740,30 @@ function Sora2PageLayout({
                           ? relatedCtaSora2Pro ?? copy.comparisonCta ?? 'View model →'
                           : copy.comparisonCta ?? 'View model →'
                       : copy.comparisonCta ?? 'View model →';
-              return (
-                <article
-                  key={entry.modelSlug}
-                  className="rounded-2xl border border-hairline bg-white/90 p-4 shadow-card transition hover:-translate-y-1 hover:border-accent/60"
-                >
-                  <p className="text-[11px] font-semibold uppercase tracking-micro text-text-muted">{entry.brandId}</p>
-                  <h3 className="mt-2 text-lg font-semibold text-text-primary">
-                    {label}
-                  </h3>
-                  <p className="mt-2 text-sm text-text-secondary line-clamp-3">
-                    {entry.seo?.description ?? localizedContent.overview ?? ''}
-                  </p>
-                  <Link
-                    href={localizeModelsPath(entry.modelSlug)}
-                    className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent transition hover:text-accentSoft"
+                return (
+                  <article
+                    key={entry.modelSlug}
+                    className="rounded-2xl border border-hairline bg-white/90 p-4 shadow-card transition hover:-translate-y-1 hover:border-accent/60"
                   >
-                    {ctaLabel}
-                  </Link>
-                </article>
-              );
-            })}
-          </div>
-        </section>
-      ) : null}
+                    <p className="text-[11px] font-semibold uppercase tracking-micro text-text-muted">{entry.brandId}</p>
+                    <h3 className="mt-2 text-lg font-semibold text-text-primary">
+                      {label}
+                    </h3>
+                    <p className="mt-2 text-sm text-text-secondary line-clamp-3">
+                      {entry.seo?.description ?? localizedContent.overview ?? ''}
+                    </p>
+                    <Link
+                      href={localizeModelsPath(entry.modelSlug)}
+                      className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent transition hover:text-accentSoft"
+                    >
+                      {ctaLabel}
+                    </Link>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        ) : null}
 
         <section className="mt-14 space-y-3 rounded-3xl border border-hairline bg-white/90 px-6 py-6 text-text-primary shadow-card sm:px-8">
           {copy.finalPara1 ? <p className="text-base text-text-secondary">{copy.finalPara1}</p> : null}
@@ -2027,9 +2027,9 @@ export default async function ModelDetailPage({ params }: PageParams) {
   };
   const platformPriceInfo = detailCopy.overview.platformPrice
     ? {
-        label: detailCopy.overview.platformPrice,
-        href: '/generate',
-      }
+      label: detailCopy.overview.platformPrice,
+      href: '/generate',
+    }
     : null;
   const examplesLinkHref = { pathname: '/examples', query: { engine: engine.modelSlug ?? slug } };
   const pricingLinkHref = { pathname: '/pricing' };
@@ -2083,301 +2083,301 @@ export default async function ModelDetailPage({ params }: PageParams) {
   return (
     <>
       <div className="mx-auto max-w-4xl px-4 pb-24 pt-16 sm:px-6 lg:px-8">
-      <Head>
-        {heroPosterPreload ? <link rel="preload" as="image" href={heroPosterPreload} fetchPriority="high" /> : null}
-        {schemaPayloads.map((schema, index) => (
-          <script
-            key={`schema-${index}`}
-            type="application/ld+json"
-            suppressHydrationWarning
-            dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
-          />
-        ))}
-      </Head>
-      <Link href={localizeModelsPath()} className="text-sm font-semibold text-accent hover:text-accentSoft">
-        {detailCopy.backLabel}
-      </Link>
-      <header className="mt-6 space-y-3">
-        <div className="flex flex-wrap items-center gap-4">
-          {brand && engine.logoPolicy === 'logoAllowed' ? (
-            <span className="flex items-center">
-              <Image src={brand.assets.light.svg} alt={`${marketingName} logo`} width={140} height={32} className="h-9 w-auto dark:hidden" />
-              <Image src={brand.assets.dark.svg} alt={`${marketingName} logo`} width={140} height={32} className="hidden h-9 w-auto dark:inline-flex" />
-            </span>
-          ) : null}
-          <div>
-            <h2 className="text-3xl font-semibold text-text-primary sm:text-4xl">
-              {heroContent?.title ?? marketingName}
-            </h2>
-            {versionLabel ? (
-              <p className="text-sm uppercase tracking-micro text-text-muted">{versionLabel}</p>
-            ) : null}
-          </div>
-          
-        </div>
-      {introText ? <p className="text-sm text-text-secondary">{introText}</p> : null}
-      </header>
-
-      {(heroPrimaryCta?.label || secondaryCtas.length) ? (
-        <div className="mt-6 flex flex-wrap gap-3">
-          {heroPrimaryCta?.label && heroPrimaryCta.href ? (
-            <Link
-              href={heroPrimaryCta.href}
-              className="inline-flex items-center rounded-pill bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-card transition hover:bg-accentSoft"
-            >
-              {heroPrimaryCta.label}
-            </Link>
-          ) : null}
-          {secondaryCtas
-            .filter((cta): cta is { label: string; href: string } => Boolean(cta.label && cta.href))
-            .map((cta) => (
-              <Link
-                key={`${cta.href}-${cta.label}`}
-                href={cta.href!}
-                className="inline-flex items-center rounded-pill border border-hairline px-5 py-2 text-sm font-semibold text-text-primary transition hover:border-accent hover:text-accent"
-              >
-                {cta.label}
-              </Link>
-            ))}
-        </div>
-      ) : null}
-      <div className="mt-3 flex flex-wrap gap-4 text-sm">
-        <Link href={examplesLinkHref} className="font-semibold text-accent hover:text-accentSoft">
-          {detailCopy.examplesLinkLabel}
+        <Head>
+          {heroPosterPreload ? <link rel="preload" as="image" href={heroPosterPreload} fetchPriority="high" /> : null}
+          {schemaPayloads.map((schema, index) => (
+            <script
+              key={`schema-${index}`}
+              type="application/ld+json"
+              suppressHydrationWarning
+              dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
+            />
+          ))}
+        </Head>
+        <Link href={localizeModelsPath()} className="text-sm font-semibold text-accent hover:text-accentSoft">
+          {detailCopy.backLabel}
         </Link>
-              <Link href={pricingLinkHref} className="font-semibold text-accent hover:text-accentSoft">
-                {detailCopy.pricingLinkLabel}
-              </Link>
-      </div>
+        <header className="mt-6 space-y-3">
+          <div className="flex flex-wrap items-center gap-4">
+            {brand && engine.logoPolicy === 'logoAllowed' ? (
+              <span className="flex items-center">
+                <Image src={brand.assets.light.svg} alt={`${marketingName} logo`} width={140} height={32} className="h-9 w-auto dark:hidden" />
+                <Image src={brand.assets.dark.svg} alt={`${marketingName} logo`} width={140} height={32} className="hidden h-9 w-auto dark:inline-flex" />
+              </span>
+            ) : null}
+            <div>
+              <h2 className="text-3xl font-semibold text-text-primary sm:text-4xl">
+                {heroContent?.title ?? marketingName}
+              </h2>
+              {versionLabel ? (
+                <p className="text-sm uppercase tracking-micro text-text-muted">{versionLabel}</p>
+              ) : null}
+            </div>
 
-      {tocItems.length ? (
-        <nav
-          className="mt-10 rounded-2xl border border-hairline bg-white/80 p-4 shadow-card"
-          aria-label="Model page navigation"
-        >
-          <p className="text-xs font-semibold uppercase tracking-micro text-text-muted">Jump to section</p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {tocItems.map((item) => (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                className="inline-flex items-center rounded-full border border-hairline px-3 py-1 text-sm font-semibold text-text-secondary transition hover:border-accent hover:text-accent"
+          </div>
+          {introText ? <p className="text-sm text-text-secondary">{introText}</p> : null}
+        </header>
+
+        {(heroPrimaryCta?.label || secondaryCtas.length) ? (
+          <div className="mt-6 flex flex-wrap gap-3">
+            {heroPrimaryCta?.label && heroPrimaryCta.href ? (
+              <Link
+                href={heroPrimaryCta.href}
+                className="inline-flex items-center rounded-pill bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-card transition hover:bg-accentSoft"
               >
-                {item.label}
-              </a>
-            ))}
+                {heroPrimaryCta.label}
+              </Link>
+            ) : null}
+            {secondaryCtas
+              .filter((cta): cta is { label: string; href: string } => Boolean(cta.label && cta.href))
+              .map((cta) => (
+                <Link
+                  key={`${cta.href}-${cta.label}`}
+                  href={cta.href!}
+                  className="inline-flex items-center rounded-pill border border-hairline px-5 py-2 text-sm font-semibold text-text-primary transition hover:border-accent hover:text-accent"
+                >
+                  {cta.label}
+                </Link>
+              ))}
           </div>
-        </nav>
-      ) : null}
+        ) : null}
+        <div className="mt-3 flex flex-wrap gap-4 text-sm">
+          <Link href={examplesLinkHref} className="font-semibold text-accent hover:text-accentSoft">
+            {detailCopy.examplesLinkLabel}
+          </Link>
+          <Link href={pricingLinkHref} className="font-semibold text-accent hover:text-accentSoft">
+            {detailCopy.pricingLinkLabel}
+          </Link>
+        </div>
 
-      {bestUseCases?.items && bestUseCases.items.length ? (
-        <section className="mt-10 rounded-card border border-hairline bg-white p-6 shadow-card">
-          <h2 className="text-lg font-semibold text-text-primary">
-            {bestUseCases.title ?? 'Best use cases'}
-          </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-text-secondary">
-            {bestUseCases.items.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
+        {tocItems.length ? (
+          <nav
+            className="mt-10 rounded-2xl border border-hairline bg-white/80 p-4 shadow-card"
+            aria-label="Model page navigation"
+          >
+            <p className="text-xs font-semibold uppercase tracking-micro text-text-muted">Jump to section</p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {tocItems.map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className="inline-flex items-center rounded-full border border-hairline px-3 py-1 text-sm font-semibold text-text-secondary transition hover:border-accent hover:text-accent"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </nav>
+        ) : null}
 
-      {technicalOverview.length ? (
-        <section className="mt-10 rounded-card border border-hairline bg-white p-6 shadow-card">
-          <h2 className="text-lg font-semibold text-text-primary">{technicalOverviewTitle}</h2>
-          <div className="mt-4 grid gap-4 text-sm text-text-secondary sm:grid-cols-2">
-            {technicalOverview.map((entry, index) => (
-              <article key={`${entry.label ?? index}-${entry.body}`} className="space-y-1">
-                {entry.label ? <strong className="block text-text-primary">{entry.label}</strong> : null}
-                {entry.body ? <p>{entry.body}</p> : null}
-                {entry.link?.href && entry.link?.label ? (
-                  <a
-                    href={entry.link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-xs font-semibold text-accent hover:text-accentSoft"
-                  >
-                    {entry.link.label}
-                  </a>
-                ) : null}
-              </article>
-            ))}
-          </div>
-        </section>
-      ) : null}
-
-      {promptStructure ? (
-        <section
-          id={attachTextIdToPromptStructure ? textAnchorId : undefined}
-          className="mt-10 rounded-card border border-hairline bg-white p-6 shadow-card"
-        >
-          <h2 className="text-lg font-semibold text-text-primary">{promptStructure.title ?? 'Prompt structure'}</h2>
-          {promptStructure.quote ? (
-            <blockquote className="mt-3 border-l-2 border-accent pl-3 text-sm text-text-secondary italic">
-              {promptStructure.quote}
-            </blockquote>
-          ) : null}
-          {promptStructure.description ? (
-            <p className="mt-3 text-sm text-text-secondary">{promptStructure.description}</p>
-          ) : null}
-          {promptStructure.steps && promptStructure.steps.length ? (
+        {bestUseCases?.items && bestUseCases.items.length ? (
+          <section className="mt-10 rounded-card border border-hairline bg-white p-6 shadow-card">
+            <h2 className="text-lg font-semibold text-text-primary">
+              {bestUseCases.title ?? 'Best use cases'}
+            </h2>
             <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-text-secondary">
-              {promptStructure.steps.map((step) => (
-                <li key={step}>{step}</li>
+              {bestUseCases.items.map((item) => (
+                <li key={item}>{item}</li>
               ))}
             </ul>
-          ) : null}
-        </section>
-      ) : null}
+          </section>
+        ) : null}
 
-      {tips?.items && tips.items.length ? (
-        <section id="tips" className="mt-10 rounded-card border border-hairline bg-white p-6 shadow-card">
-          <h2 className="text-lg font-semibold text-text-primary">{tips.title ?? 'Tips & tricks'}</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-text-secondary">
-            {tips.items.map((tip) => (
-              <li key={tip}>{tip}</li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
-
-      {compareLink?.href && compareLink.label ? (
-        <p className="mt-6 text-sm text-text-secondary">
-          {compareLink.before ?? ''}
-          <Link href={compareLinkHref ?? compareLink.href} className="font-semibold text-accent hover:text-accentSoft">
-            {compareLink.label}
-          </Link>
-          {compareLink.after ?? ''}
-        </p>
-      ) : null}
-
-      <section id="specs" className="mt-10 space-y-4">
-        <div className="rounded-card border border-hairline bg-white p-6 shadow-card">
-          <h2 className="text-lg font-semibold text-text-primary">{detailCopy.overviewTitle}</h2>
-          <dl className="mt-4 grid gap-3 text-sm text-text-secondary sm:grid-cols-2">
-            <div>
-              <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.brand}</dt>
-              <dd>{brand ? brand.label : engine.brandId}</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.engineId}</dt>
-              <dd>{engine.id}</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.slug}</dt>
-              <dd>{localizeModelsPath(engine.modelSlug)}</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.logoPolicy}</dt>
-              <dd>{detailCopy.logoPolicies[engine.logoPolicy as keyof DetailCopy['logoPolicies']] ?? detailCopy.logoPolicies.textOnly}</dd>
-            </div>
-            {platformPriceInfo ? (
-              <div className="sm:col-span-2">
-                <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.platformPrice}</dt>
-                <dd>
-                  <Link
-                    href={platformPriceInfo.href}
-                    prefetch={false}
-                    className="text-sm font-semibold text-accent hover:text-accentSoft"
-                  >
-                    {platformPriceInfo.label}
-                  </Link>
-                </dd>
-              </div>
-            ) : null}
-          </dl>
-          {pricingNotes ? <p className="mt-3 text-xs text-text-muted">{pricingNotes}</p> : null}
-        </div>
-      </section>
-
-      {promptEntries.length > 0 && (
-        <section
-          id={!attachTextIdToPromptStructure ? textAnchorId : undefined}
-          className="mt-10 space-y-4"
-        >
-          <h2 className="text-lg font-semibold text-text-primary">{detailCopy.promptsTitle}</h2>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {promptEntries.map((entry) => (
-              <article key={entry.title} className="rounded-card border border-hairline bg-white p-4 text-sm text-text-secondary shadow-card">
-                <h3 className="text-sm font-semibold text-text-primary">{entry.title}</h3>
-                <p className="mt-1 text-sm text-text-secondary">{entry.prompt}</p>
-                {entry.notes ? <p className="mt-2 text-xs text-text-muted">{entry.notes}</p> : null}
-              </article>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {faqEntries.length > 0 && (
-        <section id="faq" className="mt-10 space-y-4">
-          <h2 className="text-lg font-semibold text-text-primary">{detailCopy.faqTitle}</h2>
-          <div className="space-y-3 text-sm text-text-secondary">
-            {faqEntries.map(({ question, answer }) => (
-              <article key={question} className="rounded-card border border-hairline bg-white p-4 shadow-card">
-                <h3 className="text-sm font-semibold text-text-primary">{question}</h3>
-                <p className="mt-1 text-sm text-text-secondary">{answer}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-      )}
-      <FAQSchema questions={faqJsonLdEntries} />
-
-      {relatedEngines.length ? (
-        <section className="mt-12">
-          <div className="mb-6 space-y-2">
-            <h2 className="text-xl font-semibold text-text-primary">{relatedCopy.title}</h2>
-            <p className="text-sm text-text-secondary">{relatedCopy.subtitle}</p>
-          </div>
-          <div className="grid gap-4 md:grid-cols-3">
-            {relatedEngines.map((candidate) => {
-              const label = candidate.marketingName ?? candidate.engine.label;
-              const ctaLabel = (() => {
-                if (slug === 'ltx-2') {
-                  if (candidate.modelSlug === 'ltx-2-fast') return 'Compare LTX-2 Pro vs Fast';
-                  if (candidate.modelSlug === 'sora-2') return 'Explore Sora 2';
-                  if (candidate.modelSlug === 'sora-2-pro') return 'Explore Sora 2 Pro';
-                }
-                return `Try ${label}`;
-              })();
-              return (
-                <article key={candidate.modelSlug} className="rounded-2xl border border-hairline bg-white/90 p-5 shadow-card">
-                  <p className="text-xs font-semibold uppercase tracking-micro text-text-muted">{candidate.brandId}</p>
-                  <h3 className="mt-2 text-lg font-semibold text-text-primary">{label}</h3>
-                  <p className="mt-2 text-sm text-text-secondary">
-                    {candidate.seo?.description ?? 'Latency, pricing, and prompt guides are documented on the detail page.'}
-                  </p>
-                  <Link
-                    href={localizeModelsPath(candidate.modelSlug)}
-                    className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent transition hover:text-accentSoft"
-                  >
-                    {ctaLabel} <span aria-hidden>→</span>
-                  </Link>
+        {technicalOverview.length ? (
+          <section className="mt-10 rounded-card border border-hairline bg-white p-6 shadow-card">
+            <h2 className="text-lg font-semibold text-text-primary">{technicalOverviewTitle}</h2>
+            <div className="mt-4 grid gap-4 text-sm text-text-secondary sm:grid-cols-2">
+              {technicalOverview.map((entry, index) => (
+                <article key={`${entry.label ?? index}-${entry.body}`} className="space-y-1">
+                  {entry.label ? <strong className="block text-text-primary">{entry.label}</strong> : null}
+                  {entry.body ? <p>{entry.body}</p> : null}
+                  {entry.link?.href && entry.link?.label ? (
+                    <a
+                      href={entry.link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-xs font-semibold text-accent hover:text-accentSoft"
+                    >
+                      {entry.link.label}
+                    </a>
+                  ) : null}
                 </article>
-              );
-            })}
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {promptStructure ? (
+          <section
+            id={attachTextIdToPromptStructure ? textAnchorId : undefined}
+            className="mt-10 rounded-card border border-hairline bg-white p-6 shadow-card"
+          >
+            <h2 className="text-lg font-semibold text-text-primary">{promptStructure.title ?? 'Prompt structure'}</h2>
+            {promptStructure.quote ? (
+              <blockquote className="mt-3 border-l-2 border-accent pl-3 text-sm text-text-secondary italic">
+                {promptStructure.quote}
+              </blockquote>
+            ) : null}
+            {promptStructure.description ? (
+              <p className="mt-3 text-sm text-text-secondary">{promptStructure.description}</p>
+            ) : null}
+            {promptStructure.steps && promptStructure.steps.length ? (
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-text-secondary">
+                {promptStructure.steps.map((step) => (
+                  <li key={step}>{step}</li>
+                ))}
+              </ul>
+            ) : null}
+          </section>
+        ) : null}
+
+        {tips?.items && tips.items.length ? (
+          <section id="tips" className="mt-10 rounded-card border border-hairline bg-white p-6 shadow-card">
+            <h2 className="text-lg font-semibold text-text-primary">{tips.title ?? 'Tips & tricks'}</h2>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-text-secondary">
+              {tips.items.map((tip) => (
+                <li key={tip}>{tip}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        {compareLink?.href && compareLink.label ? (
+          <p className="mt-6 text-sm text-text-secondary">
+            {compareLink.before ?? ''}
+            <Link href={compareLinkHref ?? compareLink.href} className="font-semibold text-accent hover:text-accentSoft">
+              {compareLink.label}
+            </Link>
+            {compareLink.after ?? ''}
+          </p>
+        ) : null}
+
+        <section id="specs" className="mt-10 space-y-4">
+          <div className="rounded-card border border-hairline bg-white p-6 shadow-card">
+            <h2 className="text-lg font-semibold text-text-primary">{detailCopy.overviewTitle}</h2>
+            <dl className="mt-4 grid gap-3 text-sm text-text-secondary sm:grid-cols-2">
+              <div>
+                <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.brand}</dt>
+                <dd>{brand ? brand.label : engine.brandId}</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.engineId}</dt>
+                <dd>{engine.id}</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.slug}</dt>
+                <dd>{localizeModelsPath(engine.modelSlug)}</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.logoPolicy}</dt>
+                <dd>{detailCopy.logoPolicies[engine.logoPolicy as keyof DetailCopy['logoPolicies']] ?? detailCopy.logoPolicies.textOnly}</dd>
+              </div>
+              {platformPriceInfo ? (
+                <div className="sm:col-span-2">
+                  <dt className="text-xs uppercase tracking-micro text-text-muted">{detailCopy.overview.platformPrice}</dt>
+                  <dd>
+                    <Link
+                      href={platformPriceInfo.href}
+                      prefetch={false}
+                      className="text-sm font-semibold text-accent hover:text-accentSoft"
+                    >
+                      {platformPriceInfo.label}
+                    </Link>
+                  </dd>
+                </div>
+              ) : null}
+            </dl>
+            {pricingNotes ? <p className="mt-3 text-xs text-text-muted">{pricingNotes}</p> : null}
           </div>
         </section>
-      ) : null}
 
-      <div className="mt-10 flex flex-wrap gap-3">
-        <Link
-          href="/app"
-          prefetch={false}
-          className="inline-flex items-center rounded-pill border border-hairline px-4 py-2 text-sm font-semibold text-text-primary transition hover:border-accent hover:text-accent"
-        >
-          {detailCopy.buttons.pricing}
-        </Link>
-        <Link
-          href={launchHref}
-          className="inline-flex items-center rounded-pill bg-accent px-4 py-2 text-sm font-semibold text-white shadow-card transition hover:bg-accentSoft"
-        >
-          {detailCopy.buttons.launch}
-        </Link>
+        {promptEntries.length > 0 && (
+          <section
+            id={!attachTextIdToPromptStructure ? textAnchorId : undefined}
+            className="mt-10 space-y-4"
+          >
+            <h2 className="text-lg font-semibold text-text-primary">{detailCopy.promptsTitle}</h2>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {promptEntries.map((entry) => (
+                <article key={entry.title} className="rounded-card border border-hairline bg-white p-4 text-sm text-text-secondary shadow-card">
+                  <h3 className="text-sm font-semibold text-text-primary">{entry.title}</h3>
+                  <p className="mt-1 text-sm text-text-secondary">{entry.prompt}</p>
+                  {entry.notes ? <p className="mt-2 text-xs text-text-muted">{entry.notes}</p> : null}
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {faqEntries.length > 0 && (
+          <section id="faq" className="mt-10 space-y-4">
+            <h2 className="text-lg font-semibold text-text-primary">{detailCopy.faqTitle}</h2>
+            <div className="space-y-3 text-sm text-text-secondary">
+              {faqEntries.map(({ question, answer }) => (
+                <article key={question} className="rounded-card border border-hairline bg-white p-4 shadow-card">
+                  <h3 className="text-sm font-semibold text-text-primary">{question}</h3>
+                  <p className="mt-1 text-sm text-text-secondary">{answer}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+        <FAQSchema questions={faqJsonLdEntries} />
+
+        {relatedEngines.length ? (
+          <section className="mt-12">
+            <div className="mb-6 space-y-2">
+              <h2 className="text-xl font-semibold text-text-primary">{relatedCopy.title}</h2>
+              <p className="text-sm text-text-secondary">{relatedCopy.subtitle}</p>
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              {relatedEngines.map((candidate) => {
+                const label = candidate.marketingName ?? candidate.engine.label;
+                const ctaLabel = (() => {
+                  if (slug === 'ltx-2') {
+                    if (candidate.modelSlug === 'ltx-2-fast') return 'Compare LTX-2 Pro vs Fast';
+                    if (candidate.modelSlug === 'sora-2') return 'Explore Sora 2';
+                    if (candidate.modelSlug === 'sora-2-pro') return 'Explore Sora 2 Pro';
+                  }
+                  return `Try ${label}`;
+                })();
+                return (
+                  <article key={candidate.modelSlug} className="rounded-2xl border border-hairline bg-white/90 p-5 shadow-card">
+                    <p className="text-xs font-semibold uppercase tracking-micro text-text-muted">{candidate.brandId}</p>
+                    <h3 className="mt-2 text-lg font-semibold text-text-primary">{label}</h3>
+                    <p className="mt-2 text-sm text-text-secondary">
+                      {candidate.seo?.description ?? 'Latency, pricing, and prompt guides are documented on the detail page.'}
+                    </p>
+                    <Link
+                      href={localizeModelsPath(candidate.modelSlug)}
+                      className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent transition hover:text-accentSoft"
+                    >
+                      {ctaLabel} <span aria-hidden>→</span>
+                    </Link>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        ) : null}
+
+        <div className="mt-10 flex flex-wrap gap-3">
+          <Link
+            href="/app"
+            prefetch={false}
+            className="inline-flex items-center rounded-pill border border-hairline px-4 py-2 text-sm font-semibold text-text-primary transition hover:border-accent hover:text-accent"
+          >
+            {detailCopy.buttons.pricing}
+          </Link>
+          <Link
+            href={launchHref}
+            className="inline-flex items-center rounded-pill bg-accent px-4 py-2 text-sm font-semibold text-white shadow-card transition hover:bg-accentSoft"
+          >
+            {detailCopy.buttons.launch}
+          </Link>
+        </div>
+
       </div>
-
-    </div>
-  </>
-);
+    </>
+  );
 }
