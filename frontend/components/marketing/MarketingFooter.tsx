@@ -54,10 +54,10 @@ export function MarketingFooter() {
   const crawlerNote =
     t(
       'footer.crawlerNote',
-      'MaxVideoAI allows AI crawlers (GPTBot, OAI-SearchBot, Google-Extended, and CCBot) to index public model pages and documentation for educational and research visibility.'
+      'Perzia AI allows AI crawlers (GPTBot, OAI-SearchBot, Google-Extended, and CCBot) to index public model pages and documentation for educational and research visibility.'
     ) ??
-    'MaxVideoAI allows AI crawlers (GPTBot, OAI-SearchBot, Google-Extended, and CCBot) to index public model pages and documentation for educational and research visibility.';
-  const brandLabel = t('nav.brand', 'MaxVideo AI') ?? 'MaxVideo AI';
+    'Perzia AI allows AI crawlers (GPTBot, OAI-SearchBot, Google-Extended, and CCBot) to index public model pages and documentation for educational and research visibility.';
+  const brandLabel = t('nav.brand', 'Perzia AI') ?? 'MaxVideo AI';
   const languageLabel = t('footer.languageLabel', 'Language') ?? 'Language';
   return (
     <footer className="border-t border-hairline bg-white">
@@ -69,7 +69,7 @@ export function MarketingFooter() {
           >
             <Image
               src="/assets/branding/logo-mark.svg"
-              alt="MaxVideoAI"
+              alt="Perzia AI"
               width={32}
               height={32}
               className="h-8 w-8"
@@ -86,7 +86,7 @@ export function MarketingFooter() {
         </div>
         <div className="grid gap-4 text-sm text-text-secondary sm:grid-cols-2 lg:grid-cols-2">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-micro text-text-muted">Explore MaxVideoAI</p>
+            <p className="text-xs font-semibold uppercase tracking-micro text-text-muted">Explore Perzia AI</p>
             <nav className="mt-3 flex flex-wrap gap-3" aria-label="Key pages">
               {exploreLinks.map((item) => {
                 const linkLocale = item.locale === true ? undefined : false;

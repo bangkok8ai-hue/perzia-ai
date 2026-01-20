@@ -101,7 +101,7 @@ function ModelCard({ card, ctaLabel }: { card: ModelGalleryCard; ctaLabel: strin
     >
       <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-micro text-neutral-600">
         <span>{card.versionLabel}</span>
-        <span className="rounded-full border border-black/10 px-2 py-1 text-[10px] font-semibold text-neutral-600">MaxVideoAI</span>
+        <span className="rounded-full border border-black/10 px-2 py-1 text-[10px] font-semibold text-neutral-600">Perzia AI</span>
       </div>
       <div className="mt-3">
         <h2 className="text-xl font-semibold leading-snug text-neutral-900">{card.label}</h2>

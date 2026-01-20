@@ -81,7 +81,7 @@ export default async function TermsPage() {
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
             unstyled
             className="font-medium"
@@ -90,7 +90,7 @@ export default async function TermsPage() {
           <ObfuscatedEmailLink
             user="support"
             domain="maxvideoai.com"
-            label="support@maxvideoai.com"
+            label="support@perzia-ai.com"
             placeholder="support [at] maxvideoai.com"
             unstyled
             className="font-medium"
@@ -186,7 +186,7 @@ function TermsArticleEn({ version, effective }: { version: string; effective: st
             <ObfuscatedEmailLink
               user="support"
               domain="maxvideoai.com"
-              label="support@maxvideoai.com"
+              label="support@perzia-ai.com"
               placeholder="support [at] maxvideoai.com"
               unstyled
               className="font-medium"
@@ -298,7 +298,7 @@ function TermsArticleEn({ version, effective }: { version: string; effective: st
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
           />
           .
@@ -385,7 +385,7 @@ function TermsArticleFr({ version, effective }: { version: string; effective: st
             <ObfuscatedEmailLink
               user="support"
               domain="maxvideoai.com"
-              label="support@maxvideoai.com"
+              label="support@perzia-ai.com"
               placeholder="support [at] maxvideoai.com"
               unstyled
               className="font-medium"
@@ -487,7 +487,7 @@ function TermsArticleFr({ version, effective }: { version: string; effective: st
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
           />
           .
@@ -579,7 +579,7 @@ function TermsArticleEs({ version, effective }: { version: string; effective: st
             <ObfuscatedEmailLink
               user="support"
               domain="maxvideoai.com"
-              label="support@maxvideoai.com"
+              label="support@perzia-ai.com"
               placeholder="support [at] maxvideoai.com"
               unstyled
               className="font-medium"
@@ -687,7 +687,7 @@ function TermsArticleEs({ version, effective }: { version: string; effective: st
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
           />
           .

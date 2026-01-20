@@ -517,7 +517,7 @@ const en: Dictionary = {
     teams: {
       title: 'Teams',
       description: 'Role-based approvals, shared wallets, and delivery hand-offs roll out next. Join the beta to test team controls early.',
-      comingSoonNote: 'Teams features are in private beta. Contact support@maxvideoai.com to join the rollout.',
+      comingSoonNote: 'Teams features are in private beta. Contact support@perzia-ai.com to join the rollout.',
       points: [
         'Role-based shared wallets with approvals across finance, producers, and stakeholders.',
         'Automated daily summaries covering spend, refunds, and queue health.',
@@ -876,7 +876,7 @@ const en: Dictionary = {
         {
           heading: '4. User Content & Generated Media',
           body:
-            'User uploads (photos, logos, reference footage, prompts) remain your property. We may store, process, and display uploaded assets solely to produce the requested text-to-video or image-to-video render and to deliver the workspace features you enable. For every piece of generated media, you grant MaxVideoAI a worldwide, non-exclusive, royalty-free, transferable, and sublicensable license to host, reproduce, index, display, and otherwise use the videos to operate the service, improve routing and models, run safety reviews, and showcase Examples galleries, template pages, or other marketing placements. You may mark renders as private inside your workspace or request delisting by contacting support if a privacy toggle is unavailable, and we will honor the request.',
+            'User uploads (photos, logos, reference footage, prompts) remain your property. We may store, process, and display uploaded assets solely to produce the requested text-to-video or image-to-video render and to deliver the workspace features you enable. For every piece of generated media, you grant Perzia AI a worldwide, non-exclusive, royalty-free, transferable, and sublicensable license to host, reproduce, index, display, and otherwise use the videos to operate the service, improve routing and models, run safety reviews, and showcase Examples galleries, template pages, or other marketing placements. You may mark renders as private inside your workspace or request delisting by contacting support if a privacy toggle is unavailable, and we will honor the request.',
         },
         {
           heading: '5. Billing',
@@ -896,7 +896,7 @@ const en: Dictionary = {
         { heading: '2. How we use data', body: 'Operate routing, improve product quality, and communicate critical updates.' },
         { heading: '3. Storage & security', body: 'We store data in encrypted systems with least-privilege access. Render assets auto-expire per workspace policy.' },
         { heading: '4. Sharing', body: 'We only share data with underlying engine providers when routing renders. We never sell customer data.' },
-        { heading: '5. Your choices', body: 'Request export or deletion any time via support@maxvideo.ai. Admins control retention windows.' },
+        { heading: '5. Your choices', body: 'Request export or deletion any time via support@perzia-ai.com. Admins control retention windows.' },
       ],
     },
   },

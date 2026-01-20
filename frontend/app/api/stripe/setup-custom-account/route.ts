@@ -46,7 +46,7 @@ export async function GET(req: NextRequest) {
           business_type: 'individual',
           company: null,
           individual: {
-            email: 'ops@maxvideoai.com',
+            email: 'ops@perzia-ai.com',
           },
           capabilities: {
             card_payments: { requested: true },
@@ -85,7 +85,7 @@ export async function GET(req: NextRequest) {
       const account = await stripe.accounts.create({
         type: 'custom',
         country: 'FR',
-        email: 'ops@maxvideoai.com',
+        email: 'ops@perzia-ai.com',
         business_type: 'individual',
         capabilities: {
           card_payments: { requested: true },

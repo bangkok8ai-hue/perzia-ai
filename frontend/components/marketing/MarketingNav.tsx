@@ -30,7 +30,7 @@ export function MarketingNav() {
   const menuRef = useRef<HTMLDivElement | null>(null);
   const walletPromptCloseTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const walletPromptId = useId();
-  const brand = t('nav.brand', 'MaxVideo AI') ?? 'MaxVideo AI';
+  const brand = t('nav.brand', 'Perzia AI') ?? 'MaxVideo AI';
   const defaultLinks: Array<{ key: string; href: string }> = [
     { key: 'models', href: '/models' },
     { key: 'examples', href: '/examples' },
@@ -257,7 +257,7 @@ export function MarketingNav() {
           >
             <Image
               src="/assets/branding/logo-mark.svg"
-              alt="MaxVideoAI"
+              alt="Perzia AI"
               width={32}
               height={32}
               className="h-8 w-8"
@@ -447,7 +447,7 @@ export function MarketingNav() {
             >
               <Image
                 src="/assets/branding/logo-mark.svg"
-                alt="MaxVideoAI"
+                alt="Perzia AI"
                 width={28}
                 height={28}
                 className="h-7 w-7"

@@ -152,7 +152,7 @@ export default async function LegalIndexPage() {
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
             className="font-semibold text-accent hover:text-accentSoft"
           />

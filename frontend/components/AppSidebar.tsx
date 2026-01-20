@@ -296,7 +296,7 @@ export function AppSidebar() {
           >
             <Image
               src="/assets/branding/logo-mark.svg"
-              alt="MaxVideoAI logo mark"
+              alt="Perzia AI logo mark"
               width={collapsed ? 22 : 26}
               height={collapsed ? 22 : 26}
             />

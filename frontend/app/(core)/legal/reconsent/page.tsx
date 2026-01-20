@@ -35,7 +35,7 @@ export default function LegalReconsentPage() {
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
           />
           .

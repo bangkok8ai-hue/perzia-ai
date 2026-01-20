@@ -44,7 +44,7 @@ interface SnackbarState {
 const DEFAULT_GALLERY_COPY = {
   title: 'Latest renders',
   viewAll: 'View all',
-  curated: 'Starter samples curated by the MaxVideo team are shown until you generate your own videos.',
+  curated: 'Starter samples curated by the Perzia AI team are shown until you generate your own videos.',
   error: 'Failed to load latest renders. Please retry.',
   retry: 'Retry',
   imageCta: 'Generate images',

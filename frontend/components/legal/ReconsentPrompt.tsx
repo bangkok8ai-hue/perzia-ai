@@ -12,12 +12,12 @@ type DocumentStatus = {
 type ReconsentStatus =
   | null
   | {
-      needsReconsent: boolean;
-      shouldBlock: boolean;
-      mode: 'soft' | 'hard';
-      graceEndsAt: string | null;
-      documents: DocumentStatus[];
-    };
+    needsReconsent: boolean;
+    shouldBlock: boolean;
+    mode: 'soft' | 'hard';
+    graceEndsAt: string | null;
+    documents: DocumentStatus[];
+  };
 
 type ApiResponse = {
   ok: boolean;
@@ -191,7 +191,7 @@ export function ReconsentPrompt() {
           We&apos;ve updated our legal terms
         </h2>
         <p className="text-sm text-text-secondary">
-          To continue using MaxVideoAI, please review and accept the updated documents below.
+          To continue using Perzia AI, please review and accept the updated documents below.
         </p>
         {status.mode === 'soft' && !status.shouldBlock ? (
           <p className="text-xs font-medium uppercase tracking-wide text-accent">

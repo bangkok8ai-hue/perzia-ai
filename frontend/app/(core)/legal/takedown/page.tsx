@@ -123,7 +123,7 @@ function TakedownArticle({ locale }: { locale: AppLocale }) {
             <ObfuscatedEmailLink
               user="legal"
               domain="maxvideoai.com"
-              label="legal@maxvideoai.com"
+              label="legal@perzia-ai.com"
               placeholder="legal [at] maxvideoai.com"
             />{' '}
             avec « URGENT » dans l’objet.
@@ -142,7 +142,7 @@ function TakedownArticle({ locale }: { locale: AppLocale }) {
             <ObfuscatedEmailLink
               user="legal"
               domain="maxvideoai.com"
-              label="legal@maxvideoai.com"
+              label="legal@perzia-ai.com"
               placeholder="legal [at] maxvideoai.com"
             />{' '}
             con “URGENT” en el asunto.
@@ -161,7 +161,7 @@ function TakedownArticle({ locale }: { locale: AppLocale }) {
             <ObfuscatedEmailLink
               user="legal"
               domain="maxvideoai.com"
-              label="legal@maxvideoai.com"
+              label="legal@perzia-ai.com"
               placeholder="legal [at] maxvideoai.com"
             />{' '}
             with “URGENT” in the subject line.
@@ -187,7 +187,7 @@ export default async function TakedownPage() {
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
           />
         </p>

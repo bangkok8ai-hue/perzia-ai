@@ -38,7 +38,7 @@ export default async function CookiePolicyPage() {
           <ObfuscatedEmailLink
             user="privacy"
             domain="maxvideoai.com"
-            label="privacy@maxvideoai.com"
+            label="privacy@perzia-ai.com"
             placeholder="privacy [at] maxvideoai.com"
             unstyled
             className="font-medium underline underline-offset-2"
@@ -118,7 +118,7 @@ export default async function CookiePolicyPage() {
             <ObfuscatedEmailLink
               user="privacy"
               domain="maxvideoai.com"
-              label="privacy@maxvideoai.com"
+              label="privacy@perzia-ai.com"
               placeholder="privacy [at] maxvideoai.com"
             />
             .

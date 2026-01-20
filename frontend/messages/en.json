@@ -1,6 +1,6 @@
 {
   "nav": {
-    "brand": "MaxVideo AI",
+    "brand": "Perzia AI",
     "links": [
       {
         "key": "models",
@@ -77,7 +77,7 @@
         "label": "Spanish"
       }
     ],
-    "crawlerNote": "MaxVideoAI allows AI crawlers (GPTBot, OAI-SearchBot, Google-Extended, and CCBot) to index public model pages and documentation for educational and research visibility."
+    "crawlerNote": "Perzia AI allows AI crawlers (GPTBot, OAI-SearchBot, Google-Extended, and CCBot) to index public model pages and documentation for educational and research visibility."
   },
   "home": {
     "badges": [
@@ -110,7 +110,7 @@
     "heroScreenshot": {
       "title": "Every control in one view.",
       "body": "Composer, live pricing, gallery rail, and job feed stay together so you can tweak prompts, review outputs, and monitor the queue without leaving the screen.",
-      "alt": "MaxVideo AI workspace showing the composer, live price chip, and gallery preview in a single dashboard."
+      "alt": "Perzia AI workspace showing the composer, live price chip, and gallery preview in a single dashboard."
     },
     "proofTabs": [
       {
@@ -265,7 +265,7 @@
       "items": [
         {
           "q": "Is Sora 2 available in the EU?",
-          "a": "Sora 2 availability is limited. MaxVideoAI routes your brief to supported engines today and keeps Sora-ready presets for later."
+          "a": "Sora 2 availability is limited. Perzia AI routes your brief to supported engines today and keeps Sora-ready presets for later."
         },
         {
           "q": "Can I add audio?",
@@ -283,7 +283,7 @@
     },
     "priceChipSuffix": "No subscription. Pay-as-you-go.",
     "meta": {
-      "title": "Multi-engine AI video generator – Pay-as-you-go | MaxVideoAI",
+      "title": "Multi-engine AI video generator – Pay-as-you-go | Perzia AI",
       "description": "Create AI video with Sora 2, Veo 3, Pika and more from one workspace. Transparent pricing, pay-as-you-go wallets, 4K upscaling, iterative renders x1-x4."
     },
     "compare": {
@@ -427,7 +427,7 @@
     "teams": {
       "title": "Teams",
       "description": "Role-based approvals, shared wallets, and delivery hand-offs roll out next. Join the beta to test team controls early.",
-      "comingSoonNote": "Teams features are in private beta. Contact support@maxvideoai.com to join the rollout.",
+      "comingSoonNote": "Teams features are in private beta. Contact support@Perzia AI.com to join the rollout.",
       "points": [
         "Role-based shared wallets with approvals across finance, producers, and stakeholders.",
         "Automated daily summaries covering spend, refunds, and queue health.",
@@ -495,17 +495,17 @@
     "supplementalFaq": [
       {
         "question": "Can I use Sora 2 in Europe?",
-        "answer": "Direct access is invite-only. MaxVideoAI provides paid access to Sora 2 rendering from Europe via our hub."
+        "answer": "Direct access is invite-only. Perzia AI provides paid access to Sora 2 rendering from Europe via our hub."
       },
       {
         "question": "Do videos have watermarks?",
-        "answer": "No. Renders produced through MaxVideoAI are delivered without watermarks."
+        "answer": "No. Renders produced through Perzia AI are delivered without watermarks."
       }
     ],
     "priceChipSuffix": "Price before you generate.",
     "priceChipPrefix": "This render",
     "meta": {
-      "title": "AI Video Pricing — Pay-As-You-Go | MaxVideoAI",
+      "title": "AI Video Pricing — Pay-As-You-Go | Perzia AI",
       "description": "See pricing before you generate. Compare costs across engines (Sora, Veo, Kling, Pika). Pay only for successful renders — no subscription. Pricing shown per clip."
     }
   },
@@ -581,12 +581,12 @@
   "models": {
     "hero": {
       "title": "Compare all AI video models in one workspace",
-      "subtitle": "Compare every AI video engine available in MaxVideoAI.",
-      "body": "MaxVideoAI lets you compare every serious AI video engine side-by-side: Sora 2, Veo 3.1, Pika 2.2, Kling, Wan, MiniMax and more. Check real examples, specs and live pricing so you can pick the right model for each shot, not guess from a waitlist demo."
+      "subtitle": "Compare every AI video engine available in Perzia AI.",
+      "body": "Perzia AI lets you compare every serious AI video engine side-by-side: Sora 2, Veo 3.1, Pika 2.2, Kling, Wan, MiniMax and more. Check real examples, specs and live pricing so you can pick the right model for each shot, not guess from a waitlist demo."
     },
     "intro": {
       "paragraphs": [
-        "Each engine in this catalog is wired into the MaxVideoAI workspace with monitored latency, price tracking, and fallbacks. We add models as soon as providers open real capacity—not waitlist demos—so you know what can ship to production today.",
+        "Each engine in this catalog is wired into the Perzia AI workspace with monitored latency, price tracking, and fallbacks. We add models as soon as providers open real capacity—not waitlist demos—so you know what can ship to production today.",
         "Pick an engine to see the prompt presets, duration limits, and current route we use to keep renders flowing, then duplicate it into your own workspace."
       ],
       "cards": [
@@ -690,7 +690,7 @@
         "priceBefore": "Live pricing updates inside the Generate workspace.",
         "versionLabel": "v2.6 Pro"
       },
-      "title": "AI Video Models Comparison + Pricing Shown | MaxVideoAI",
+      "title": "AI Video Models Comparison + Pricing Shown | Perzia AI",
       "description": "Compare AI video engines side-by-side: pricing shown per clip, audio support, max duration and resolution. Pick the right model before you generate."
     },
     "note": "",
@@ -724,18 +724,18 @@
   },
   "aiVideoEngines": {
     "meta": {
-      "title": "AI Video Engines — Compare Sora, Veo, Pika | MaxVideoAI",
+      "title": "AI Video Engines — Compare Sora, Veo, Pika | Perzia AI",
       "description": "Compare availability, latency, and compliance routes for Sora 2, Veo 3, Pika, and MiniMax engines in Europe."
     },
     "hero": {
       "title": "Run AI Video Generators in Europe — Sora 2, Veo 3, Pika & More",
-      "intro": "MaxVideoAI keeps cinematic text-to-video engines compliant, monitored, and production-ready for European teams. Use this hub to understand availability, compare creative trade-offs, and launch projects with the right guardrails from day one.",
+      "intro": "Perzia AI keeps cinematic text-to-video engines compliant, monitored, and production-ready for European teams. Use this hub to understand availability, compare creative trade-offs, and launch projects with the right guardrails from day one.",
       "secondary": "Not sure which model to pick? Read our {{article:comparison article}}."
     },
     "sections": [
       {
         "title": "Sora 2 availability and alternatives",
-        "body": "Sora 2 remains a staged rollout, so MaxVideoAI handles the verification trail, regional compliance, and predictive routing when capacity spikes. Producers can benchmark storyboards against {{sora:Sora 2 reference projects}} and switch to Sora 2 Pro presets or Veo 3 sequences when turnaround speed matters more than frontier fidelity. We document prompt structures, footage approvals, and post-production best practices so every brief stays aligned with OpenAI review criteria while still shipping on time. Regional producers also receive weekly availability notes covering audio support, frame length, and compliance traceability for regulated sectors."
+        "body": "Sora 2 remains a staged rollout, so Perzia AI handles the verification trail, regional compliance, and predictive routing when capacity spikes. Producers can benchmark storyboards against {{sora:Sora 2 reference projects}} and switch to Sora 2 Pro presets or Veo 3 sequences when turnaround speed matters more than frontier fidelity. We document prompt structures, footage approvals, and post-production best practices so every brief stays aligned with OpenAI review criteria while still shipping on time. Regional producers also receive weekly availability notes covering audio support, frame length, and compliance traceability for regulated sectors."
       },
       {
         "title": "Veo 3: cinematic text-to-video for creators",
@@ -743,16 +743,16 @@
       },
       {
         "title": "Pika 2.2 for fast social content",
-        "body": "When teams need playful loops or short-form edits, Pika 2.2 delivers multi-aspect outputs at a fraction of the budget. MaxVideoAI exposes curated presets so editors can jump from vertical reels to square product shots without leaving the workspace. Compare text-to-video and image-to-video modes side-by-side on our {{pika:Pika quickstart guide}} and reuse prompt banks that have already been cleared for brand-safe campaigns. Daily QA passes flag style drift or artefacts so you know when to regenerate, upscale, or hand off to animators for refinement."
+        "body": "When teams need playful loops or short-form edits, Pika 2.2 delivers multi-aspect outputs at a fraction of the budget. Perzia AI exposes curated presets so editors can jump from vertical reels to square product shots without leaving the workspace. Compare text-to-video and image-to-video modes side-by-side on our {{pika:Pika quickstart guide}} and reuse prompt banks that have already been cleared for brand-safe campaigns. Daily QA passes flag style drift or artefacts so you know when to regenerate, upscale, or hand off to animators for refinement."
       },
       {
-        "title": "How MaxVideoAI routes Fal.ai engines",
-        "body": "Fal.ai powers the multi-engine routing backbone behind MaxVideoAI, letting us burst to capacity while surfacing a consistent interface to creative leads. Our orchestration layer keeps prompts portable, logs every render, and exposes diagnostics so you know when to retry or hand off to another engine like {{veoFast:Veo 3.1 Fast}} or {{hailuo:MiniMax Hailuo}} for stylised outputs. Teams also gain access to rate cards, audit trails, and regional compliance notes in one workspace, and automated playbooks explain how to escalate priority or swap render regions when demand peaks."
+        "title": "How Perzia AI routes Fal.ai engines",
+        "body": "Fal.ai powers the multi-engine routing backbone behind Perzia AI, letting us burst to capacity while surfacing a consistent interface to creative leads. Our orchestration layer keeps prompts portable, logs every render, and exposes diagnostics so you know when to retry or hand off to another engine like {{veoFast:Veo 3.1 Fast}} or {{hailuo:MiniMax Hailuo}} for stylised outputs. Teams also gain access to rate cards, audit trails, and regional compliance notes in one workspace, and automated playbooks explain how to escalate priority or swap render regions when demand peaks."
       }
     ],
     "comparison": {
       "title": "Compare the top video generators",
-      "intro": "Whether you need frontier fidelity or budget-friendly loops, MaxVideoAI keeps each engine ready for production workloads.",
+      "intro": "Whether you need frontier fidelity or budget-friendly loops, Perzia AI keeps each engine ready for production workloads.",
       "cards": [
         {
           "label": "Sora 2",
@@ -786,7 +786,7 @@
     "faqTitle": "AI video routing FAQ",
     "faq": [
       {
-        "question": "Does MaxVideoAI support European billing for Fal.ai engines?",
+        "question": "Does Perzia AI support European billing for Fal.ai engines?",
         "answer": "Yes. We process invoices in EUR or GBP and map them to Fal.ai usage so finance teams can reconcile spend without US subsidiaries or prepaid card workarounds."
       },
       {
@@ -795,11 +795,11 @@
       },
       {
         "question": "Can I monitor model changes without refreshing documentation?",
-        "answer": "The MaxVideoAI workspace highlights latency, output limits, and policy updates in real time, so producers know when to retry or pivot to alternative engines."
+        "answer": "The Perzia AI workspace highlights latency, output limits, and policy updates in real time, so producers know when to retry or pivot to alternative engines."
       }
     ],
     "cta": {
-      "body": "Looking for sequenced prompt recipes? Read the latest guides on the {{blog:MaxVideoAI blog}} for branded storytelling walkthroughs and engine updates."
+      "body": "Looking for sequenced prompt recipes? Read the latest guides on the {{blog:Perzia AI blog}} for branded storytelling walkthroughs and engine updates."
     }
   },
   "examples": {
@@ -809,7 +809,7 @@
     "engineFilterAllLabel": "All",
     "hero": {
       "title": "AI video examples you can clone.",
-      "subtitle": "Hover to loop, click to expand. Each clip previews the motion and style you can route in MaxVideo AI.",
+      "subtitle": "Hover to loop, click to expand. Each clip previews the motion and style you can route in Perzia AI.",
       "body": "Browse AI video examples generated with Sora 2, Veo 3.1, Pika 2.2, Kling, Wan and more. Each clip shows the prompt, format and duration so you can compare how different engines handle camera moves, product shots, selfies and cinematic storytelling in one gallery."
     },
     "items": [
@@ -968,7 +968,7 @@
   },
   "blog": {
     "hero": {
-      "title": "The MaxVideo AI blog.",
+      "title": "The Perzia AI blog.",
       "subtitle": "News on engines, customer stories, prompt guides, and price-before best practices. Subscribe in-app to get updates in your queue digest.",
       "eyebrow": "The Studio Journal",
       "ctaLabel": "Latest Sora coverage →"
@@ -976,7 +976,7 @@
     "empty": "Blog posts coming soon.",
     "cta": "Read more",
     "intro": {
-      "lead": "MaxVideoAI’s journal covers everything we learn while routing frontier video engines for real production teams. We document prompt patterns, pricing changes, latency shifts, and the workflows that keep agencies on schedule when models rotate. Every story is written from live usage—not a press release.",
+      "lead": "Perzia AI’s journal covers everything we learn while routing frontier video engines for real production teams. We document prompt patterns, pricing changes, latency shifts, and the workflows that keep agencies on schedule when models rotate. Every story is written from live usage—not a press release.",
       "cards": [
         {
           "title": "Model deep dives",
@@ -1001,21 +1001,21 @@
         },
         {
           "question": "Can I suggest a topic or request coverage?",
-          "answer": "Yes—send topics to press@maxvideo.ai and include reference renders if you can. We prioritize stories that help production teams stay current."
+          "answer": "Yes—send topics to press@perzia-ai.com and include reference renders if you can. We prioritize stories that help production teams stay current."
         },
         {
           "question": "Where can I find release notes?",
           "answer": "Feature-level updates live in the product changelog, and API updates post inside the developer docs. The blog covers higher-level workflows."
         }
       ],
-      "footnote": "Need more detail? Email press@maxvideo.ai with your request and we’ll route it to the right producer."
+      "footnote": "Need more detail? Email press@perzia-ai.com with your request and we’ll route it to the right producer."
     }
   },
   "videoPage": {
     "backLink": "← Back",
     "hero": {
-      "titleFallback": "MaxVideoAI render",
-      "intro": "This video was generated with {engine} on MaxVideoAI — discover how to create similar renders below.",
+      "titleFallback": "Perzia AI render",
+      "intro": "This video was generated with {engine} on Perzia AI — discover how to create similar renders below.",
       "promptLabel": "Prompt",
       "promptFallback": "Prompt unavailable.",
       "copy": "Copy prompt",
@@ -1032,7 +1032,7 @@
       "aspectFallback": "an adaptive aspect ratio",
       "sentences": [
         "This AI-generated video showcases {promptStyle} and ships straight from our public Examples playlist.",
-        "{engineName} handled this render inside MaxVideoAI, delivering {durationLabel} at {aspectRatioLabel} with {audioState}.",
+        "{engineName} handled this render inside Perzia AI, delivering {durationLabel} at {aspectRatioLabel} with {audioState}.",
         "The footage highlights consistent motion, crisp lighting, and natural reflections so creative and product teams can judge how the model behaves.",
         "Prompt styling keeps {promptTone} cues that you can remix or extend with image references, narration, or upscaling.",
         "Use the engine card, pricing link, and blog resources below to compare models or start a similar run in your workspace."
@@ -1080,14 +1080,14 @@
   "about": {
     "hero": {
       "title": "Quiet confidence for AI video teams.",
-      "subtitle": "MaxVideo AI is the independent hub for AI video production. We route to the right engine for every shot, price before you generate, and keep your team in control without vendor lock-in."
+      "subtitle": "Perzia AI is the independent hub for AI video production. We route to the right engine for every shot, price before you generate, and keep your team in control without vendor lock-in."
     },
     "paragraphs": [
       "We believe professional teams deserve clarity before they hit render. That means price transparency, reliable routing, and shared context between creatives, producers, and stakeholders.",
       "Independence matters: we stay neutral across engines, integrate with Sora 2, Veo 3.1, Veo 3 Fast, Pika 2.2, MiniMax Hailuo 02, Hunyuan Image, and rotating betas, and list trademarks only to describe compatibility.",
       "The product is engineered for teams that need precision without noise. Quiet UI, premium defaults, precise controls, and price-before chips that keep finance in the loop."
     ],
-    "note": "Trademarks and service marks are property of their respective owners. MaxVideo AI stays independent so you can stay current without switching platforms."
+    "note": "Trademarks and service marks are property of their respective owners. Perzia AI stays independent so you can stay current without switching platforms."
   },
   "contact": {
     "hero": {
@@ -1129,7 +1129,7 @@
       "sections": [
         {
           "heading": "1. Overview",
-          "body": "These Terms govern your use of MaxVideo AI. By accessing the service you agree to the obligations below."
+          "body": "These Terms govern your use of Perzia AI. By accessing the service you agree to the obligations below."
         },
         {
           "heading": "2. Accounts",
@@ -1137,11 +1137,11 @@
         },
         {
           "heading": "3. Usage & Compliance",
-          "body": "Use MaxVideo AI only in compliance with applicable laws, respect licensing limits, never upload illegal or infringing assets, and do not attempt to generate prohibited or unsafe content. We may review, block, or remove renders and suspend access when videos violate these Terms or our policies."
+          "body": "Use Perzia AI only in compliance with applicable laws, respect licensing limits, never upload illegal or infringing assets, and do not attempt to generate prohibited or unsafe content. We may review, block, or remove renders and suspend access when videos violate these Terms or our policies."
         },
         {
           "heading": "4. User Content & Generated Media",
-          "body": "User uploads (photos, logos, reference footage, prompts) remain your property. We may store, process, and display uploaded assets solely to produce the requested text-to-video or image-to-video render and to deliver the workspace features you enable. For every piece of generated media, you grant MaxVideoAI a worldwide, non-exclusive, royalty-free, transferable, and sublicensable license to host, reproduce, index, display, and otherwise use the videos to operate the service, improve routing and models, run safety reviews, and showcase Examples galleries, template pages, or other marketing placements. You may mark renders as private inside your workspace or request delisting/desindexation by contacting support if a privacy toggle is unavailable, and we will honor the request. You retain ownership of your prompts, uploads, descriptions, and brand assets, while MaxVideoAI retains ownership of the platform, interfaces, transformations, and technical improvements built atop the service."
+          "body": "User uploads (photos, logos, reference footage, prompts) remain your property. We may store, process, and display uploaded assets solely to produce the requested text-to-video or image-to-video render and to deliver the workspace features you enable. For every piece of generated media, you grant Perzia AI a worldwide, non-exclusive, royalty-free, transferable, and sublicensable license to host, reproduce, index, display, and otherwise use the videos to operate the service, improve routing and models, run safety reviews, and showcase Examples galleries, template pages, or other marketing placements. You may mark renders as private inside your workspace or request delisting/desindexation by contacting support if a privacy toggle is unavailable, and we will honor the request. You retain ownership of your prompts, uploads, descriptions, and brand assets, while Perzia AI retains ownership of the platform, interfaces, transformations, and technical improvements built atop the service."
         },
         {
           "heading": "5. Billing",
@@ -1149,7 +1149,7 @@
         },
         {
           "heading": "6. Liability",
-          "body": "MaxVideo AI is provided as-is. We limit liability to the maximum extent permitted by law."
+          "body": "Perzia AI is provided as-is. We limit liability to the maximum extent permitted by law."
         }
       ]
     },
@@ -1175,7 +1175,7 @@
         },
         {
           "heading": "5. Your choices",
-          "body": "Request export or deletion any time via support@maxvideo.ai. Admins control retention windows."
+          "body": "Request export or deletion any time via support@perzia-ai.com. Admins control retention windows."
         }
       ]
     }
@@ -1246,9 +1246,9 @@
   },
   "gallery": {
     "meta": {
-      "title": "AI Video Examples + Pricing Shown | MaxVideoAI",
+      "title": "AI Video Examples + Pricing Shown | Perzia AI",
       "description": "Explore real AI video examples with prompts, duration, audio info and pricing shown per clip. Clone any shot into your workspace in seconds.",
-      "title_engine": "AI Video Examples — {engineName} | MaxVideoAI",
+      "title_engine": "AI Video Examples — {engineName} | Perzia AI",
       "description_engine": "Browse {engineName} video examples with prompts, duration, audio info, and pricing shown per clip. Clone any shot into the workspace."
     }
   },
@@ -1712,7 +1712,7 @@
         "srSoon": "Coming soon",
         "live": "Shared wallets, approvals, and budgets are enabled in your workspace.",
         "beta": "Coming soon — shared wallets, approvals, and budgets. Join the beta at {email}.",
-        "email": "support@maxvideoai.com"
+        "email": "support@Perzia AI.com"
       },
       "curated": "Starter renders curated by the MaxVideo team appear here until you generate your own clips.",
       "error": "Failed to load jobs.",
@@ -1876,7 +1876,7 @@
         },
         "note": "Team note: On shared wallets, status applies to all members.",
         "comingSoon": "Coming soon — unified wallets, role-based approvals, and budgeting controls. Join the beta at {email}.",
-        "contactEmail": "support@maxvideoai.com",
+        "contactEmail": "support@Perzia AI.com",
         "statusLive": "Live",
         "statusSoon": "Coming soon"
       },
@@ -2029,7 +2029,7 @@
         "invite": "Invite member",
         "createProject": "Create project",
         "upcomingPrefix": "Coming soon — shared wallets, approvals, and budgets. Join the beta at ",
-        "upcomingEmail": "support@maxvideoai.com",
+        "upcomingEmail": "support@Perzia AI.com",
         "upcomingSuffix": "."
       },
       "privacy": {
@@ -2072,7 +2072,7 @@
     "modes": {
       "signup": {
         "title": "Create your workspace account",
-        "description": "Get instant access to the MaxVideoAI workspace. We'll confirm your email before your first render."
+        "description": "Get instant access to the Perzia AI workspace. We'll confirm your email before your first render."
       },
       "signin": {
         "title": "Access your workspace",

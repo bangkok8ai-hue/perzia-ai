@@ -105,7 +105,7 @@ export default async function PrivacyPage() {
           <ObfuscatedEmailLink
             user="privacy"
             domain="maxvideoai.com"
-            label="privacy@maxvideoai.com"
+            label="privacy@perzia-ai.com"
             placeholder="privacy [at] maxvideoai.com"
             unstyled
             className="font-medium"
@@ -114,7 +114,7 @@ export default async function PrivacyPage() {
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
             unstyled
             className="font-medium"
@@ -257,7 +257,7 @@ function PrivacyArticleEn({ version, effective }: { version: string; effective: 
           <ObfuscatedEmailLink
             user="privacy"
             domain="maxvideoai.com"
-            label="privacy@maxvideoai.com"
+            label="privacy@perzia-ai.com"
             placeholder="privacy [at] maxvideoai.com"
           />
           . You can lodge a complaint with your local data protection authority; in France, contact the CNIL.
@@ -283,7 +283,7 @@ function PrivacyArticleEn({ version, effective }: { version: string; effective: 
           <ObfuscatedEmailLink
             user="privacy"
             domain="maxvideoai.com"
-            label="privacy@maxvideoai.com"
+            label="privacy@perzia-ai.com"
             placeholder="privacy [at] maxvideoai.com"
           />
           .
@@ -425,7 +425,7 @@ function PrivacyArticleFr({ version, effective }: { version: string; effective: 
           <ObfuscatedEmailLink
             user="privacy"
             domain="maxvideoai.com"
-            label="privacy@maxvideoai.com"
+            label="privacy@perzia-ai.com"
             placeholder="privacy [at] maxvideoai.com"
           />
           . Vous pouvez introduire une plainte auprès de votre autorité locale (en France : CNIL).
@@ -452,7 +452,7 @@ function PrivacyArticleFr({ version, effective }: { version: string; effective: 
           <ObfuscatedEmailLink
             user="privacy"
             domain="maxvideoai.com"
-            label="privacy@maxvideoai.com"
+            label="privacy@perzia-ai.com"
             placeholder="privacy [at] maxvideoai.com"
           />
           .
@@ -592,7 +592,7 @@ function PrivacyArticleEs({ version, effective }: { version: string; effective: 
           <ObfuscatedEmailLink
             user="privacy"
             domain="maxvideoai.com"
-            label="privacy@maxvideoai.com"
+            label="privacy@perzia-ai.com"
             placeholder="privacy [at] maxvideoai.com"
           />
           . Puedes presentar reclamaciones ante tu autoridad local (por ejemplo, la AEPD o la CNIL).
@@ -618,7 +618,7 @@ function PrivacyArticleEs({ version, effective }: { version: string; effective: 
           <ObfuscatedEmailLink
             user="privacy"
             domain="maxvideoai.com"
-            label="privacy@maxvideoai.com"
+            label="privacy@perzia-ai.com"
             placeholder="privacy [at] maxvideoai.com"
           />
           .

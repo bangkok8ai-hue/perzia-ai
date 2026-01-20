@@ -113,7 +113,7 @@ export default function SubprocessorsPage() {
         <ObfuscatedEmailLink
           user="privacy"
           domain="maxvideoai.com"
-          label="privacy@maxvideoai.com"
+          label="privacy@perzia-ai.com"
           placeholder="privacy [at] maxvideoai.com"
         />
         .

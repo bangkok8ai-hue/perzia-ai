@@ -67,7 +67,7 @@ export default async function AcceptableUsePage() {
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
           />
         </p>
@@ -119,7 +119,7 @@ function AupArticleEn() {
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
           />
           . We review reports promptly and take appropriate action.
@@ -174,7 +174,7 @@ function AupArticleFr() {
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
           />
           . Nous examinons chaque signalement et agissons rapidement.
@@ -229,7 +229,7 @@ function AupArticleEs() {
           <ObfuscatedEmailLink
             user="legal"
             domain="maxvideoai.com"
-            label="legal@maxvideoai.com"
+            label="legal@perzia-ai.com"
             placeholder="legal [at] maxvideoai.com"
           />
           . Revisamos cada informe y actuamos con rapidez.

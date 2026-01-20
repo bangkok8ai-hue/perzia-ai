@@ -46,14 +46,14 @@ export default function MentionsLegalesPage() {
             <ObfuscatedEmailLink
               user="support"
               domain="maxvideoai.com"
-              label="support@maxvideoai.com"
+              label="support@perzia-ai.com"
               placeholder="support [at] maxvideoai.com"
             />{' '}
             ·{' '}
             <ObfuscatedEmailLink
               user="legal"
               domain="maxvideoai.com"
-              label="legal@maxvideoai.com"
+              label="legal@perzia-ai.com"
               placeholder="legal [at] maxvideoai.com"
             />
           </p>
@@ -94,7 +94,7 @@ export default function MentionsLegalesPage() {
             <ObfuscatedEmailLink
               user="privacy"
               domain="maxvideoai.com"
-              label="privacy@maxvideoai.com"
+              label="privacy@perzia-ai.com"
               placeholder="privacy [at] maxvideoai.com"
             />
             .
