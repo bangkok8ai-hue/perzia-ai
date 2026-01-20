@@ -65,16 +65,15 @@ export function MarketingFooter() {
         <div className="flex flex-col gap-4 text-sm text-text-muted md:flex-row md:items-center md:justify-between">
           <Link
             href="/"
-            className="inline-flex items-center gap-3 font-display text-lg font-semibold tracking-tight text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            className="inline-flex items-center font-display text-lg font-semibold tracking-tight text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
             <Image
-              src="/assets/branding/logo-mark.svg"
+              src="/assets/branding/perzia-logo.svg"
               alt="Perzia AI"
-              width={32}
-              height={32}
-              className="h-8 w-8"
+              width={120}
+              height={38}
+              className="h-9"
             />
-            <span>{brandLabel}</span>
           </Link>
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-5">
             {/* Language toggle temporarily hidden - routing preserved */}
