@@ -35,7 +35,7 @@ const HEADER_COPY: Record<AppLocale, { title: string; effective: string; company
   es: {
     title: 'Notificación y retirada',
     effective: 'Fecha de entrada en vigor: 28 de octubre de 2025',
-    companyLine: 'Empresa: MaxVideoAI',
+    companyLine: 'Empresa: Perzia AI',
     contactLabel: 'Contacto:',
   },
 };
@@ -44,7 +44,7 @@ const FORM_COPY: Record<AppLocale, TakedownFormCopy> = {
   en: {
     emailLabel: 'Contact email',
     urlLabel: 'URL of the content',
-    urlPlaceholder: 'https://maxvideoai.com/video/...',
+    urlPlaceholder: 'https://perzia-ai.com/video/...',
     reasonLabel: 'Reason',
     reasons: {
       copyright: 'Copyright / IP infringement',
@@ -66,7 +66,7 @@ const FORM_COPY: Record<AppLocale, TakedownFormCopy> = {
   fr: {
     emailLabel: 'E-mail de contact',
     urlLabel: 'URL du contenu',
-    urlPlaceholder: 'https://maxvideoai.com/video/...',
+    urlPlaceholder: 'https://perzia-ai.com/video/...',
     reasonLabel: 'Motif',
     reasons: {
       copyright: 'Atteinte aux droits d’auteur / IP',
@@ -88,7 +88,7 @@ const FORM_COPY: Record<AppLocale, TakedownFormCopy> = {
   es: {
     emailLabel: 'Correo de contacto',
     urlLabel: 'URL del contenido',
-    urlPlaceholder: 'https://maxvideoai.com/video/...',
+    urlPlaceholder: 'https://perzia-ai.com/video/...',
     reasonLabel: 'Motivo',
     reasons: {
       copyright: 'Infracción de copyright / PI',
@@ -115,7 +115,7 @@ function TakedownArticle({ locale }: { locale: AppLocale }) {
       return (
         <article className="space-y-4 text-base leading-relaxed text-text-secondary">
           <p>
-            Si un contenu généré via MaxVideoAI porte atteinte à vos droits ou enfreint la loi, utilisez ce formulaire pour demander un examen. Nous accusons réception, enquêtons rapidement et prenons
+            Si un contenu généré via Perzia AI porte atteinte à vos droits ou enfreint la loi, utilisez ce formulaire pour demander un examen. Nous accusons réception, enquêtons rapidement et prenons
             les mesures appropriées (suppression ou suspension de compte si nécessaire).
           </p>
           <p>
@@ -134,7 +134,7 @@ function TakedownArticle({ locale }: { locale: AppLocale }) {
       return (
         <article className="space-y-4 text-base leading-relaxed text-text-secondary">
           <p>
-            Si un contenido generado con MaxVideoAI vulnera tus derechos o la ley, utiliza este formulario para solicitar una revisión. Confirmaremos la recepción, investigaremos con rapidez y actuaremos
+            Si un contenido generado con Perzia AI vulnera tus derechos o la ley, utiliza este formulario para solicitar una revisión. Confirmaremos la recepción, investigaremos con rapidez y actuaremos
             en consecuencia (incluida la retirada del contenido o la suspensión de cuentas cuando proceda).
           </p>
           <p>
@@ -199,3 +199,4 @@ export default async function TakedownPage() {
     </div>
   );
 }
+
