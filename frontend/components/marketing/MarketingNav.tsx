@@ -253,17 +253,16 @@ export function MarketingNav() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="flex items-center gap-3 font-display text-base font-semibold tracking-tight text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            className="flex items-center font-display text-base font-semibold tracking-tight text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
             <Image
-              src="/assets/branding/logo-mark.svg"
+              src="/assets/branding/perzia-logo.svg"
               alt="Perzia AI"
-              width={32}
-              height={32}
-              className="h-8 w-8"
+              width={140}
+              height={44}
+              className="h-11"
               priority
             />
-            <span>{brand}</span>
           </Link>
           <button
             type="button"
@@ -442,18 +441,17 @@ export function MarketingNav() {
           <div className="mx-auto flex max-w-sm items-center justify-between">
             <Link
               href="/"
-              className="flex items-center gap-3 font-display text-base font-semibold text-text-primary"
+              className="flex items-center font-display text-base font-semibold text-text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
               <Image
-                src="/assets/branding/logo-mark.svg"
+                src="/assets/branding/perzia-logo.svg"
                 alt="Perzia AI"
-                width={28}
-                height={28}
-                className="h-7 w-7"
+                width={120}
+                height={38}
+                className="h-9"
                 priority
               />
-              <span>{brand}</span>
             </Link>
             <button
               type="button"

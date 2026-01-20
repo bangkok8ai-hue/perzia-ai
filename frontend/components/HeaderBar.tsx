@@ -593,9 +593,8 @@ export function HeaderBar() {
 function LogoMark() {
   const { t } = useI18n();
   return (
-    <Link href="/" className="flex items-center gap-2" aria-label={t('workspace.header.logoAria', 'Go to marketing homepage')}>
-      <Image src="/assets/branding/logo-mark.svg" alt="Perzia AI" width={28} height={28} priority />
-      <span className="text-lg font-semibold tracking-tight text-text-primary">Perzia AI</span>
+    <Link href="/" className="flex items-center" aria-label={t('workspace.header.logoAria', 'Go to marketing homepage')}>
+      <Image src="/assets/branding/perzia-logo.svg" alt="Perzia AI" width={140} height={44} priority />
     </Link>
   );
 }
