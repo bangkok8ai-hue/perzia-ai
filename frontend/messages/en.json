@@ -102,8 +102,7 @@
         "Pika 2.2",
         "MiniMax Hailuo 02",
         "Kling 2.5",
-        "Wan 2.5",
-        "Nano Banana"
+        "Wan 2.5"
       ],
       "caption": "Independent hub. Trademarks belong to their owners.",
       "availabilityNotice": "Availability may vary by provider; pricing chips refresh automatically."
@@ -605,11 +604,6 @@
           "emoji": "⚡",
           "title": "When to choose Pika or MiniMax",
           "body": "Pika 2.2 excels at stylised loops and social edits, while MiniMax Hailuo 02 keeps budgets low for volume runs. Both complement Sora and Veo when you need fast alternates or lightweight briefs."
-        },
-        {
-          "emoji": "🖼️",
-          "title": "When to choose Nano Banana",
-          "body": "Storyboard or edit photoreal stills before jumping into motion. Nano Banana shares the same wallet and prompt lab, so you can prep Veo/Sora shots with text-to-image or reference edits."
         }
       ],
       "cta": {
@@ -696,9 +690,9 @@
         "priceBefore": "Live pricing updates inside the Generate workspace.",
         "versionLabel": "v2.6 Pro"
       },
-    "title": "AI Video Models Comparison + Pricing Shown | MaxVideoAI",
-    "description": "Compare AI video engines side-by-side: pricing shown per clip, audio support, max duration and resolution. Pick the right model before you generate."
-  },
+      "title": "AI Video Models Comparison + Pricing Shown | MaxVideoAI",
+      "description": "Compare AI video engines side-by-side: pricing shown per clip, audio support, max duration and resolution. Pick the right model before you generate."
+    },
     "note": "",
     "detail": {
       "backLabel": "← Back to models",
@@ -1427,22 +1421,22 @@
             "ariaOn": "Unmute all previews",
             "ariaOff": "Mute all previews"
           },
-        "loop": {
-          "on": "Loop on",
-          "off": "Loop off",
-          "ariaOn": "Disable looping",
-          "ariaOff": "Enable looping"
+          "loop": {
+            "on": "Loop on",
+            "off": "Loop off",
+            "ariaOn": "Disable looping",
+            "ariaOff": "Enable looping"
+          },
+          "modal": {
+            "label": "Open modal",
+            "aria": "Open preview in modal"
+          },
+          "openTake": {
+            "label": "Open",
+            "aria": "Open this take"
+          },
+          "copyPrompt": "Copy prompt"
         },
-        "modal": {
-          "label": "Open modal",
-          "aria": "Open preview in modal"
-        },
-        "openTake": {
-          "label": "Open",
-          "aria": "Open this take"
-        },
-        "copyPrompt": "Copy prompt"
-      },
         "placeholder": "—"
       },
       "galleryRail": {
@@ -1513,43 +1507,83 @@
         "guides": {
           "pika-text-to-video": {
             "description": "Pika 2.2 handles stylized prompts or uploaded stills in one card — perfect for quick loops and product explainers.",
-            "badges": ["Text prompts", "Image input", "Fast queue"]
+            "badges": [
+              "Text prompts",
+              "Image input",
+              "Fast queue"
+            ]
           },
           "sora-2": {
             "description": "OpenAI Sora 2 handles cinematic narratives with lip-sync and audio - ideal for hero renders.",
-            "badges": ["Audio native", "Cinematic", "Remix"]
+            "badges": [
+              "Audio native",
+              "Cinematic",
+              "Remix"
+            ]
           },
           "sora-2-pro": {
             "description": "Sora 2 Pro unlocks higher resolutions, synced dialogue, and image-to-video control for top-tier productions.",
-            "badges": ["1080p", "Audio native", "Lip-sync"]
+            "badges": [
+              "1080p",
+              "Audio native",
+              "Lip-sync"
+            ]
           },
           "veo-3-1": {
             "description": "Veo 3.1 now handles direct prompts or reference stills. Swap between text-to-video and image-to-video without leaving the queue.",
-            "badges": ["Text prompts", "Multi reference", "Audio native"]
+            "badges": [
+              "Text prompts",
+              "Multi reference",
+              "Audio native"
+            ]
           },
           "veo-3-1-fast": {
             "description": "Veo 3.1 Fast now handles quick text prompts or single-image animations with optional audio.",
-            "badges": ["Text prompts", "Image-to-video", "Audio option"]
+            "badges": [
+              "Text prompts",
+              "Image-to-video",
+              "Audio option"
+            ]
           },
           "veo-3-1-first-last": {
             "description": "Upload first and last frames, describe the bridge, and toggle between Veo 3.1 and Veo 3.1 Fast for the transition.",
-            "badges": ["Two frames", "Audio option", "Standard & Fast"]
+            "badges": [
+              "Two frames",
+              "Audio option",
+              "Standard & Fast"
+            ]
           },
           "minimax-hailuo-02-text": {
             "description": "Hailuo 02 Standard handles stylized text prompts or animated reference stills with prompt optimiser support.",
-            "badges": ["Prompt optimiser", "Image input", "6–10s silent"]
+            "badges": [
+              "Prompt optimiser",
+              "Image input",
+              "6–10s silent"
+            ]
           },
           "kling-2-5-turbo": {
             "description": "Kling 2.5 Turbo lives in one card with Pro text, Pro image, and Standard image-to-video modes for cinematic shots or budget loops.",
-            "badges": ["Text prompts", "Image-to-video", "Standard tier"]
+            "badges": [
+              "Text prompts",
+              "Image-to-video",
+              "Standard tier"
+            ]
           },
           "wan-2-5": {
             "description": "Wan 2.5 handles 5 or 10 second clips with optional background audio plus prompt expansion when you need extra detail.",
-            "badges": ["Audio option", "5s or 10s", "480p–1080p"]
+            "badges": [
+              "Audio option",
+              "5s or 10s",
+              "480p–1080p"
+            ]
           },
           "wan-2-6": {
             "description": "Wan 2.6 merges text, image, and reference-to-video in one card with multi-shot prompting and 720p/1080p tiers.",
-            "badges": ["Text prompts", "Image input", "Reference video"]
+            "badges": [
+              "Text prompts",
+              "Image input",
+              "Reference video"
+            ]
           }
         }
       }
@@ -1664,7 +1698,7 @@
         }
       }
     },
-      "jobs": {
+    "jobs": {
       "title": "Jobs",
       "sections": {
         "video": "Video jobs",
@@ -1686,13 +1720,13 @@
       "empty": "No renders yet. Start a generation to populate your history.",
       "loadMore": "Load more",
       "loading": "Loading…",
-        "actions": {
-          "addToLibrary": "Add to Library",
-          "removeFromLibrary": "Remove from Library",
-          "saving": "Saving…",
-          "removing": "Removing…"
-        }
-      },
+      "actions": {
+        "addToLibrary": "Add to Library",
+        "removeFromLibrary": "Remove from Library",
+        "saving": "Saving…",
+        "removing": "Removing…"
+      }
+    },
     "dashboard": {
       "create": {
         "title": "Create",
