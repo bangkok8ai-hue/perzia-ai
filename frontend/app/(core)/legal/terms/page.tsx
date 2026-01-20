@@ -25,7 +25,7 @@ const HEADER_COPY: Record<AppLocale, { title: string; versionLabel: string; effe
     title: 'Terms of Service',
     versionLabel: 'Version',
     effectiveLabel: 'Effective date',
-    companyLine: 'Company: MaxVideoAI (sole proprietorship in formation) · Governing law: France (Paris courts)',
+    companyLine: 'Company: Perzia AI (sole proprietorship in formation) · Governing law: France (Paris courts)',
     contactLabel: 'Contact:',
   },
   fr: {

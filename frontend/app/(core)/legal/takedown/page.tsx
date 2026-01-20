@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildSeoMetadata({
     locale,
     title: 'Notice & Takedown',
-    description: 'Report abusive or unlawful content generated through MaxVideoAI.',
+    description: 'Report abusive or unlawful content generated through Perzia AI.',
     hreflangGroup: 'legalTakedown',
     englishPath: '/legal/takedown',
     availableLocales: ['en', 'fr', 'es'] as AppLocale[],
@@ -23,7 +23,7 @@ const HEADER_COPY: Record<AppLocale, { title: string; effective: string; company
   en: {
     title: 'Notice & Takedown',
     effective: 'Effective date: 28 October 2025',
-    companyLine: 'Company: MaxVideoAI',
+    companyLine: 'Company: Perzia AI',
     contactLabel: 'Contact:',
   },
   fr: {
@@ -153,7 +153,7 @@ function TakedownArticle({ locale }: { locale: AppLocale }) {
       return (
         <article className="space-y-4 text-base leading-relaxed text-text-secondary">
           <p>
-            If content generated through MaxVideoAI infringes your rights or violates the law, use this form to request a review. We will acknowledge receipt, investigate promptly, and take appropriate
+            If content generated through Perzia AI infringes your rights or violates the law, use this form to request a review. We will acknowledge receipt, investigate promptly, and take appropriate
             action (including removal or account suspension when justified).
           </p>
           <p>

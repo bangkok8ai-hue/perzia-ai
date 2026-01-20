@@ -124,7 +124,7 @@ export default async function ModelsPage() {
   const content = dictionary.models;
   const heroTitle = content.hero?.title ?? 'AI Video Engines – Sora, Veo, Pika & More';
   const HERO_BODY_FALLBACK =
-    'Browse every AI video engine available in MaxVideoAI, including Sora 2, Veo 3.1, Pika 2.2, Kling, Luma, Wan and MiniMax Hailuo. Each model page includes real examples, specs, pricing and prompt tips so you can choose the right engine for your shot.';
+    'Browse every AI video engine available in Perzia AI, including Sora 2, Veo 3.1, Pika 2.2, Kling, Luma, Wan and MiniMax Hailuo. Each model page includes real examples, specs, pricing and prompt tips so you can choose the right engine for your shot.';
   const heroBody =
     typeof content.hero?.body === 'string' && content.hero.body.trim().length ? content.hero.body : HERO_BODY_FALLBACK;
   const introContent = content.intro ?? null;
@@ -249,7 +249,7 @@ export default async function ModelsPage() {
       <header className="space-y-3">
         <h1 className="text-3xl font-semibold text-text-primary sm:text-4xl">{heroTitle}</h1>
         <h2 className="text-xl font-semibold text-text-primary sm:text-2xl">
-          Compare all AI video models available in MaxVideoAI
+          Compare all AI video models available in Perzia AI
         </h2>
         <p className="max-w-2xl text-base text-text-secondary">{content.hero.subtitle}</p>
         <p className="max-w-2xl text-sm text-text-secondary">{heroBody}</p>

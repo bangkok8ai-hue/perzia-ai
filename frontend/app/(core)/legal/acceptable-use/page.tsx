@@ -23,7 +23,7 @@ const HEADER_COPY: Record<AppLocale, { title: string; effective: string; company
   en: {
     title: 'Acceptable Use Policy',
     effective: 'Effective date: 28 October 2025',
-    companyLine: 'Company: MaxVideoAI',
+    companyLine: 'Company: Perzia AI',
     contactLabel: 'Contact:',
   },
   fr: {
@@ -111,7 +111,7 @@ function AupArticleEn() {
       <section className="space-y-2">
         <h2 className="text-lg font-semibold text-text-primary">Report abuse</h2>
         <p>
-          If you believe content generated through MaxVideoAI breaches this policy or your rights, notify us via the{' '}
+          If you believe content generated through Perzia AI breaches this policy or your rights, notify us via the{' '}
           <Link href="/legal/takedown" className="text-accent underline">
             Notice &amp; Takedown form
           </Link>{' '}
