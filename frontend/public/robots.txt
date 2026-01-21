@@ -16,9 +16,9 @@ Disallow: /test
 Disallow: /private/
 
 # Sitemaps
-Sitemap: https://maxvideoai.com/sitemap.xml
-Sitemap: https://maxvideoai.com/sitemap-en.xml
-Sitemap: https://maxvideoai.com/sitemap-fr.xml
-Sitemap: https://maxvideoai.com/sitemap-es.xml
-Sitemap: https://maxvideoai.com/sitemap-models.xml
-Sitemap: https://maxvideoai.com/sitemap-video.xml
+Sitemap: https://perzia-ai.vercel.app/sitemap.xml
+Sitemap: https://perzia-ai.vercel.app/sitemap-en.xml
+Sitemap: https://perzia-ai.vercel.app/sitemap-fr.xml
+Sitemap: https://perzia-ai.vercel.app/sitemap-es.xml
+Sitemap: https://perzia-ai.vercel.app/sitemap-models.xml
+Sitemap: https://perzia-ai.vercel.app/sitemap-video.xml

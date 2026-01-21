@@ -16,7 +16,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://maxvideoai.com" />
+        <link rel="preconnect" href="https://perzia-ai.vercel.app" />
         {GTM_ID ? (
           <Script
             id="gtm-consent-bootstrap"

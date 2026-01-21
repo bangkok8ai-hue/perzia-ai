@@ -13,8 +13,8 @@ import { resolveDictionary } from '@/lib/i18n/server';
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
   process.env.SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://maxvideoai.com');
-const NORMALIZED_SITE_URL = SITE_URL.replace(/\/+$/, '') || 'https://maxvideoai.com';
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://perzia-ai.vercel.app');
+const NORMALIZED_SITE_URL = SITE_URL.replace(/\/+$/, '') || 'https://perzia-ai.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${NORMALIZED_SITE_URL}/`),
@@ -67,12 +67,12 @@ export default async function CoreLayout({ children }: { children: ReactNode }) 
     name: 'MaxVideoAI',
     ...(enableSearchSchema
       ? {
-          potentialAction: {
-            '@type': 'SearchAction',
-            target: `${homeUrl}search?q={query}`,
-            'query-input': 'required name=query',
-          },
-        }
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: `${homeUrl}search?q={query}`,
+          'query-input': 'required name=query',
+        },
+      }
       : {}),
   };
 

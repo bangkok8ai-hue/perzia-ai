@@ -22,7 +22,7 @@ type PageProps = {
   searchParams?: { from?: string };
 };
 
-const SITE = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://maxvideoai.com').replace(/\/$/, '');
+const SITE = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://perzia-ai.vercel.app').replace(/\/$/, '');
 const FALLBACK_THUMB = `${SITE}/og/price-before.png`;
 const FALLBACK_POSTER = `${SITE}/og/price-before.png`;
 const TITLE_SUFFIX = ' — Perzia AI';

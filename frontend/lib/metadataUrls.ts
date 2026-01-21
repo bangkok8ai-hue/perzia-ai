@@ -8,7 +8,7 @@ function resolveSiteBaseUrl() {
     process.env.NEXT_PUBLIC_SITE_URL ??
     process.env.SITE_URL ??
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null) ??
-    'https://maxvideoai.com';
+    'https://perzia-ai.vercel.app';
   try {
     const normalized = new URL(configured);
     normalized.pathname = '/';
@@ -16,7 +16,7 @@ function resolveSiteBaseUrl() {
     normalized.hash = '';
     return normalized.origin;
   } catch {
-    return 'https://maxvideoai.com';
+    return 'https://perzia-ai.vercel.app';
   }
 }
 

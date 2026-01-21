@@ -7,7 +7,7 @@ const localizedSlugConfig = require('./config/localized-slugs.json');
 
 const { Client } = require('pg');
 
-const SITE_URL = 'https://maxvideoai.com';
+const SITE_URL = 'https://perzia-ai.vercel.app';
 const LOCALES = ['en', 'fr', 'es'];
 const LOCALE_PREFIXES = { en: '', fr: 'fr', es: 'es' };
 const MARKETING_CORE_PATHS = [
@@ -64,7 +64,7 @@ async function fetchSlugsFromDb(tableName, basePath) {
   } finally {
     try {
       await client.end();
-    } catch {}
+    } catch { }
   }
 }
 

@@ -3,11 +3,11 @@ import { submitToIndexNow } from '@/lib/indexnow';
 
 function normalizeSiteUrl(value?: string | null): string {
   if (!value) {
-    return 'https://maxvideoai.com';
+    return 'https://perzia-ai.vercel.app';
   }
   const trimmed = value.trim();
   if (!trimmed) {
-    return 'https://maxvideoai.com';
+    return 'https://perzia-ai.vercel.app';
   }
   if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
     return trimmed.replace(/\/+$/, '');

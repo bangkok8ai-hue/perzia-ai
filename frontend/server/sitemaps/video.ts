@@ -4,7 +4,7 @@ import { ensureBillingSchema } from '@/lib/schema';
 import { listExamples } from '@/server/videos';
 import { normalizeEngineId } from '@/lib/engine-alias';
 
-const SITE = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://maxvideoai.com').replace(/\/$/, '');
+const SITE = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://perzia-ai.vercel.app').replace(/\/$/, '');
 const EXAMPLES_PAGE_SIZE = 60;
 
 function escapeXml(value: string): string {

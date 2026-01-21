@@ -17,7 +17,7 @@ export type SitemapEntry = {
   lastModified?: string;
 };
 
-const RAW_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'https://maxvideoai.com';
+const RAW_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'https://perzia-ai.vercel.app';
 const SITE_URL =
   RAW_SITE_URL.startsWith('http://') || RAW_SITE_URL.startsWith('https://')
     ? RAW_SITE_URL.replace(/\/+$/, '')
