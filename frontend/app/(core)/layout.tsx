@@ -19,8 +19,8 @@ const NORMALIZED_SITE_URL = SITE_URL.replace(/\/+$/, '') || 'https://perzia-ai.v
 export const metadata: Metadata = {
   metadataBase: new URL(`${NORMALIZED_SITE_URL}/`),
   title: {
-    default: 'MaxVideoAI — AI Video Generator Hub',
-    template: '%s — MaxVideoAI',
+    default: 'Perzia AI — AI Video Generator Hub',
+    template: '%s — Perzia AI',
   },
   description: 'Generate cinematic AI videos via Sora 2, Veo 3, Pika & more. Pay-as-you-go, no watermarks.',
   icons: {
@@ -48,14 +48,14 @@ export default async function CoreLayout({ children }: { children: ReactNode }) 
   const orgSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'MaxVideoAI',
+    name: 'Perzia AI',
     url: homeUrl,
     logo: logoUrl,
     sameAs: [
-      'https://x.com/MaxVideoAI',
-      'https://www.linkedin.com/company/maxvideoai/',
-      'https://github.com/camgraphe/maxvideoai',
-      'https://www.producthunt.com/products/maxvideoai',
+      'https://x.com/PerziaAI',
+      'https://www.linkedin.com/company/perzia-ai/',
+      'https://github.com/bangkok8ai-hue/perzia-ai',
+      'https://www.producthunt.com/products/perzia-ai',
     ],
   };
 
@@ -64,7 +64,7 @@ export default async function CoreLayout({ children }: { children: ReactNode }) 
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     url: homeUrl,
-    name: 'MaxVideoAI',
+    name: 'Perzia AI',
     ...(enableSearchSchema
       ? {
         potentialAction: {
