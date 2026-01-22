@@ -17,6 +17,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://perzia-ai.vercel.app" />
+        <link rel="manifest" href="/site.webmanifest" />
         {GTM_ID ? (
           <Script
             id="gtm-consent-bootstrap"

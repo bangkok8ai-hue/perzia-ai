@@ -97,26 +97,26 @@ export default async function DocsIndexPage({ params }: { params: { locale: AppL
         </header>
 
         <nav aria-label="On-page navigation" className="mt-4">
-        <div className="rounded-xl border border-hairline bg-white p-3 text-sm text-text-secondary sm:hidden">
-          <div className="flex flex-wrap gap-2 text-muted-foreground">
-            {tocLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="underline underline-offset-2 text-muted-foreground transition-colors hover:text-text-primary"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </div>
-        <div className="mt-4 sm:grid sm:grid-cols-[220px_1fr] sm:gap-6">
-          <aside className="hidden sm:block sm:sticky sm:top-24 sm:h-max sm:self-start sm:rounded-xl sm:border sm:border-hairline sm:bg-white sm:p-4 sm:text-sm sm:text-text-secondary">
-            <div className="mb-2 text-sm font-semibold text-text-primary">On this page</div>
-            <ul className="space-y-1">
+          <div className="rounded-xl border border-hairline bg-white p-3 text-sm text-text-secondary sm:hidden">
+            <div className="flex flex-wrap gap-2 text-muted-foreground">
               {tocLinks.map((link) => (
-                <li key={link.href}>
-                  <a
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="underline underline-offset-2 text-muted-foreground transition-colors hover:text-text-primary"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="mt-4 sm:grid sm:grid-cols-[220px_1fr] sm:gap-6">
+            <aside className="hidden sm:block sm:sticky sm:top-24 sm:h-max sm:self-start sm:rounded-xl sm:border sm:border-hairline sm:bg-white sm:p-4 sm:text-sm sm:text-text-secondary">
+              <div className="mb-2 text-sm font-semibold text-text-primary">On this page</div>
+              <ul className="space-y-1">
+                {tocLinks.map((link) => (
+                  <li key={link.href}>
+                    <a
                       href={link.href}
                       className="text-muted-foreground transition-colors hover:underline hover:text-text-primary"
                     >
@@ -328,7 +328,7 @@ export default async function DocsIndexPage({ params }: { params: { locale: AppL
               about: ['onboarding', 'refund policy', 'brand safety', 'webhooks', 'api references'],
               publisher: {
                 '@type': 'Organization',
-                name: 'MaxVideo AI',
+                name: 'Perzia AI',
                 url: SITE,
               },
             }),

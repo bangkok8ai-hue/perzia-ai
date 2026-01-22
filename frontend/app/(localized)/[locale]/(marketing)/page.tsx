@@ -433,10 +433,10 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
     const modelHref = canonicalSlug ? `/models/${encodeURIComponent(canonicalSlug)}` : null;
     const detailMeta = video
       ? {
-          prompt: video.promptExcerpt ?? video.prompt ?? null,
-          engineLabel: video.engineLabel ?? label,
-          durationSec: video.durationSec ?? null,
-        }
+        prompt: video.promptExcerpt ?? video.prompt ?? null,
+        engineLabel: video.engineLabel ?? label,
+        durationSec: video.durationSec ?? null,
+      }
       : null;
 
     return {
@@ -464,18 +464,18 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
   const heroPriceMap: Record<string, string> =
     heroTileConfigs.some((tile) => !tile.adminPriceLabel)
       ? await resolveHeroTilePrices(
-          heroTileConfigs
-            .filter((tile) => !tile.adminPriceLabel)
-            .map((tile) => ({
-              id: tile.id,
-              engineId: tile.engineId,
-              durationSec: tile.durationSec,
-              resolution: tile.resolution,
-              fallbackPriceLabel: tile.fallbackPriceLabel,
-              minPriceCents: tile.minPriceCents,
-              minPriceCurrency: tile.minPriceCurrency,
-            }))
-        )
+        heroTileConfigs
+          .filter((tile) => !tile.adminPriceLabel)
+          .map((tile) => ({
+            id: tile.id,
+            engineId: tile.engineId,
+            durationSec: tile.durationSec,
+            resolution: tile.resolution,
+            fallbackPriceLabel: tile.fallbackPriceLabel,
+            minPriceCents: tile.minPriceCents,
+            minPriceCurrency: tile.minPriceCurrency,
+          }))
+      )
       : {};
 
   const examplesCalloutCopy = home.examplesCallout ?? {
@@ -511,7 +511,7 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
   const softwareSchema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'MaxVideoAI',
+    name: 'Perzia AI',
     applicationCategory: 'Video',
     operatingSystem: 'Web',
     offers: {
@@ -531,7 +531,7 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
   const videoJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'MaxVideoAI - Generate cinematic AI video',
+    name: 'Perzia AI - Generate cinematic AI video',
     description: 'Create watermark-free AI videos with Sora 2, Veo 3.1, Veo 3 Fast, Pika 2.2, MiniMax Hailuo 02, and Hunyuan Image.',
     thumbnailUrl: ['https://maxvideoai.com/og/price-before.png'],
     uploadDate: '2025-10-01T12:00:00+00:00',
@@ -540,7 +540,7 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
     embedUrl: 'https://maxvideoai.com/',
     publisher: {
       '@type': 'Organization',
-      name: 'MaxVideoAI',
+      name: 'Perzia AI',
       logo: {
         '@type': 'ImageObject',
         url: 'https://maxvideoai.com/favicon-512.png',
@@ -764,7 +764,7 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'MaxVideo AI',
+            name: 'Perzia AI',
             url: 'https://maxvideoai.com',
             logo: 'https://maxvideoai.com/logo-wordmark.svg',
             sameAs: [],
@@ -781,7 +781,7 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'SoftwareApplication',
-            name: 'MaxVideo AI',
+            name: 'Perzia AI',
             applicationCategory: 'VideoEditorApplication',
             operatingSystem: 'Web',
             url: 'https://maxvideoai.com',
@@ -799,7 +799,7 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
             ],
             publisher: {
               '@type': 'Organization',
-              name: 'MaxVideo AI',
+              name: 'Perzia AI',
             },
           }),
         }}
