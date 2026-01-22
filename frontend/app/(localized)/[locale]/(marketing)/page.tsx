@@ -220,7 +220,7 @@ function MiniFAQ({ faq }: MiniFaqProps) {
     items: [
       {
         q: 'Is Sora 2 available in the EU?',
-        a: 'Sora 2 availability is limited. MaxVideoAI routes your brief to supported engines today and keeps Sora-ready presets for later.',
+        a: 'Sora 2 availability is limited. Perzia AI routes your brief to supported engines today and keeps Sora-ready presets for later.',
       },
       {
         q: 'Can I add audio?',
@@ -526,24 +526,24 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
       ratingCount: '3200',
     },
     description: seoDescription,
-    url: 'https://maxvideoai.com',
+    url: 'https://perzia-ai.vercel.app',
   };
   const videoJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
     name: 'Perzia AI - Generate cinematic AI video',
     description: 'Create watermark-free AI videos with Sora 2, Veo 3.1, Veo 3 Fast, Pika 2.2, MiniMax Hailuo 02, and Hunyuan Image.',
-    thumbnailUrl: ['https://maxvideoai.com/og/price-before.png'],
+    thumbnailUrl: ['https://perzia-ai.vercel.app/og/price-before.png'],
     uploadDate: '2025-10-01T12:00:00+00:00',
     duration: 'PT45S',
-    contentUrl: 'https://maxvideoai.com/hero/sora2.mp4',
-    embedUrl: 'https://maxvideoai.com/',
+    contentUrl: 'https://perzia-ai.vercel.app/hero/sora2.mp4',
+    embedUrl: 'https://perzia-ai.vercel.app/',
     publisher: {
       '@type': 'Organization',
       name: 'Perzia AI',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://maxvideoai.com/favicon-512.png',
+        url: 'https://perzia-ai.vercel.app/favicon-512.png',
       },
     },
   };
@@ -765,8 +765,8 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'Perzia AI',
-            url: 'https://maxvideoai.com',
-            logo: 'https://maxvideoai.com/logo-wordmark.svg',
+            url: 'https://perzia-ai.vercel.app',
+            logo: 'https://perzia-ai.vercel.app/logo-wordmark.svg',
             sameAs: [],
             description:
               'Independent hub for AI video generation. Price before you generate. Works with Sora, Veo, LTX-2, Kling, Pika, MiniMax, Wan, Nano Banana.',
@@ -784,7 +784,7 @@ export default async function HomePage({ params }: { params?: { locale?: AppLoca
             name: 'Perzia AI',
             applicationCategory: 'VideoEditorApplication',
             operatingSystem: 'Web',
-            url: 'https://maxvideoai.com',
+            url: 'https://perzia-ai.vercel.app',
             offers: {
               '@type': 'Offer',
               price: '0',

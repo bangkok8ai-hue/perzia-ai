@@ -227,14 +227,14 @@ export default async function PricingPage({ params }: { params: { locale: AppLoc
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: 'AI Video Generation and Editing',
-    name: 'MaxVideoAI',
+    name: 'Perzia AI',
     description:
       'Generate high-quality AI videos using Sora 2, Veo 3, Pika, and other models. Digital credits, no shipping required.',
     provider: {
       '@type': 'Organization',
-      name: 'MaxVideoAI',
-      url: 'https://maxvideoai.com',
-      logo: 'https://maxvideoai.com/icon.png',
+      name: 'Perzia AI',
+      url: 'https://perzia-ai.vercel.app',
+      logo: 'https://perzia-ai.vercel.app/icon.png',
     },
     areaServed: 'Worldwide',
     offers: {
@@ -305,9 +305,9 @@ export default async function PricingPage({ params }: { params: { locale: AppLoc
       tier.spendThresholdCents <= 0
         ? tierCopy?.requirement ?? memberCopy.requirementDefault
         : (tierCopy?.requirementThreshold ?? memberCopy.requirementThreshold).replace(
-            '{amount}',
-            currencyFormatter.format(tier.spendThresholdCents / 100)
-          );
+          '{amount}',
+          currencyFormatter.format(tier.spendThresholdCents / 100)
+        );
     const discountPct = tier.discountPercent * 100;
     const pctLabel = discountPct % 1 === 0 ? discountPct.toFixed(0) : discountPct.toFixed(1);
     const benefit =
@@ -342,13 +342,13 @@ export default async function PricingPage({ params }: { params: { locale: AppLoc
             {exploreLinks.map((link) => {
               const key = `${link.label}-${typeof link.href === 'string' ? link.href : link.href.pathname}`;
               return (
-              <Link
-                key={key}
-                href={link.href}
-                className="inline-flex items-center rounded-full border border-hairline px-3 py-1 text-xs font-semibold text-text-secondary transition hover:border-accent hover:text-accent"
-              >
-                {link.label}
-              </Link>
+                <Link
+                  key={key}
+                  href={link.href}
+                  className="inline-flex items-center rounded-full border border-hairline px-3 py-1 text-xs font-semibold text-text-secondary transition hover:border-accent hover:text-accent"
+                >
+                  {link.label}
+                </Link>
               );
             })}
           </div>

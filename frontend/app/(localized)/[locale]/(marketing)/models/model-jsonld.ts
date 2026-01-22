@@ -1,7 +1,7 @@
 import type { EngineAvailability } from '@/types/engines';
 import { getFalEngineBySlug } from '@/config/falEngines';
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://maxvideoai.com';
+const SITE = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://perzia-ai.vercel.app';
 
 const AVAILABILITY_MAP: Record<EngineAvailability, string> = {
   available: 'https://schema.org/InStock',
@@ -18,7 +18,7 @@ export function buildModelServiceJsonLd(slug: string) {
 
   const url = `${SITE}${engine.seo.canonicalPath}`;
   const description =
-    engine.seo?.description ?? engine.seoText ?? 'Generate AI videos with this model on MaxVideoAI.';
+    engine.seo?.description ?? engine.seoText ?? 'Generate AI videos with this model on Perzia AI.';
   const serviceType = `AI Video Generation with ${engine.marketingName}`;
   const name = engine.cardTitle ?? engine.marketingName;
   const availability = AVAILABILITY_MAP[engine.availability] ?? AVAILABILITY_MAP.limited;
@@ -31,9 +31,9 @@ export function buildModelServiceJsonLd(slug: string) {
     description,
     provider: {
       '@type': 'Organization',
-      name: 'MaxVideoAI',
-      url: 'https://maxvideoai.com',
-      logo: 'https://maxvideoai.com/icon.png',
+      name: 'Perzia AI',
+      url: 'https://perzia-ai.vercel.app',
+      logo: 'https://perzia-ai.vercel.app/icon.png',
     },
     areaServed: 'Worldwide',
     url,
